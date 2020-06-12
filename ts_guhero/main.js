@@ -140,10 +140,10 @@ window.boot = function () {
     // jsList
     var jsList = settings.jsList;
 
-    var bundledScript = settings.debug ? 'src/project.dev.js' : 'src/project.js';
+    var bundledScript = settings.debug ? 'ts_guhero/src/project.dev.js' : 'ts_guhero/src/project.js';
     if (jsList) {
         jsList = jsList.map(function (x) {
-            return 'src/' + x;
+            return 'ts_guhero/src/' + x;
         });
         jsList.push(bundledScript);
     }
@@ -178,16 +178,16 @@ window.boot = function () {
 if (window.jsb) {
     var isRuntime = (typeof loadRuntime === 'function');
     if (isRuntime) {
-        require('src/settings.js');
-        require('src/cocos2d-runtime.js');
+        require('ts_guhero/src/settings.js');
+        require('ts_guhero/src/cocos2d-runtime.js');
         if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
             require('src/physics.js');
         }
         require('jsb-adapter/engine/index.js');
     }
     else {
-        require('src/settings.js');
-        require('src/cocos2d-jsb.js');
+        require('ts_guhero/src/settings.js');
+        require('ts_guhero/src/cocos2d-jsb.js');
         if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
             require('src/physics.js');
         }
