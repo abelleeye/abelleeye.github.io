@@ -164,8 +164,8 @@ window.boot = function () {
 
     // init assets
     cc.AssetLibrary.init({
-        libraryPath: 'res/import',
-        rawAssetsBase: 'res/raw-',
+        libraryPath: 'ts_guhero/res/import',
+        rawAssetsBase: 'ts_guhero/res/raw-',
         rawAssets: settings.rawAssets,
         packedAssets: settings.packedAssets,
         md5AssetsMap: settings.md5AssetsMap,
