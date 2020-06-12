@@ -76,9 +76,9 @@
       document.body.appendChild(domScript);
     }
 
-    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.js', function () {
+    loadScript(debug ? '404/cocos2d-js.js' : '404/cocos2d-js-min.js', function () {
       if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
-        loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
+        loadScript(debug ? '404/physics.js' : '404/physics-min.js', window.boot);
       }
       else {
         window.boot();
