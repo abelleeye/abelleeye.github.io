@@ -117,7 +117,7 @@
 <p>以上6个方式无论是哪个初始化方式，都是在beanbean实例化，并赋值完成后开始的。</p>
 <p>看文字你会懂，会填入其它的概念：</p>
 <p>本图转载自：<a href="https://www.cnblogs.com/zrtqsk/p/3735273.html" target="_blank" rel="noopener">https://www.cnblogs.com/zrtqsk/p/3735273.html</a></p>
-<p><img src="https://blog.abellee.cn/upload/2020/1/bean%E5%91%A8%E6%9C%9F-d6b591a95ece4e7587107d529a81057a.png" alt="bean周期.png"></p>
+<p><img src="bean%E5%91%A8%E6%9C%9F.png" alt="bean周期.png"></p>
 <h3 id="bean的作用域-scope"><a href="#bean的作用域-scope" class="headerlink" title="bean的作用域@scope()"></a><a href="#bean的作用域-scope" title="bean的作用域@scope()"></a>bean的作用域@scope()</h3><p>说起bean，就必须有bean的作用域，一点都不复杂，就两个，一个单例，一个多例。</p>
 <p>代码格式是这样的</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span>  </span><br><span class="line"> <span class="keyword">public</span>  <span class="class"><span class="keyword">class</span> <span class="title">MyConfiguration</span> </span>&#123;  </span><br><span class="line"> <span class="meta">@Bean</span>   </span><br><span class="line"> <span class="meta">@Scope</span>（“prototype”）  </span><br><span class="line"> <span class="keyword">public</span> Encryptor encryptor（）&#123;  </span><br><span class="line"> <span class="comment">// ...   </span></span><br><span class="line"> &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
