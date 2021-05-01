@@ -1,0 +1,1840 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed]]></title><description><![CDATA[不会写代码，也不会打人马。]]></description><link>https://www.abellee.cn</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 01 May 2021 16:13:57 GMT</lastBuildDate><item><title><![CDATA[eva]]></title><description><![CDATA[EVA 一款因作者需求而生的一款极简风谷歌扩展! 扩展商店地址 
+ logo作者 Peter Qian(钱学毅) 功能 时间戳转换 图片转base64 base64转图片 字符串编解码(md5, base6…]]></description><link>https://www.abellee.cn/5/1/2021/eva/</link><guid isPermaLink="false">https://www.abellee.cn/5/1/2021/eva/</guid><pubDate>Sat, 01 May 2021 02:21:34 GMT</pubDate><content:encoded>&lt;h1&gt;&lt;a href=&quot;https://github.com/abelleeye/eva&quot;&gt;EVA&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;一款因作者需求而生的一款极简风谷歌扩展!&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/eva/dcjhacinagjbejleicefnpcnbeffhihi&quot;&gt;扩展商店地址&lt;/a&gt;
+&lt;img src=&quot;./image/eva_store_pic.png&quot; alt=&quot;商店&quot;/&gt;&lt;/p&gt;&lt;h1&gt;logo作者&lt;/h1&gt;&lt;p&gt;Peter Qian(钱学毅)&lt;/p&gt;&lt;h1&gt;功能&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;时间戳转换&lt;/li&gt;&lt;li&gt;图片转base64&lt;/li&gt;&lt;li&gt;base64转图片&lt;/li&gt;&lt;li&gt;字符串编解码(md5, base64)&lt;/li&gt;&lt;/ul&gt;&lt;h1&gt;使用方法&lt;/h1&gt;&lt;p&gt;直接点击扩展图标会弹出主页面&lt;/p&gt;&lt;h1&gt;页面截图&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;./image/eva_page.png&quot; alt=&quot;页面截图&quot;/&gt;&lt;/p&gt;&lt;h1&gt;离线安装方法&lt;/h1&gt;&lt;ol&gt;&lt;li&gt;&lt;code&gt;yarn&lt;/code&gt; 安装依赖&lt;/li&gt;&lt;li&gt;&lt;code&gt;yarn dev&lt;/code&gt; 将编译好的 build 文件夹拖拽进谷歌浏览器中。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;你也可以直接在Releases直接下载最新的zip包，解压后直接将文件夹拖拽到chrome扩展页面。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[aliyun_ddns]]></title><description><![CDATA[DDNS aliyun ddns 基于openjdk11开发 Feature 多主域名解析 多主机记录解析 任务轮询间隔可配置 当解析主机记录未设置过，自动创建 异步线程同时解析 jsonip.com低延迟获取公网IP docker-compose…]]></description><link>https://www.abellee.cn/3/8/2021/aliyun_ddns/</link><guid isPermaLink="false">https://www.abellee.cn/3/8/2021/aliyun_ddns/</guid><pubDate>Mon, 08 Mar 2021 06:58:20 GMT</pubDate><content:encoded>&lt;h1&gt;&lt;a href=&quot;https://github.com/AbelLee-LiYe/ddns&quot;&gt;DDNS&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;aliyun ddns&lt;/p&gt;&lt;p&gt;基于openjdk11开发&lt;/p&gt;&lt;h2&gt;Feature&lt;/h2&gt;&lt;ul class=&quot;contains-task-list&quot;&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; 多主域名解析&lt;/li&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; 多主机记录解析&lt;/li&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; 任务轮询间隔可配置&lt;/li&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; 当解析主机记录未设置过，自动创建&lt;/li&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; 异步线程同时解析&lt;/li&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; jsonip.com低延迟获取公网IP&lt;/li&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; docker-compose一键启动&lt;/li&gt;&lt;/ul&gt;&lt;h2&gt;安装&lt;/h2&gt;&lt;h2&gt;配置&lt;/h2&gt;&lt;p&gt;accessKeyId 和 secret 获取方式： 阿里云 -&amp;gt; 控制台 -&amp;gt; 右上角头像 -&amp;gt; AccessKey 管理&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-json5&quot;&gt;{
+  &amp;quot;regionId&amp;quot;: &amp;quot;cn-hangzhou&amp;quot;,  //可用区域
+  &amp;quot;accessKeyId&amp;quot;: &amp;quot;accessKeyId&amp;quot;, 
+  &amp;quot;secret&amp;quot;: &amp;quot;secret&amp;quot;,  
+  &amp;quot;interval&amp;quot;: 10000, // 毫秒
+  &amp;quot;domains&amp;quot;: [
+    {
+      &amp;quot;domain&amp;quot;: &amp;quot;example.com&amp;quot;, // 主域名
+      &amp;quot;rrKeyWords&amp;quot;: [
+        {
+          &amp;quot;rrKeyWord&amp;quot;: &amp;quot;pre&amp;quot;, // 主机记录 pre.example.com
+          &amp;quot;type&amp;quot;: &amp;quot;A&amp;quot;
+        },
+        {
+          &amp;quot;rrKeyWord&amp;quot;: &amp;quot;example&amp;quot;,
+          &amp;quot;type&amp;quot;: &amp;quot;A&amp;quot;
+        }
+      ]
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[2021_新年_新诗]]></title><description><![CDATA[赋汇唔，言透卷。
+唔言案，由光散。
+案由颂，春风泛。
+颂春赋，汇唔言。]]></description><link>https://www.abellee.cn/2/14/2021/2021_新年_新诗/</link><guid isPermaLink="false">https://www.abellee.cn/2/14/2021/2021_新年_新诗/</guid><pubDate>Sun, 14 Feb 2021 18:16:20 GMT</pubDate><content:encoded>&lt;p&gt;赋汇唔，言透卷。
+唔言案，由光散。
+案由颂，春风泛。
+颂春赋，汇唔言。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[无言]]></title><description><![CDATA[合意亦无言，张亦似无声。
+水意亦无然，酒亦似无味。]]></description><link>https://www.abellee.cn/10/10/2020/无言/</link><guid isPermaLink="false">https://www.abellee.cn/10/10/2020/无言/</guid><pubDate>Sat, 10 Oct 2020 03:23:00 GMT</pubDate><content:encoded>&lt;p&gt;合意亦无言，张亦似无声。
+水意亦无然，酒亦似无味。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[2020-08-01-随笔]]></title><description><![CDATA[…]]></description><link>https://www.abellee.cn/8/1/2020/2020-08-01-随笔/</link><guid isPermaLink="false">https://www.abellee.cn/8/1/2020/2020-08-01-随笔/</guid><pubDate>Sat, 01 Aug 2020 23:15:15 GMT</pubDate><content:encoded>&lt;p&gt;生活好他妈魔幻啊， 你喜欢的并不一定会去做，你正在做的并不一定是你喜欢的。你用各种各样的理由劝说你自己，为了让自己心灵舒服一点。你还不想放弃，就像否定了过去时的自己。真要不做了，你还会有一种自己只会单一技能的挫败感。人生呀，你是真他妈操蛋呀。生着，活着。进行各种各样的创作活动不过为了抒发自己内心那操蛋的滋味！也许能抒发，也许不能。&lt;/p&gt;&lt;p&gt;走向暖炉，温暖且刺痛。&lt;/p&gt;&lt;p&gt;点上一根烟，吸上一口，伴随着恶臭的烟草味和感到微微恶心的呼吸道，即使有一丝烟雾的满足，还是避免不了罪恶感的疯狂袭来。一遍又一遍，它从未停息，只是偶尔隐入忽远忽近的海平面。你开始自责，开始悔恨，你那深扎在心灵深处的希望呀，是那么的弱不禁风，你那纠结的灵魂在看不见的海风中伴随着寒冷摇曳不定。&lt;/p&gt;&lt;p&gt;哦！今天是一天，也许美好，或者不是。你不确定今天的客观在你所谓的主观上是个什么知觉。明天也是一天，也许美好，或者不是。后天也是一天，也许美好，或者不是。&lt;/p&gt;&lt;p&gt;从今天起，做一个咸鱼
+写作，代码，听歌，看剧
+从今天起，做一个舍利逐己的人
+我愿身边的人都是幸福的
+我想有一个阳台，面向夜空，星光连海
+我也想成为一个发自内心爱这个世界的人&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Minecraft_skin_abel]]></title><description><![CDATA[自制皮肤, 已上传官网, 转载请注明出处. 皮肤名字: Abel 展示:
+ 皮肤文件:
+]]></description><link>https://www.abellee.cn/6/26/2020/Minecraft-skin-abel/</link><guid isPermaLink="false">https://www.abellee.cn/6/26/2020/Minecraft-skin-abel/</guid><pubDate>Fri, 26 Jun 2020 15:23:41 GMT</pubDate><content:encoded>&lt;p&gt;自制皮肤, 已上传官网, 转载请注明出处.&lt;/p&gt;&lt;p&gt;皮肤名字: Abel&lt;/p&gt;&lt;p&gt;展示:
+&lt;img src=&quot;https://i.loli.net/2021/05/01/GXVEC3sj62TDQSt.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;皮肤文件:
+&lt;img src=&quot;https://i.loli.net/2021/05/01/ovZECwc9p14kzPi.png&quot;/&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[通过两点获取全部路径(string) && Return all paths from a given source to a destination(string)]]></title><description><![CDATA[参考:  https://www.geeksforgeeks.org/find-paths-given-source-destination/]]></description><link>https://www.abellee.cn/6/16/2020/通过两点获取全部路径/</link><guid isPermaLink="false">https://www.abellee.cn/6/16/2020/通过两点获取全部路径/</guid><pubDate>Tue, 16 Jun 2020 17:50:00 GMT</pubDate><content:encoded>&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;// A directed graph using 
+// adjacency map representation
+public class Graph {
+
+    // No. of vertices in graph 
+    private String s;
+
+    // adjacency list  
+    private Map&amp;lt;String, List&amp;lt;String&amp;gt;&amp;gt; adjMap;
+
+    private List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; resultList;
+
+    //Constructor
+    public Graph(Map&amp;lt;String, List&amp;lt;String&amp;gt;&amp;gt; nodeMap){
+        if (Objects.isNull(nodeMap)) {
+            throw new NullPointerException(&amp;quot;node map is not be null!&amp;quot;);
+        }
+        this.adjMap = nodeMap;
+        this.resultList = new ArrayList&amp;lt;&amp;gt;();
+    }
+
+    // Get all paths from
+    // &amp;#x27;s&amp;#x27; to &amp;#x27;d&amp;#x27; 
+    public List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; getAllPaths(String s, String d) {
+        if (Objects.isNull(s) || Objects.isNull(d)) {
+            throw new NullPointerException(&amp;quot;source or destination must not be null&amp;quot;);
+        }
+
+        if (Objects.isNull(this.s)) {
+            this.s = s;
+        }
+
+        Map&amp;lt;String, Boolean&amp;gt; isVisited = new HashMap&amp;lt;&amp;gt;(adjMap.size());
+        List&amp;lt;String&amp;gt; pathList = new ArrayList&amp;lt;&amp;gt;();
+
+        // add source to pathList
+        pathList.add(s);
+
+        // Call recursive utility
+        getAllPathsUtil(s, d, isVisited, pathList);
+
+        return this.resultList;
+    }
+
+    // A recursive function to print 
+    // all paths from &amp;#x27;u&amp;#x27; to &amp;#x27;d&amp;#x27;. 
+    // isVisited map keeps track of
+    // vertices in current path. 
+    // localPathList&amp;lt;&amp;gt; stores actual 
+    // vertices in the current path 
+    private void getAllPathsUtil(String u, String d,
+                                   Map&amp;lt;String, Boolean&amp;gt; isVisited,
+                                   List&amp;lt;String&amp;gt; localPathList) {
+
+        // Mark the current node
+        isVisited.put(u, Boolean.TRUE);
+
+        if (u.equals(d)) {
+            resultList.add(new ArrayList&amp;lt;&amp;gt;(localPathList));
+            System.out.println(localPathList); // print one finished path
+            // if match found then no need to traverse more till depth 
+            isVisited.put(u, Boolean.FALSE);
+            return;
+        }
+
+        // Recur for all the vertices 
+        // adjacent to current vertex
+        List&amp;lt;String&amp;gt; vertices = adjMap.get(u);
+
+        for (String i : vertices) {
+            if (Objects.isNull(isVisited.get(i)) || !isVisited.get(i)) {
+                // store current node  
+                // in path list
+                localPathList.add(i);
+                getAllPathsUtil(i, d, isVisited, localPathList);
+
+                // remove current node 
+                // in path list
+                localPathList.remove(i);
+            }
+        }
+
+        // Mark the current node
+        isVisited.put(u, Boolean.FALSE);
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class Demo {
+    public static void main(String[] args) {
+        Map&amp;lt;String, List&amp;lt;String&amp;gt;&amp;gt; nodeMap = new HashMap&amp;lt;&amp;gt;();
+        nodeMap.put(&amp;quot;0&amp;quot;, Arrays.asList(&amp;quot;1&amp;quot;, &amp;quot;3&amp;quot;));
+        nodeMap.put(&amp;quot;1&amp;quot;, Arrays.asList(&amp;quot;0&amp;quot;, &amp;quot;2&amp;quot;));
+        nodeMap.put(&amp;quot;2&amp;quot;, Arrays.asList(&amp;quot;1&amp;quot;, &amp;quot;3&amp;quot;, &amp;quot;4&amp;quot;));
+        nodeMap.put(&amp;quot;3&amp;quot;, Arrays.asList(&amp;quot;0&amp;quot;, &amp;quot;2&amp;quot;, &amp;quot;4&amp;quot;));
+        nodeMap.put(&amp;quot;4&amp;quot;, Arrays.asList(&amp;quot;2&amp;quot;, &amp;quot;3&amp;quot;));
+
+        List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; allPaths = new Graph(nodeMap).getAllPaths(&amp;quot;2&amp;quot;, &amp;quot;4&amp;quot;);
+        System.out.println(allPaths); // print [[2, 1, 0, 3, 4], [2, 3, 4], [2, 4]]
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&lt;li&gt;参考: &lt;a href=&quot;https://www.geeksforgeeks.org/find-paths-given-source-destination/&quot;&gt;https://www.geeksforgeeks.org/find-paths-given-source-destination/&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[二零一九年八月下旬]]></title><description><![CDATA[二零一九年八月下旬 空雀楼台罔自若，独留空人悬闲枝。
+枯流滴近终无用，映不出零星背月。]]></description><link>https://www.abellee.cn/8/22/2019/二零一九年八月下旬/</link><guid isPermaLink="false">https://www.abellee.cn/8/22/2019/二零一九年八月下旬/</guid><pubDate>Thu, 22 Aug 2019 09:55:25 GMT</pubDate><content:encoded>&lt;p&gt;二零一九年八月下旬&lt;/p&gt;&lt;p&gt;空雀楼台罔自若，独留空人悬闲枝。
+枯流滴近终无用，映不出零星背月。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[iTerm2常用快捷键]]></title><description><![CDATA[标签 分屏 其它]]></description><link>https://www.abellee.cn/7/24/2019/iTerm2常用快捷键/</link><guid isPermaLink="false">https://www.abellee.cn/7/24/2019/iTerm2常用快捷键/</guid><pubDate>Wed, 24 Jul 2019 09:28:56 GMT</pubDate><content:encoded>&lt;h2&gt;标签&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;新建标签：command + t
+
+关闭标签：command + w
+
+切换标签：command + 数字 command + 左右方向键
+
+切换全屏：command + enter
+
+查找：command + f
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;分屏&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;垂直分屏：command + d
+
+水平分屏：command + shift + d
+
+切换屏幕：command + option + 方向键 command + [ 或 command + ]
+
+查看历史命令：command + ;
+
+查看剪贴板历史：command + shift + h
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;其它&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;清除当前行：ctrl + u
+
+到行首：ctrl + a
+
+到行尾：ctrl + e
+
+前进后退：ctrl + f/b (相当于左右方向键)
+
+上一条命令：ctrl + p
+
+搜索命令历史：ctrl + r
+
+删除当前光标的字符：ctrl + d
+
+删除光标之前的字符：ctrl + h
+
+删除光标之前的单词：ctrl + w
+
+删除到文本末尾：ctrl + k
+
+交换光标处文本：ctrl + t
+
+清屏1：command + r
+
+清屏2：ctrl + l
+
+自带有哪些很实用的功能/快捷键
+
+⌘ + 数字在各 tab 标签直接来回切换
+
+选择即复制 + 鼠标中键粘贴，这个很实用
+
+⌘ + f 所查找的内容会被自动复制
+
+⌘ + d 横着分屏 / ⌘ + shift + d 竖着分屏
+
+⌘ + r = clear，而且只是换到新一屏，不会想 clear 一样创建一个空屏
+
+ctrl + u 清空当前行，无论光标在什么位置
+
+输入开头命令后 按 ⌘ + ; 会自动列出输入过的命令
+
+⌘ + shift + h 会列出剪切板历史
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[弱冠赋]]></title><description><![CDATA[人衰花谢亦流年，春来物新不见先。
+欲世知命忘回首，苍苍沧里获苍苍。]]></description><link>https://www.abellee.cn/5/18/2019/弱冠赋/</link><guid isPermaLink="false">https://www.abellee.cn/5/18/2019/弱冠赋/</guid><pubDate>Sat, 18 May 2019 00:17:17 GMT</pubDate><content:encoded>&lt;p&gt;人衰花谢亦流年，春来物新不见先。
+欲世知命忘回首，苍苍沧里获苍苍。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[线程安全延迟初始化方案]]></title><description><![CDATA[Initialization On Demand Holder idiom DoubleCheckedLocking…]]></description><link>https://www.abellee.cn/4/7/2019/线程安全延迟初始化方案/</link><guid isPermaLink="false">https://www.abellee.cn/4/7/2019/线程安全延迟初始化方案/</guid><pubDate>Sun, 07 Apr 2019 09:43:38 GMT</pubDate><content:encoded>&lt;h2&gt;Initialization On Demand Holder idiom&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class InstanceFactory { 
+    private static class InstanceHolder {
+        public static Instance instance = new Instance(); 
+    } public static Instance getInstance() {
+        return InstanceHolder.instance ;　　// 这里将导致InstanceHolder类被初始化  
+    } 
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;DoubleCheckedLocking&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class SafeDoubleCheckedLocking {
+
+    private volatile static Instance instance; 
+
+    public static Instance getInstance() { 
+        if (instance == null) { 
+            synchronized (SafeDoubleCheckedLocking.class) { 
+                if (instance == null) instance = new Instance(); // instance为volatile，现在没问题了 
+            } 
+        } 
+        return instance;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;结语&lt;/h2&gt;&lt;p&gt;字段延迟初始化降低了初始化类或创建实例的开销，但增加了访问被延迟初始化的字段 的开销。在大多数时候，正常的初始化要优于延迟初始化。如果确实需要对实例字段使用线程 安全的延迟初始化，请使用上面介绍的基于volatile的延迟初始化的方案；如果确实需要对静 态字段使用线程安全的延迟初始化，请使用上面介绍的基于类初始化的方案。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[happens-before规则]]></title><description><![CDATA[《JSR-133:Java Memory Model and Thread Specification》定义了如下happens-before规则。 1）程序顺序规则：一个线程中的每个操作，happens-before于该线程中的任意后续操作。…]]></description><link>https://www.abellee.cn/4/7/2019/happens-before规则/</link><guid isPermaLink="false">https://www.abellee.cn/4/7/2019/happens-before规则/</guid><pubDate>Sun, 07 Apr 2019 09:27:35 GMT</pubDate><content:encoded>&lt;p&gt;《JSR-133:Java Memory Model and Thread Specification》定义了如下happens-before规则。&lt;/p&gt;&lt;p&gt;1）程序顺序规则：一个线程中的每个操作，happens-before于该线程中的任意后续操作。&lt;/p&gt;&lt;p&gt;2）监视器锁规则：对一个锁的解锁，happens-before于随后对这个锁的加锁。&lt;/p&gt;&lt;p&gt;3）volatile变量规则：对一个volatile域的写，happens-before于任意后续对这个volatile域的 读。&lt;/p&gt;&lt;p&gt;4）传递性：如果A happens-before B，且B happens-before C，那么A happens-before C。&lt;/p&gt;&lt;p&gt;5）start()规则：如果线程A执行操作ThreadB.start()（启动线程B），那么A线程的 ThreadB.start()操作happens-before于线程B中的任意操作。&lt;/p&gt;&lt;p&gt;6）join()规则：如果线程A执行操作ThreadB.join()并成功返回，那么线程B中的任意操作 happens-before于线程A从ThreadB.join()操作成功返回。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[响了许久的花和炮]]></title><description><![CDATA[2019年1月1日记 响了许久的炮和花 春花谢，谢走花人怨。 花人愿，愿作梨花圈。 梨花眷，眷那故人念。 故人唸，唸不完春花。]]></description><link>https://www.abellee.cn/1/1/2019/响了许久的花和炮/</link><guid isPermaLink="false">https://www.abellee.cn/1/1/2019/响了许久的花和炮/</guid><pubDate>Tue, 01 Jan 2019 09:26:00 GMT</pubDate><content:encoded>&lt;p&gt;2019年1月1日记&lt;br/&gt;
+响了许久的炮和花&lt;/p&gt;&lt;p&gt;春花谢，谢走花人怨。&lt;br/&gt;
+花人愿，愿作梨花圈。&lt;br/&gt;
+梨花眷，眷那故人念。&lt;br/&gt;
+故人唸，唸不完春花。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[静态代理和动态代理]]></title><description><![CDATA[静态代理 静态代理很简单，举个例子： 我们日常生活中，都要找人解决各种各样问题。 我们先不管到底解决的是什么问题，我们同意写成do…]]></description><link>https://www.abellee.cn/12/23/2018/静态代理和动态代理/</link><guid isPermaLink="false">https://www.abellee.cn/12/23/2018/静态代理和动态代理/</guid><pubDate>Sun, 23 Dec 2018 09:24:13 GMT</pubDate><content:encoded>&lt;h1&gt;静态代理&lt;/h1&gt;&lt;p&gt;静态代理很简单，举个例子：&lt;/p&gt;&lt;p&gt;我们日常生活中，都要找人解决各种各样问题。&lt;/p&gt;&lt;p&gt;我们先不管到底解决的是什么问题，我们同意写成do()。&lt;/p&gt;&lt;p&gt;静态代理的一个重要的地方就是需要固定的接口。&lt;/p&gt;&lt;p&gt;大体流程是这样的：&lt;/p&gt;&lt;p&gt;平时我们找人做事，我们需要直接找到这个人，但是个人的经历非常有限，而且能做的事情非常少。&lt;/p&gt;&lt;p&gt;比如我们在这个人的接口上面定义了他能做某件事，所以这个人就只能做某件事，为什么不能干别的，因为我们没定义。因为定义了，就违反了OOP编程的概念。&lt;/p&gt;&lt;p&gt;我再把这个例子具体一点，你也许就能明白许多。&lt;/p&gt;&lt;p&gt;比如我们定义一个Person接口，它的唯一方法是do();&lt;br/&gt;
+再定义一个实现类，歌手，然后实现这个方法，我们告诉这个歌手，你只能唱歌。&lt;/p&gt;&lt;p&gt;这个时候，当我们想调用歌手的时候。发现歌手很忙。而且他只能唱歌。毕竟术业有专攻。这个时候我们怎么办。&lt;/p&gt;&lt;p&gt;我们需要给这个歌手一个经纪人。我们这里称为代理类。&lt;/p&gt;&lt;p&gt;然后我们就以后不直接找这个歌手了，我们直接找这个经纪人，也就是这个代理类，歌手负责唱歌，代理类负责做所有其它的事情。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface Person{  
+  
+ void do();  
+}  
+  
+  
+  
+public class Singer implements Person{  
+  
+ @Override  
+ public void do(){  
+ sout(&amp;quot;我能唱歌！&amp;quot;);  
+ }  
+}  
+  
+  
+public class PersonProxy{  
+  
+ private Person person;  
+  
+ public PersonProxy(Person person){  
+ this.person = person  
+ }  
+  
+ // 加这么多 o 就是想表面，名字不是一样的。但是do很恰当。  
+ public void dooooo(){  
+ // do something!  
+  
+ person.do();  
+  
+ // do something!  
+ }  
+}  
+  
+  
+public class main{  
+ psvm{  
+ PersonProxy personproxy = new PersonProxy(new Singer);  
+  
+ personproxy.dooooo();  
+ }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;到现在你懂了吗？ 当然在代码里面是不能用 do 这个关键字的。&lt;/p&gt;&lt;p&gt;当我们想用 歌手的时候就传歌手，就很自由。&lt;/p&gt;&lt;p&gt;静态代理对于一个 经常敲代码的人来说， 即使没有学过，也会很自然的写出来，但是静态代理的缺点就是，很难扩展。&lt;/p&gt;&lt;p&gt;比如：我们要在歌手唱歌之前和后，不断变换业务，那会怎么样？你是选择做超多的代理类还是？如果要复用呢？你又如何做？&lt;/p&gt;&lt;h1&gt;动态代理&lt;/h1&gt;&lt;p&gt;使用动态代理，我们实现一个接口。&lt;/p&gt;&lt;p&gt;InvocationHandler 顾名思义： 调用处理器&lt;/p&gt;&lt;p&gt;流程控制都由它处理。&lt;/p&gt;&lt;p&gt;它长这样：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface InvocationHandler {  
+  
+ public Object invoke(Object proxy, Method method, Object\[\] args)  
+ throws Throwable;  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;记得刚学动态代理的时候，反射和设计模式，总不能很好的互相适应，每次都感觉摸不到知识。后来通过不断的看，总算把它掌握了。&lt;/p&gt;&lt;p&gt;参数的名字：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;proxy：调用此方法的代理实例&lt;/li&gt;&lt;li&gt;method：就是反射那个Method类，在这里就是正在调用的方法&lt;/li&gt;&lt;li&gt;args：这个是在这个方法内调用方法时方法的参数&lt;/li&gt;&lt;li&gt;返回值：这个返回值，真的是，看了好多篇博文，大家真的是非常默契，点到即止，一到这里就没了。所以我特地查了API，找到了答案&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;原文是：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;the value to return from the method invocation on the proxy instance. If the declared return type of the interface method is a primitive type, then the value returned by this method must be an instance of the corresponding primitive wrapper class; otherwise, it must be a type assignable to the declared return type. If the value returned by this method is {@code null} and the interface method’s return type is primitive, then a @code NullPointerException will be thrown by the method invocation on the proxy instance. If the value returned by this method is otherwise not compatible with the interface method’s declared return type as described above,a @code ClassCastException will be thrown by the method invocation on the proxy instance.
+
+中文意思是：从代理实例上的方法调用返回的值。如果接口方法声明的返回类型是原始类型，那么该方法返回的值必须是对应原始包装类的实例;否则，它必须是可分配给声明的返回类型的类型。如果此方法返回的值为{@code null}，且接口方法的返回类型为原始类型，则方法调用将在代理实例上抛出{@code NullPointerException}。如果此方法返回的值与上述接口方法声明的返回类型不兼容，则方法调用将在代理实例上抛出{@code ClassCastException}。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;懂了没？&lt;/p&gt;&lt;p&gt;然后我们还需要一个 Proxy 类&lt;/p&gt;&lt;p&gt;这个类的作用就是：动态生成代理类和对象&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public static Object newProxyInstance(ClassLoader loader,  
+ Class&amp;lt;?&amp;gt; [] interfaces,  
+ InvocationHandler h)  
+ throws IllegalArgumentException  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这个类 需要传入 类加载器，要操作的接口，和 你定义的调用处理器。 并返回一个 代理对象。&lt;/p&gt;&lt;p&gt;来，我们直接上代码：&lt;br/&gt;
+我们把do改成doSomething，你们可以直接复制代码进行测试，我推荐这么做，因为动态代理，稍难理解。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface Person{  
+  
+ void doSomething();  
+}  
+  
+  
+  
+public class Singer implements Person{  
+  
+ @Override  
+ public void doSomething(){  
+ sout(&amp;quot;我能唱歌！&amp;quot;);  
+ }  
+}  
+  
+// 注意这里我不采用名字 PersonProxy，用 PersonHandler  
+  
+public class PersonHandler implements InvocationHandler{  
+  
+ private Person person;  
+  
+ public PersonProxy(Person person){  
+ this.person = person  
+ }  
+  
+ // 我们会实现这个方法  
+ @Override  
+ public Object invoke(Object proxy, Method method, Object\[\] args) {  
+    
+ // 这个方法就是控制流程了，你可以在这里做一些事情。  
+ // do something  
+  
+ //这个方法就是被代理的类内的方法。  
+ method.invoke(person, args);  
+  
+ // do something  
+  
+ // 因为原始的方法没有返回值，所以我们这里返回null  
+ return null;  
+ }  
+    
+}  
+  
+  
+public class Main{  
+    
+ psvm{  
+ // 把要处理的对象搞进来  
+ Singer singer = new Singer();  
+  
+ // 此类的处理器。多态真的太棒了。然后把要处理的对象传进去。  
+ PersonHandler personHandler = new PersonHandler(singer);  
+  
+ // 这里我们会先做个代理对象  
+ // 第一个参数：类加载器，这里我们随便选个默认加载器  
+ // 第二个参数：处理类的接口，这里就是 Person  
+ // 第三个参数：我们定义的处理器，这里就是 personHandler   
+ Person proxy = (Person)Peoxy.newProxyInstance(  
+ ClassLoader.getSystemClassLoader(),  
+ new Class {Person.class},  
+ personHandler   
+ )  
+  
+ // 这里我们就可以调用包裹了Singer所有方法的代理类，  
+ // 这个代理类 可以 调用 Singer 的所有方法，  
+ // 因为我们就定义了一个 doSomething，所以我们就调用了一个方法，  
+ // 但是这个方法就是：上面所谓的流程。  
+ // 你可以在 handler 里面，进行在这个方法上面下面干你想做的事情。  
+ // 这个就是动态代理了。  
+ proxy.doSomething();  
+    
+ }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;他们最大的区别就是，静态代理只代理一个类，&lt;br/&gt;
+而动态代理可以代理，一个接口下的多个类。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[spring学习笔记]]></title><description><![CDATA[介绍 作为一名java web选手，学java就有可能做web，做web就必须用框架，学框架当然就少不了Spring Framework。作为一个可以整合其它几乎所有主流框架的Spring…]]></description><link>https://www.abellee.cn/12/20/2018/spring学习笔记/</link><guid isPermaLink="false">https://www.abellee.cn/12/20/2018/spring学习笔记/</guid><pubDate>Thu, 20 Dec 2018 09:03:59 GMT</pubDate><content:encoded>&lt;h1&gt;介绍&lt;/h1&gt;&lt;p&gt;作为一名java web选手，学java就有可能做web，做web就必须用框架，学框架当然就少不了Spring Framework。作为一个可以整合其它几乎所有主流框架的Spring，我最近有特别大的心思，要将它复习一遍，顺便深入一点。其实我并不是爱写笔记的人，因为，即使我写了，我也很少回来看，但。。。我有分享精神，我希望有缘看到这篇笔记的人，可以从中收益，这是我的愿景。&lt;/p&gt;&lt;p&gt;其实，我是看了好多遍都没能深入理解，所以只好写下来，哈哈。&lt;/p&gt;&lt;p&gt;本人的文章断句及思想跳跃很大，所以请准备以分段式思维来阅读。&lt;/p&gt;&lt;p&gt;还有，我个人喜欢用的方式会详解，其它的会提及甚至略过。&lt;/p&gt;&lt;p&gt;soooo，Let’s go!&lt;/p&gt;&lt;h1&gt;Spring简介&lt;/h1&gt;&lt;h2&gt;Ioc容器和beans&lt;/h2&gt;&lt;h3&gt;Ioc的介绍&lt;/h3&gt;&lt;p&gt;IoC容器是Spring框架中的重中之重，虽然每天都在用，但我一直没有好好深入的理解它。所以要认真看。我认为，想要学习一门技术，首先要理解作者为什么做这个技术，它有什么思想？它的优点是什么等等。我就像个十万个为什么的小学生，干什么都喜欢问问问，做事却没那么棒！哈哈！&lt;/p&gt;&lt;p&gt;IoC这个词的中文意思叫控制反转。也称为DI，中文翻译为依赖注入。可能有人会问，那IoC和DI到底是什么？或者它们是什么关系？我们带着这样的问题，去理解这个该死的又非常有魅力的IoC容器。&lt;/p&gt;&lt;p&gt;IoC是什么？IoC是一个概念，是一种思想，是一种设计模式，但是这个名字很难让人理解，所以DI是它的新名字，上文提到的依赖注入。&lt;/p&gt;&lt;p&gt;我更喜欢的是把Spring的IoC容器称为一种标准，一个java大对象，使地球上的程序员都进入了同一个生态。提到设计模式，我最喜欢设计了，但是设计经验烂的要死，但是设计这个东西很酷，最喜欢创造东西时候的感觉了，很棒。&lt;/p&gt;&lt;p&gt;DI的设计思想为，举个例子：平时你写代码的时候，是不是你自己要去new一个对象？每次用，代码就要每次new，就像能突然new出来一个老婆一样，new，new，new。虽然程序运行的时候代码已经写好了，不用你自己亲自上去new，但设计你得自己设计对象和对象之间的关系。另外对象都有依赖关系，比如：老师和学校，老师和学生，更甚者，老师和学校的员工信息，老师要用教材等等。&lt;/p&gt;&lt;p&gt;具体一点：老师在学校上课，老师要依赖学校，老师教学生，学生要依赖老师，教材也要依赖老师，老师要发工资，老师要依赖于员工信息表等等。这种依赖关系在小项目里要头疼一下，在大项目里，这种依赖关系的设计是不可想象的。&lt;/p&gt;&lt;p&gt;并且最主要的一点，每个企业的J2EE的Web控制器体系各不相同，如何将控制器与数据库结合到一起，控制器的复用，都是问题，可能在自身企业中是个不太大的问题，但是也造成了在控制器体系中浪费大量的人力财力，我认为最浪费的莫过于，在整个java web 生态圈中，浪费的可不是一点半点，加一起浪费的简直可怕。&lt;/p&gt;&lt;p&gt;但是DI却不同，看到IoC的这个新名字就知道，“依赖”注入。“依赖”是重点，依赖就是对象和对象之间的依赖关系，那什么是依赖注入呢？&lt;/p&gt;&lt;p&gt;通过Spring官方文档，我们可以了解到，DI是个过程，这个过程就是：对象有它们之间的依赖关系，但是只能通过构造器函数，工厂方法参数，然后在构造器函数或者工厂方法函数返回的对象实例上面设置属性。最后IoC容器在创建Bean的时候，依次注入这些对象实例。因为这个过程和我们平时new对象的传统方式完全相反，所以称为IoC控制的反转。又因为bean本身通过本身的构造器来控制自身的依赖关系，所以你理解了“依赖注入”了吗？&lt;/p&gt;&lt;p&gt;另外还要说句重点，&lt;code&gt;org.springframework.beans&lt;/code&gt;，&lt;code&gt;org.springframework.context&lt;/code&gt;这两个包就是IoC容器的基础。既然看到了beans，那我们讨论讨论bean吧。&lt;/p&gt;&lt;h3&gt;beans的介绍&lt;/h3&gt;&lt;p&gt;上面提到了bean这个概念，我对bean的理解也不够深入，不过通过继续阅读，我也对bean也深入了那么一点点，让我们继续。&lt;/p&gt;&lt;p&gt;传统的bean是什么？&lt;/p&gt;&lt;p&gt;一句话概括bean就是：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;声明 private 成员变量&lt;/li&gt;&lt;li&gt;setter getter 方法&lt;/li&gt;&lt;li&gt;声明 默认构造器&lt;/li&gt;&lt;li&gt;实现 Serializbale 接口&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;接下来我们讨论的是被Spring IoC容器管理的bean的概念。&lt;/p&gt;&lt;p&gt;在Spring中，bean就是应用程序中的螺丝钉，没它不行，但它的个体不重要，就像人一样，我们每个人都是如尘埃，但是没有每个人，这个世界就不能称为我们现在所谓的这个世界。&lt;/p&gt;&lt;p&gt;bean在Spring中被IoC容器管理着，bean就是一个个对象。bean的一生不断被IoC容器实例化，管理，互相拼凑着。而IoC容器中的bean的依赖关系是在配置类或者XML（其它配置方法我也不知道了）这样的元数据文件中配置的。&lt;/p&gt;&lt;p&gt;可能大家有这样的疑问，为什么都是类，如上面的，为什么称配置类为元数据文件啊？因为，比如：世界都是由分子组成的，什么夸克，弦就不讨论了，我只是举个例子。我们的java类就相当于分子，因为构造不同用途不同，我们要将其分类，然后组装我们更为强大的应用，顺便说一句，我爱计算机。。。。&lt;/p&gt;&lt;h2&gt;IOC容器&lt;/h2&gt;&lt;p&gt;为什么题目的名字为容器一呢？因为我也不知道我接下来该如何分类，会写多少，所以这样我认为是最恰当的分类了。&lt;/p&gt;&lt;p&gt;谈起Spring的IoC容器，第一反应就应该是&lt;br/&gt;
+&lt;code&gt;org.springframework.context.ApplicationContext&lt;/code&gt;&lt;br/&gt;
+这个接口，这个接口代表的就是IoC容器，负责上文提到的，实例化、组装、配置bean。怎么做这一套神奇功夫的操作？就是通过上文提到的，元数据配置方法，即XML或者配置类。本人偏爱配置类，XML却不怎么会写。正因为本人的偏爱，所以这篇笔记几乎都会以配置类的方法来论述Spring。但也是稍微尽可能提及几句XML。&lt;/p&gt;&lt;p&gt;这个接口有好多实现类，因为我喜欢用注解，所以我通常会创建‘AnootationConfigAplicationContext’这个实现来拿bean，它是继承于‘GenericApplicationContext’这个类。如果你喜欢XML你也可以用‘ClasspathXMlAplicationContext’这个实现类来拿bean。‘ClasspathXMlAplicationContext’和‘GenericApplicationContext’都是继承于‘AbstractApplicationContext’这个抽象类。&lt;br/&gt;
+‘AnootationConfigAplicationContext’实现了‘AnnotationConfigRegistry’这个抽象类，&lt;br/&gt;
+‘GenericApplicationContext’实现了‘BeanDefinitionRegistry’这个抽象类，&lt;br/&gt;
+‘ClassPathXmlApplicationContext’它撒鬼子都没实现。&lt;/p&gt;&lt;p&gt;因为语言描述可能逻辑难以理解下面的是语句：&lt;br/&gt;
+&lt;code&gt;public class AnnotationConfigApplicationContext extends GenericApplicationContext implements AnnotationConfigRegistry&lt;/code&gt;&lt;br/&gt;
+&lt;code&gt;public class ClassPathXmlApplicationContext extends AbstractXmlApplicationContext&lt;/code&gt;&lt;br/&gt;
+&lt;code&gt;public class GenericApplicationContext extends AbstractApplicationContext implements BeanDefinitionRegistry&lt;/code&gt;&lt;/p&gt;&lt;p&gt;原理简单表达就是：你的java类进入容器，你的配置（注解或者XML）进入容器，然后他们相结合，最后给调用者（浏览器或者其它什么的）。&lt;/p&gt;&lt;h3&gt;@Required&lt;/h3&gt;&lt;p&gt;此注解标注在setter方法上。&lt;/p&gt;&lt;p&gt;此注解的作用为，当你调用此类时，必须显式设置此属性，否则会报‘BeanInitializationException’异常。我是从来没用过到这个注解，Spring推荐在类init方法中，进行此属性的断言或者什么的，进行强制赋值，以避免报‘NullPointerException’这个让人呕吐的异常。&lt;/p&gt;&lt;h3&gt;@Autowired&lt;/h3&gt;&lt;p&gt;这个注解很重要，先说名字，自动装配。&lt;/p&gt;&lt;p&gt;它有个参数 required ，意思是：声明是否需要带注释的依赖项？默认为：true&lt;/p&gt;&lt;p&gt;这个注解天天用，很好用，各种姿势都很好。&lt;/p&gt;&lt;p&gt;大概意思就是：当标注了这个注解，你就不需要手动指定被依赖项的依赖项，它会自动装配进你的被依赖项。&lt;/p&gt;&lt;ol&gt;&lt;li&gt;此注解标注在构造器上&lt;/li&gt;&lt;li&gt;可以用于setter方法&lt;/li&gt;&lt;li&gt;成员变量上&lt;/li&gt;&lt;li&gt;配置方法上&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;标记完，就表示这些参数会由Spring的依赖注入工具自动装配。&lt;/p&gt;&lt;ol&gt;&lt;li&gt;当标注在构造器上时，表示当该构造器作为一个Spring bean使用时，进行自动装配。如果多个非必需构造函数声明注释此注解，则它们将被视为自动装配的候选者。将选择具有最大数量‘依赖关系’的构造函数，这些构造函数可以通过匹配Spring容器中的bean来满足。如果不能满足任何候选者，则将使用主要/默认构造函数（如果存在）。重点：如果一个类一开始只声明一个构造函数，它将始终被使用，即使没有注释。还有：带注释的构造函数不必是public。&lt;/li&gt;&lt;li&gt;当标注在有任意名字和任意数量的参数方法上时，每个参数都将使用Spring容器中的与其相匹配bean来进行自动装配，上面说的‘setter’其实就是这种配置方式中的一种方式而已，这种配置方法同样不必非是public。&lt;/li&gt;&lt;li&gt;在 容器 也就是collection或者Map的依赖类型中，IoC容器会自动装配他们声明的值的类型所匹配的所有的bean，正因如此，所以，必须将Map的key声明为String类型。这样才能成功解析为相应的bean名字。神不神奇？&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;总结：因为 ‘注入’ 是通过 ‘BeanPostProcessor’（Bean后置处理器）这个类来执行的，所以不能 自动装配 ‘BeanPostProcessor’或‘BeanFactoryPostProcessor’这样的类。&lt;/p&gt;&lt;h3&gt;@Qualifier&lt;/h3&gt;&lt;p&gt;这个注解可以说是 @Autowired 的扩展注释&lt;/p&gt;&lt;p&gt;可能通过自动装配的时候可能导致会遇到多个候选人的情况，比如：你定义了两个基于一个类的相同bean，但是当装配的时候，IoC容器却不知道装配哪个好，这时候你就要用 @Qualifier 这个注解标注在依赖参数上来区分注入哪个bean。格式：&lt;code&gt;@Qualifier(&amp;quot;apple&amp;quot;)&lt;/code&gt; 你可以标注在成员变量上，也可以标注在 构造器或方法的某个参数上面。当然 声明 bean 的时候你也要给他们添加 qualifier 属性才可以。 相互相成的东西。&lt;/p&gt;&lt;p&gt;这个注解我用过几次，那几次确实歧议很大，不得不用。&lt;/p&gt;&lt;p&gt;还有，@Qualifier 还有自定义限定符 扩展功能，我不用，所以不讨论。&lt;/p&gt;&lt;p&gt;ps：如果你打算用名称（就像是别名）这个方式来注入，推荐使用 JSR-250 的 @Resource 这个注释，因为我不爱用这个注释，所以我进行关于它的论述。&lt;/p&gt;&lt;h2&gt;基于java的容器配置&lt;/h2&gt;&lt;p&gt;说完了 @Autowired 这个很主要的注解，我们终于可以开始讨论 “基于java的容器配置”&lt;/p&gt;&lt;h3&gt;@Bean和@Configuration&lt;/h3&gt;&lt;p&gt;这两个注解不能分开说，他们息息相关，所以只好一起说了。&lt;/p&gt;&lt;p&gt;先说注意的地方：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;当@Bean注解在没有标注@Configuration的类里面时，比如：@Bean标注在一个@Component类内或者啥也没标注的类里面时，这些被@Bean标注的bean就处于‘lite’模式，我喜欢称其为“弱B”模式。&lt;/li&gt;&lt;li&gt;与在@Configuration类内的bean不同，标注在@Configuration内的@Bean被称为‘full’模式，我喜欢称其为“猛男”模式。不是不喜欢打英文，是互相切换太费劲。处于‘弱B’模式下的标注@Bean的方法不能声明bean之间的依赖关系，即：弱逼@Bean不能调用其它@Bean，简单暴力易懂。&lt;/li&gt;&lt;li&gt;Spring说了，只有在@Configuration下的@Bean才能称为猛男，避免”弱B“&lt;br/&gt;@Bean多次调用其它方法导致难以追踪的错误。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;Spring基于java配置的核心工件（左膀右臂）就是 @Bean和 @Configuration， @Configuration注释类，@Bean注释方法。分工明确，XX搭配，干货不累，@Bean瞬间变猛男。&lt;/p&gt;&lt;p&gt;顺嘴提一句，@Bean 和 XMl 配置中的 &lt;code&gt;&amp;lt;bean&amp;gt;&lt;/code&gt; 标签一样一样的。&lt;br/&gt;
+然后忘记说了，bean的名字就是方法名。这也是我喜欢的方式。因为我喜欢这个共识：约定大于配置。&lt;/p&gt;&lt;h3&gt;AnnotationConfigApplicationContext&lt;/h3&gt;&lt;p&gt;上文提过，AnnotationConfigApplicationContext这个类是ApplicationContext这个抽象类中的其中之一的实现类，看名字就知道是管理注解方面的。&lt;/p&gt;&lt;p&gt;这个Context不仅可以接受被@Configuration标注的类，还可以接受被@Component标注的类。&lt;/p&gt;&lt;p&gt;当遇到@Configuration这种情况时，无论时@Configuration这个类还是被@Bean标注的方法都会被注册为bean，&lt;/p&gt;&lt;p&gt;当遇到@Component这种情况时，这个类被注册为一个bean，然后通过@Autowired获得必要的元数据。&lt;/p&gt;&lt;h3&gt;拿bean&lt;/h3&gt;&lt;p&gt;然后我们就可以这样拿到bean&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public static void  
+ ApplicationContext ctx = new AnnotationConfigApplicationContext(MyService.class);  
+ MyService myService = ctx.getBean(MyService.class);  
+ myService.doStuff();  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;register()方法&lt;/h3&gt;&lt;p&gt;我们还可以用 register() 这个方法来 注册bean。&lt;br/&gt;
+我还是第一次见到这样的写法，以前都没注意，mark下。&lt;br/&gt;
+以前都是 new AnnotationConfigApplicationContext().register() 。 像这样的语法。&lt;br/&gt;
+但是这样注册bean的方式，我本人不喜欢，也没用过。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public static void main(String\[\] args) {  
+ AnnotationConfigApplicationContext ctx = new  
+ ctx.register(AppConfig.class, OtherConfig.class);  
+ ctx.register(AdditionalConfig.class  
+ ctx.refresh();  
+ MyService myService = ctx.getBean(MyService.class  
+ myService.doStuff();  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;scan(String…)方法&lt;/h3&gt;&lt;p&gt;你可以用这个方法来扫描bean，虽然我都是用注解&lt;/p&gt;&lt;pre&gt;&lt;code&gt;@ComponentScan(  
+ excludeFilters = {@Filter(  
+ type = FilterType.CUSTOM,  
+ classes = {TypeExcludeFilter.class}  
+), @Filter(  
+ type = FilterType.CUSTOM,  
+ classes = {AutoConfigurationExcludeFilter.class}  
+)}  
+)  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这个String参数是包的名字，比如：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public static void main(String\[\] args) {  
+ AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();  
+ ctx.scan(&amp;quot;com.acme&amp;quot;);  
+ ctx.refresh();  
+ MyService myService = ctx.getBean(MyService.class);  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;refresh()这个方法，我们先不讨论。&lt;br/&gt;
+顺便说下，@Component这个注解是标注在@Configuration上面的。&lt;/p&gt;&lt;h3&gt;通过@Bean声明一个bean&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Configuration  
+public class AppConfig {  
+  
+ @Bean  
+ public TransferService transferService() {  
+ return new TransferServiceImpl();  
+ }  
+  
+} 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;完了，easy，right？&lt;/p&gt;&lt;p&gt;bean名字就是 transferService 方法名&lt;br/&gt;
+声明的bean类就是返回的 TransferServiceImpl&lt;/p&gt;&lt;h3&gt;bean的生命周期回调&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;你可以选择 JSR-250 里面的 @PostConstruct 构造器之后 和 @PreDestroy 回收前 两个注解，但是我不喜欢，但是面试的时候总有面试官将三种 声明周期函数 顺序啊什么的进行 考试，我认为很没必要，也很不喜欢别人问我这种问题。因为一个是java的，一个是spring的，谁会做四个回调函数呢？&lt;/li&gt;&lt;li&gt;如果一个bean继承了InitializingBean, DisposableBean, 或者 Lifecycle 接口， 这个bean就可以实现他们的方法 来进行生命周期回调。&lt;/li&gt;&lt;li&gt;这个是我 如果有 这方面的需求经常用的方式：init-method 和 destroy-method。&lt;/li&gt;&lt;/ol&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class Foo {  
+ public void init() {  
+ // initialization logic  
+ }  
+}  
+  
+public class Bar {  
+ public void cleanup() {  
+ // destruction logic  
+ }  
+}  
+  
+@Configuration  
+public class AppConfig {  
+ @Bean(initMethod = &amp;quot;init&amp;quot;)  
+ public Foo foo() {  
+ return new Foo();  
+ }  
+ @Bean(destroyMethod = &amp;quot;cleanup&amp;quot;)  
+ public Bar bar() {  
+ return new Bar();  
+ }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;很方便也很让人懂是不是？&lt;/p&gt;&lt;p&gt;构造期间你也可以不用注释，直接调方法就行。我不推荐这样，因为这样很不规范。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Configuration  
+public class AppConfig {  
+ @Bean  
+ public Foo foo() {  
+ Foo foo = new Foo();  
+ foo.init();  
+ return foo;  
+ }  
+  
+ // ...  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;==========================&lt;/p&gt;&lt;p&gt;这个是实现Spring InitializingBean 和DisposableBean接口的方式。&lt;/p&gt;&lt;p&gt;容器调用afterPropertiesSet()前者，destroy()后者允许bean在初始化和销毁​​bean时执行某些操作。&lt;/p&gt;&lt;p&gt;这是例子代码：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class AnotherExampleBean implements DisposableBean {  
+  
+ public void destroy() {  
+ // do some destruction work (like releasing pooled connections)  
+ }  
+} 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;InitializingBean 同理。&lt;/p&gt;&lt;p&gt;是我没脸，我要把 @PostConstruct和@PreDestroy 的例子放在这里&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class CachingMovieLister {  
+  
+ @PostConstruct  
+ public void populateMovieCache() {  
+ // populates the movie cache upon initialization...  
+ }  
+  
+ @PreDestroy  
+ public void clearMovieCache() {  
+ // clears the movie cache upon destruction...  
+ }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;总结：声明周期顺序&lt;/p&gt;&lt;p&gt;以上6个方式无论是哪个初始化方式，都是在beanbean实例化，并赋值完成后开始的。&lt;/p&gt;&lt;p&gt;看文字你会懂，会填入其它的概念：&lt;/p&gt;&lt;p&gt;本图转载自：&lt;a href=&quot;https://www.cnblogs.com/zrtqsk/p/3735273.html&quot;&gt;https://www.cnblogs.com/zrtqsk/p/3735273.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/05/01/aVGeJlukiA3EqO5.png&quot; alt=&quot;bean周期.png&quot;/&gt;&lt;/p&gt;&lt;h3&gt;bean的作用域@scope()&lt;/h3&gt;&lt;p&gt;说起bean，就必须有bean的作用域，一点都不复杂，就两个，一个单例，一个多例。&lt;/p&gt;&lt;p&gt;代码格式是这样的&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Configuration  
+ public  class MyConfiguration {  
+ @Bean   
+ @Scope（“prototype”）  
+ public Encryptor encryptor（）{  
+ // ...   
+ }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;prototype 这个就是多例了，意思就是，容器内每次调用都会都会创建一个新的此类的实例，而singleton不一样，singleton在容器启动的时候就开始创建实例，每次调用此bean都会调用这一个实例。&lt;br/&gt;
+具体可能在后面进行讨论。&lt;/p&gt;&lt;p&gt;这个部分主要讨论的还是@Scope这个注解。&lt;/p&gt;&lt;p&gt;@Scope注解不止可以定义单例和多例，还可以定义 作用域代理。像这样：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;// an HTTP Session-scoped bean exposed as a proxy  
+@Bean  
+@Scope(value = &amp;quot;session&amp;quot;, proxyMode = ScopedProxyMode.TARGET_CLASS)  
+public UserPreferences userPreferences() {  
+ return new UserPreferences();  
+}  
+  
+@Bean  
+public Service userService() {  
+ UserService service = new SimpleUserService();  
+ // a reference to the proxied userPreferences bean  
+ service.setUserPreferences(userPreferences());  
+ return service;  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;官网上的注释解释的很明白，如果你的bean调用比它作用域要小的bean推荐采取这样的方式。&lt;br/&gt;
+&lt;br/&gt;
+上面的代码 userService要调用 userPreferences 。所以在 userPreferences 上定义 该bean的作用域为 session，即：被调用bean随着session的销毁而销毁。&lt;/p&gt;&lt;p&gt;实现原理是 AOP的 代理类， 具体的AOP ，我会新开一篇来讲述。&lt;/p&gt;&lt;h3&gt;定制bean名字&lt;/h3&gt;&lt;p&gt;我认为这很没有意义，但是既然Spring有这个了，我也说一下，很简单，万一用到了呢？&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Configuration  
+public class AppConfig {  
+  
+ @Bean(name = &amp;quot;myFoo&amp;quot;)  
+ public Foo foo() {  
+ return new Foo();  
+ }  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;没了，就是在@Bean注解后面加个 name属性 再填个String&lt;/p&gt;&lt;p&gt;然后还可以像这样添加别名：别名在有某B合作的时候将你需要的bean名字给重制的时候很好用&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Configuration  
+public class AppConfig {  
+  
+ @Bean(name = { &amp;quot;dataSource&amp;quot;, &amp;quot;subsystemA-dataSource&amp;quot;, &amp;quot;subsystemB-dataSource&amp;quot; })  
+ public DataSource dataSource() {  
+ // instantiate, configure and return DataSource bean...  
+ }  
+  
+} 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;不解释，不解释，哈哈！都懂，都懂！&lt;/p&gt;&lt;h3&gt;bean构造器内参数方式形成依赖&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Configuration  
+public class AppConfig {  
+  
+ @Bean  
+ public Foo foo() {  
+ return new Foo(bar());  
+ }  
+  
+ @Bean  
+ public Bar bar() {  
+ return new Bar();  
+ }  
+  
+} 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样就形成了bean之间的依赖，简直不要太直观。&lt;/p&gt;&lt;h3&gt;Lookup method injection&lt;/h3&gt;&lt;p&gt;这个是Spring的高级特性&lt;/p&gt;&lt;p&gt;这个方式的 bean 之间的依赖，我没有用过。不过官网说，当一个单例bean依赖一个多例bean时，它很好用。不过我暂时对使用这个方式没什么兴趣，因为它有点绕，缺少可读性，我贴代码。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public abstract class CommandManager {  
+ public Object process(Object commandState) {  
+ // grab a new instance of the appropriate Command interface  
+ Command command = createCommand();  
+  
+ // set the state on the (hopefully brand new) Command instance  
+ command.setState(commandState);  
+ return command.execute();  
+ }  
+  
+ // okay... but where is the implementation of this method?  
+ protected abstract Command createCommand();  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Bean  
+@Scope(&amp;quot;prototype&amp;quot;)  
+public AsyncCommand asyncCommand() {  
+ AsyncCommand command = new AsyncCommand();  
+ // inject dependencies here as required  
+ return command;  
+}  
+  
+@Bean  
+public CommandManager commandManager() {  
+ // return new anonymous implementation of CommandManager with command() overridden  
+ // to return a new prototype Command object  
+ return new CommandManager() {  
+ protected Command createCommand() {  
+ return asyncCommand();  
+ }  
+ }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;可以看到commandManager返回了一个匿名类，并在匿名类内实现createCommand()这个抽象方法，然后在这个抽象方法return了asyncCommand()这个方法，这个方法return了AsyncCommand 这个类的bean。&lt;/p&gt;&lt;p&gt;绕了一大圈，结果就是：commandManager这个bean 通过内部匿名类的方式 return了个AsyncCommand，然后还是个多例的，但是到底有没有 commandManager 被创建，我还是有点晕的。&lt;/p&gt;&lt;h3&gt;Further information about how Java-based configuration works internally&lt;/h3&gt;&lt;p&gt;这也是Spring的高级特性，既然已经做笔记了，就顺手写下来吧，反正也顺便看一遍了。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Configuration  
+public class AppConfig {  
+  
+ @Bean  
+ public ClientService clientService1() {  
+ ClientServiceImpl clientService = new ClientServiceImpl();  
+ clientService.setClientDao(clientDao());  
+ return clientService;  
+ }  
+ @Bean  
+ public ClientService clientService2() {  
+ ClientServiceImpl clientService = new ClientServiceImpl();  
+ clientService.setClientDao(clientDao());  
+ return clientService;  
+ }  
+  
+ @Bean  
+ public ClientDao clientDao() {  
+ return new ClientDaoImpl();  
+ }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这是一个bean被调用两次的经典例子。&lt;/p&gt;&lt;p&gt;因为这个稍复杂，我担心解释起来有歧义，所以将原文贴在这里。&lt;/p&gt;&lt;blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;code&gt;clientDao()&lt;/code&gt; has been called once in &lt;code&gt;clientService1()&lt;/code&gt; and once in clientService2(). Since this method creates a new instance of ClientDaoImpl and returns it, you would normally expect having 2 instances (one for each service). That definitely would be problematic: in Spring, instantiated beans have a singleton scope by default. This is where the magic comes in: All @Configuration classes are subclassed at startup-time with CGLIB. In the subclass, the child method checks the container first for any cached (scoped) beans before it calls the parent method and creates a new instance. Note that as of Spring 3.2, it is no longer necessary to add CGLIB to your classpath because CGLIB classes have been repackaged under org.springframework and included directly within the spring-core JAR.&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;h3&gt;@Import&lt;/h3&gt;&lt;p&gt;这个注解也是我喜欢用的之一，&lt;/p&gt;&lt;p&gt;它可以让你轻松从一个 @Configuration 调用另一个 @Configuration 里面的 @Bean ，通常我是经常在这种情况下使用的。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Configuration  
+public class ConfigA {  
+  
+ @Bean  
+ public A a() { return new A(); }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Configuration  
+@Import(ConfigA.class)  
+public class ConfigB {  
+  
+ @Bean  
+ public B b() { return new B(); }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后这样之后，神奇的事情发生了，Bean A 跑到 ConfigB 这个配置类里面了。&lt;/p&gt;&lt;p&gt;然后你通过这样的方式就可以轻松调用了，虽然在一定意义上不怎么优雅。但是如果你像我一样蠢的话，不止蠢，还懒，就用这样的方式，在设计类的时候分门别类，调用的时候可以选择一把抓。不用来回翻找那么多的配置类的名字。但是这样要记住方法确实不容易，哈哈。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public static void main(String\[\] args) {  
+ ApplicationContext ctx = new AnnotationConfigApplicationContext(ConfigB.class);  
+  
+ // now both beans A and B will be available...  
+ A a = ctx.getBean(A.class);  
+ B b = ctx.getBean(B.class);  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;你只需要将 ConfigB 放入 AnnotationConfigApplicationContext 的参数里。&lt;/p&gt;&lt;h3&gt;@Resource&lt;/h3&gt;&lt;p&gt;这个不是Spring的注解，但是，我在一个商城源代码其中一个微服务中，看到有一位大量使用偏爱此注解的同行，所以从那时起，我也对此注解做了一些研究和多了一份在意。&lt;/p&gt;&lt;p&gt;这个注解是JSR-250的注释，这也是Java EE中的常见模式，Spring也保留了这样的开发方法。&lt;/p&gt;&lt;p&gt;这个注解是标注在 bean属性的 setter方法上面的。&lt;/p&gt;&lt;p&gt;这个注解你可以指定属性名字，像这样：&lt;/p&gt;&lt;p&gt;&lt;code&gt;@Resource(name = &amp;quot;XXXX&amp;quot;)&lt;/code&gt;&lt;/p&gt;&lt;p&gt;如果你不指定名字，它将采用bean属性的名字。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class SimpleMovieLister {  
+  
+ private MovieFinder movieFinder;  
+  
+ @Resource  
+ public void setMovieFinder(MovieFinder movieFinder) {  
+ this.movieFinder = movieFinder;  
+ }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在上面的例子中，这个bean的名字就是“movieFinder”。&lt;/p&gt;&lt;p&gt;这个注解的名称解析由ApplicationContext中的CommonAnnotationBeanPostProcessor公共bean后置处理器来工作的。&lt;/p&gt;&lt;p&gt;这个注解和@Autowired很相似，有必要记下来，为看其它人的代码，做好准备。&lt;/p&gt;&lt;p&gt;他们的区别：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;@Autowired 在不指定名字的情况下，是按类型装配的。所以它的依赖项必须存在，要不然你也可以设置，required属性为false。上文提到过的，是否依赖性是必须的。或者使用@Qualifier来进行名称装配。&lt;/li&gt;&lt;li&gt;@Resource却不一样，它默认就是安装名称装配的。&lt;/li&gt;&lt;li&gt;这类型的注解，主要的目的就是解决bean之间的依赖问题，使代码更流畅。&lt;/li&gt;&lt;/ol&gt;&lt;h3&gt;@PostConstruct 和 @PreDestroy&lt;/h3&gt;&lt;p&gt;上文生命周期回调提到过这两个注解，既然已经说了@Resource，那就必须要带上他俩，毕竟他们是一家的，都出自JSR-250。&lt;/p&gt;&lt;p&gt;也是由CommonAnnotationBeanPostProcessor这个后置处理器来搞定的。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class CachingMovieLister {  
+  
+ @PostConstruct  
+ public void populateMovieCache() {  
+ // populates the movie cache upon initialization...  
+ }  
+  
+ @PreDestroy  
+ public void clearMovieCache() {  
+ // clears the movie cache upon destruction...  
+ }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;官方的代码，很明确，很直观的描述了，生命周期时，通过@PostConstruct在初始化时调用populateMovieCache()这个方法来做一些事情，这里它举了缓存的例子。服务器内部的缓存，我一直胆战心惊，不敢使用，因为总觉得有些浪费资源。希望以后的哪天可以拨开云雾见青天。&lt;/p&gt;&lt;p&gt;然后在销毁前，通过这个@PreDestroy注解来标记clearMovieCache()这个方法为销毁前调用的方法。&lt;/p&gt;&lt;h3&gt;@DependsOn&lt;/h3&gt;&lt;p&gt;这个注解Spring文档，关键词就只出现两次，之前我也是从未见过，既然看到，就顺便填上，做戏要做足，哈哈。&lt;/p&gt;&lt;p&gt;这个注解的意思是：当你在一个bean上定义了这个注解，并填入所依赖的bean，从字面意思，我们可以知道被注解的是“依赖项”，注解内的名字是“被依赖项”。&lt;/p&gt;&lt;p&gt;我担心有理解歧义，所以我举个例子。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Bean  
+@DependsOn(&amp;quot;apple&amp;quot;)  
+public Bean bean(){   
+ //...   
+ return new Bean;  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这个例子表示。apple要在bean实例化前完成实例化。&lt;/p&gt;&lt;p&gt;如果两个bean存在强依赖的情况下，可以考虑此注解。&lt;/p&gt;&lt;h3&gt;@Component的详细介绍&lt;/h3&gt;&lt;p&gt;这个注解和@Configuration在一定意义上同级别，我是这么认为的。&lt;/p&gt;&lt;p&gt;我们要讲的是它的子注解，如果你的被扫描类定义很明确的话，一定要标记它的子注解，而不是标记@Component这个注解。&lt;/p&gt;&lt;p&gt;@Component的自注解有3个：&lt;br/&gt;
+也是标记在类的上面，和@Component的用法一样一样的。&lt;/p&gt;&lt;ol&gt;&lt;li&gt;@Service 标记在Service层，来表明业务类，主要处理业务逻辑。&lt;/li&gt;&lt;li&gt;@Controller 标记在Controller层，主要是路径的映射，MapingHandler 就是MVC中的映射处理器。&lt;/li&gt;&lt;li&gt;@Repository 标记在DAO层，虽然我几乎没用过。JPA处理持久层，谁用谁知道，但是最近我也遇到了JPA不好的地方，我在想办法解决这个问题。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;当然你也可以指定部件的名字像这样：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Service(&amp;quot;myMovieLister&amp;quot;)  
+public class SimpleMovieLister {  
+ // ...  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;@Component 定义的例子&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Component  
+public class FactoryMethodComponent {  
+  
+ private static int i;  
+  
+ @Bean @Qualifier(&amp;quot;public&amp;quot;)  
+ public TestBean publicInstance() {  
+ return new TestBean(&amp;quot;publicInstance&amp;quot;);  
+ }  
+  
+ // use of a custom qualifier and autowiring of method parameters  
+  
+ @Bean  
+ protected TestBean protectedInstance(@Qualifier(&amp;quot;public&amp;quot;) TestBean spouse,  
+ @Value(&amp;quot;#{privateInstance.age}&amp;quot;) String country) {  
+ TestBean tb = new TestBean(&amp;quot;protectedInstance&amp;quot;, 1);  
+ tb.setSpouse(tb);  
+ tb.setCountry(country);  
+ return tb;  
+ }  
+  
+ @Bean @Scope(BeanDefinition.SCOPE_SINGLETON)  
+ private TestBean privateInstance() {  
+ return new TestBean(&amp;quot;privateInstance&amp;quot;, i++);  
+ }  
+  
+ @Bean @Scope(value = WebApplicationContext.SCOPE_SESSION,  
+ proxyMode = ScopedProxyMode.TARGET_CLASS)  
+ public TestBean requestScopedInstance() {  
+ return new TestBean(&amp;quot;requestScopedInstance&amp;quot;, 3);  
+ }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这个部分主要举例子，来综合了解在项目中如何定义他们。&lt;/p&gt;&lt;h3&gt;一笔带过 @Inject 和 @Named&lt;/h3&gt;&lt;p&gt;这两个注解了解一下就好，我不准备深究，我也没有在实际项目中见过有人偏爱此注解，它们的大致使用是这样的，区别什么的，我就不解释了，因为我也没打算了解它，如果好奇的同学，可以去搜索一下.&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import javax.inject.Inject;  
+import javax.inject.Named;  
+  
+@Named  
+public class SimpleMovieLister {  
+  
+ private MovieFinder movieFinder;  
+  
+ @Inject  
+ public void setMovieFinder(MovieFinder movieFinder) {  
+ this.movieFinder = movieFinder;  
+ }  
+ // ...  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;@Named 就像 @Component ，@Inject 就像 @Autowired 一样使用。&lt;/p&gt;&lt;p&gt;介绍在Spring官方文档的&lt;br/&gt;
+5.11.3 Limitations of the standard approach&lt;br/&gt;
+这个地方&lt;/p&gt;&lt;h2&gt;Bean&lt;/h2&gt;&lt;p&gt;这章有很多基于XML配置的方式引发的状况，随便看看就好，我自己也很乱。。。该死的Spring文档&lt;/p&gt;&lt;p&gt;基于java配置几乎都讲完了，有没提到的，我暂时也想不到。&lt;br/&gt;
+在此章节，多多少少会提及之前已经学过的内容，所以，即使看过，也要好好学呀！&lt;/p&gt;&lt;p&gt;下面是Bean的介绍&lt;/p&gt;&lt;h3&gt;介绍&lt;/h3&gt;&lt;p&gt;Spring IoC容器管理一个或多个bean。这些bean是使用您提供给容器的配置元数据创建的，就是上面咱们提到过的元数据的设置。&lt;/p&gt;&lt;p&gt;在容器本身内，这些bean定义表示为：BeanDefinition对象，所以以后遇到这个词不要陌生。&lt;/p&gt;&lt;p&gt;其中包含以下元数据（以及其他信息）&lt;br/&gt;
+我认为官方文档说的就非常棒，谁叫就是他们家出得呢。&lt;/p&gt;&lt;ol&gt;&lt;li&gt;一个包限定类名：通常是正在定义的bean的实现类。&lt;/li&gt;&lt;li&gt;Bean的行为配置元素：意思就是bean在容器中的行为方式（范围，生命周期回调等）。&lt;/li&gt;&lt;li&gt;引用bean执行其工作所需的其他bean，这些引用也称为协作者或依赖项。意思就是，依赖。没什么特别的。&lt;/li&gt;&lt;li&gt;要在新创建的对象中设置的其他配置设置。例如，在管理连接池的Bean中使用的连接数或池的大小限制。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;这些元数据转换为组成每个bean定义的一组属性。&lt;/p&gt;&lt;p&gt;读起来挺费劲，其实想想就四个东西：名字，生命周期，依赖，配置。&lt;/p&gt;&lt;p&gt;扩展：文档原文翻译&lt;br/&gt;
+除了包含有关如何创建特定bean的信息的bean定义之外，这些 ApplicationContext实现还允许用户注册在容器外部创建的现有对象。这是通过getBeanFactory()返回BeanFactory实现 的方法访问ApplicationContext的BeanFactory来完成的DefaultListableBeanFactory。 DefaultListableBeanFactory支持通过方法该登记 registerSingleton(..)和 registerBeanDefinition(..)。但是，典型应用程序仅适用于通过元数据bean定义定义的bean。&lt;/p&gt;&lt;p&gt;其实就是给你了使用容器外的bean的方法。然后还是推荐你不使用容器外的配置。&lt;/p&gt;&lt;h3&gt;Bean的名字&lt;/h3&gt;&lt;p&gt;每个bean可以有一个或多个名字，也就是标识符。但是在容器内，bean的名字必须是唯一的。如果有多个名字，其它的名字会当作别名来处理。&lt;/p&gt;&lt;p&gt;规范：&lt;br/&gt;
+bean的名字的规范是：首字母小写的驼峰式命名法，就是和java的方法命名是一样的。&lt;/p&gt;&lt;p&gt;别名：&lt;br/&gt;
+之前已经提到过了，在java配置中，你可以配置多个bean的名字，但是只有一个会被当作bean的标记来管理，其它的都是别名。&lt;/p&gt;&lt;h3&gt;Bean的实例化&lt;/h3&gt;&lt;p&gt;bean的本质就像类差不多，就是用于创建对象的模版。容器被客户端访问时，容器会查看bean的模版。并采取该模版的模式来创建（或获取）实际对象。&lt;/p&gt;&lt;ol&gt;&lt;li&gt;一个对象的创建，通常是容器反向调用其空构造器来创建对象。和new对象差不多。&lt;/li&gt;&lt;li&gt;或者是通过工厂类的静态方法来创建的。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;具体要学好反射，如果你的反射基础好的话，估计你没有什么疑问。但是你的反射基础不好，估计这里就有十万个为什么，甚至你会犯，方法定义为基础类型时，通过反射使用包装类型来调用方法时，会出现该方法找不到的异常。&lt;/p&gt;&lt;p&gt;其实这一章在Spring官方文档里面，长篇大论，我认为都是些很没必要的东西。&lt;/p&gt;&lt;p&gt;因为，Spring就像个大妈，它什么都想兼容，什么都要管。因为Spring年头很长，做了好多向后兼容，所以有很多，我们不需要的东西。为了老项目，也做了超多的兼容。比如Spring不仅支持标准的bean，还支持非标准的bean。&lt;/p&gt;&lt;p&gt;其实，我们还是要做到标准。标准的构造我们的应用，以免发生不愉快的bug和其它问题。最后形成雪崩式效应。虽然在大型应用中这很难避免。&lt;/p&gt;&lt;p&gt;你不只可以用普通的构造器方式来构造对象，你还可以采取工厂方法来创建对象：&lt;br/&gt;
+我不喜欢这种方式，我现在很菜，我也不能掌握好，通过工厂模式创建bean后，如何解决依赖，然后等等其它问题。&lt;br/&gt;
+因为我喜欢java配置方式，在文档里，我并没有看到。通过java配置方式来构造bean并且结合工厂模式的详细信息。&lt;/p&gt;&lt;h3&gt;依赖注入&lt;/h3&gt;&lt;p&gt;之前说过，依赖注入，注入。重要的事情强调一下。这是个“过程”。&lt;/p&gt;&lt;p&gt;通过这个过程，对象定义他们之间的依赖关系。即：如果它们使用其它对象，只能通过有参构造器，参数到工厂方法，通过无参构造器，然后通过一一在它们的属性赋值或者通过工厂方法返回来解决依赖。&lt;/p&gt;&lt;p&gt;当bean创建的时候，容器会为这个bean注入这些依赖。&lt;/p&gt;&lt;p&gt;这个过程是真真正正的反向的。&lt;/p&gt;&lt;p&gt;DI的两个主要的不同的方式：&lt;/p&gt;&lt;h4&gt;基于构造函数的依赖注入&lt;/h4&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class SimpleMovieLister {  
+  
+ // the SimpleMovieLister has a dependency on a MovieFinder  
+ private MovieFinder movieFinder;  
+  
+ // a constructor so that the Spring container can &amp;#x27;inject&amp;#x27; a MovieFinder  
+ public SimpleMovieLister(MovieFinder movieFinder) {  
+ this.movieFinder = movieFinder;  
+ }  
+  
+ // business logic that actually &amp;#x27;uses&amp;#x27; the injected MovieFinder is omitted...  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这个代码的意思是：&lt;/p&gt;&lt;p&gt;SimpleMovieLister类有个依赖，这个依赖是：MovieFinder类。&lt;/p&gt;&lt;p&gt;然后就通过构造器参数的方式来形成依赖。官方文档还给个温馨话语。&lt;/p&gt;&lt;p&gt;说，这个类没有什么特别的，只是一个简单的POJO类。&lt;/p&gt;&lt;h4&gt;基于setter的依赖注入&lt;/h4&gt;&lt;p&gt;这种依赖注入的方式，是通过调用无参构造器或无参static工厂方法来实例化bean后，通过容器调用bean上的setter方法来完成的。看完这句话，是不是有一种这章之前所说的都通畅了呢？&lt;/p&gt;&lt;p&gt;这是一个只能用stter方式注入的类的例子：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class SimpleMovieLister {  
+  
+ // the SimpleMovieLister has a dependency on the MovieFinder  
+ private MovieFinder movieFinder;  
+  
+ // a setter method so that the Spring container can &amp;#x27;inject&amp;#x27; a MovieFinder  
+ public void setMovieFinder(MovieFinder movieFinder) {  
+ this.movieFinder = movieFinder;  
+ }  
+  
+ // business logic that actually &amp;#x27;uses&amp;#x27; the injected MovieFinder is omitted...  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;看没看到有什么不同？和构造器的本质是一样的，构造器本质我认为也是个方法。为什么我加我认为，因为我怕有人怼我，毕竟我代表不了任何人，哈哈。&lt;/p&gt;&lt;p&gt;选择 构造器注入，还是setter注入？&lt;/p&gt;&lt;p&gt;Spring官方建议的方式是：&lt;br/&gt;
+如果是强制性依赖，推荐构造器方式。如果是选择性的，推荐setter方式。&lt;br/&gt;
+如果你想问这句话什么意思？对不起，我也没懂。。。&lt;br/&gt;
+还有，Spring的文档有地方很恶心，有很多重复，而且没准这章它推荐这个做法，下一章就变了。&lt;br/&gt;
+我想说：你们写文档的时候，如果有歧义，开个会好吗？&lt;/p&gt;&lt;p&gt;Spring官方推荐的方式是：&lt;br/&gt;
+setter注入方式，因为如果你有很多候选参数，那么构造器注入方式，会非常的笨重。因为它会随着bean的初始化来进行注入，如果这样，对象将不太适合重新配置和注入。&lt;/p&gt;&lt;h4&gt;循环依赖问题&lt;/h4&gt;&lt;p&gt;如果您主要使用构造函数注入，则可以创建无法解析的循环依赖关系场景。&lt;/p&gt;&lt;p&gt;例如：类A通过构造函数注入需要类B的实例，而类B通过构造函数注入需要类A的实例。如果将A类和B类的bean配置为相互注入，则Spring IoC容器会在运行时检测此循环引用，并抛出一个 BeanCurrentlyInCreationException。&lt;/p&gt;&lt;p&gt;一种可能的解决方案是由setter而不是构造函数配置某些类的源代码。或者，避免构造函数注入，仅使用setter注入。换句话说，尽管不推荐使用，但您可以使用setter注入配置循环依赖关系。&lt;/p&gt;&lt;p&gt;与典型情况（没有循环依赖）不同，bean A和bean B之间的循环依赖强制其中一个bean在完全初始化之前被注入另一个bean（一个经典的鸡/蛋场景）。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/05/01/YO4P2bg7F83BCGU.png&quot; alt=&quot;setter注入歧义.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;我不管，我不管，我就是要嘲讽一波Spring team！&lt;/p&gt;&lt;p&gt;如果不存在循环依赖，当一个或多个协作bean被注入依赖bean时，每个协作bean 在被注入依赖bean之前完全配置。这意味着如果bean A依赖于bean B，则Spring IoC容器在调用bean A上的setter方法之前完全配置bean B.换句话说，bean被实例化（如果不是预先实例化的单例），设置依赖项，并调用相关的生命周期方法（如配置的init方法或InitializingBean回调方法）。&lt;/p&gt;&lt;p&gt;这句话读了多好遍才理解。看完英文看中文，看完中文看英文。&lt;/p&gt;&lt;p&gt;剩下的关于这部分的文档，都是关于“基于java配置”部分提及到的，但是以XML方式配置的section。&lt;/p&gt;&lt;p&gt;对不起Bean这个章节上面我很混乱，造成误解，请直接忽视，我准备下个部分说说bean的作用域。&lt;/p&gt;&lt;h3&gt;Bean的作用域&lt;/h3&gt;&lt;p&gt;创建一个bean的时候，将创建基于这个bean的实际类实例的recipe，Spring说这个recipe的主意很重要，因为这意味着：你可以创建超级多的对象from这个单独的recipe。&lt;/p&gt;&lt;p&gt;因为没有看源码，我还是很难理解recipe到底是个什么东西。&lt;/p&gt;&lt;p&gt;Spring说这个recipe很强大，你可以通过它来控制bean定义创建的对象中的各种依赖项和配置的值。还可以控制对象的“范围”。&lt;/p&gt;&lt;p&gt;Spring支持5个作用域，其中三个只有用 web-aware ApplicationContext 的时候才可以用。&lt;/p&gt;&lt;p&gt;那2个其实我们早就知道了，就是单例和多例。英文是singleton和prototype。&lt;/p&gt;&lt;p&gt;其它3个是，session，request和global session。&lt;/p&gt;&lt;p&gt;session：就是HTTP session&lt;br/&gt;
+request：同理就是HTTP request&lt;br/&gt;
+global session： global HTTP Session&lt;/p&gt;&lt;p&gt;文档就说了 global HTTP Session 我也不知道到底是啥。。。。&lt;/p&gt;&lt;p&gt;然后Spring还说了，3.0加入了线程域，默认不开启，需手动开启，我先不考虑它们，等需要的时候，我再翻翻。。&lt;/p&gt;&lt;h4&gt;The singleton scope&lt;/h4&gt;&lt;p&gt;单例作用域&lt;/p&gt;&lt;p&gt;这个作用域的实例，从容器开始就创建了，而且是共享的。可以注入到任何一个协作对象中。&lt;/p&gt;&lt;p&gt;单例作用域也是默认作用域&lt;/p&gt;&lt;h4&gt;The prototype scope&lt;/h4&gt;&lt;p&gt;多例模式&lt;/p&gt;&lt;p&gt;每次对这个bean提出请求的时候，都会导致创建一个新的bean实例&lt;/p&gt;&lt;p&gt;重点：容器是不管理它的整个生命周期的，容器只做它的实例化，配置。这个我很在行。也就是说，只在初始化的时候操作它，然后就交给JVM处理了。&lt;/p&gt;&lt;p&gt;如果你想控制它，请参考 生命周期回调章节。&lt;br/&gt;
+bean后置处理器是个不错的选择。&lt;br/&gt;
+反正也控制不到哪去。&lt;/p&gt;&lt;p&gt;所以：如果你想在单例bean中多次调用多例bean的新实例，请使用 方法注入 方式。&lt;/p&gt;&lt;p&gt;其实这在日常开发的时候，是个非常顺畅，理所当然的。既然不看它的，你也会这么做。&lt;/p&gt;&lt;h4&gt;Request, session, and global session scopes&lt;/h4&gt;&lt;p&gt;之前提到过，使用这三个作用域必须使用 web-aware 的ApplicationContext&lt;/p&gt;&lt;p&gt;比如：XmlWebApplicationContext&lt;/p&gt;&lt;p&gt;如果使用：ClassPathXmlApplicationContext&lt;/p&gt;&lt;p&gt;会抛出IllegalStateException异常&lt;/p&gt;&lt;p&gt;其实也是，正常在Springboot开发情况，也不会自己主动去修改它，除非我有病。&lt;/p&gt;&lt;p&gt;因为MVC的DispatchServlet已经公开了所有状态。无需担心。&lt;/p&gt;&lt;p&gt;然后需要注意的是，将这三个作用域的bean注入到另一个bean的时候，需要使用代理对象。&lt;/p&gt;&lt;p&gt;然后Spring强调：你不需要使用&lt;br/&gt;
+&lt;code&gt;&amp;lt;aop:scoped-proxy/&amp;gt;&lt;/code&gt;&lt;br/&gt;
+与单例和多例的bean结合使用。&lt;/p&gt;&lt;p&gt;对不起，我现在不知道怎么在java配置中使用这个代理对象，因为之前我没使用过这种情况。&lt;/p&gt;&lt;p&gt;然后你还可以自定义作用域，我对此并不感冒，我想跳过，有需要再来，这个太高级特性了。&lt;/p&gt;&lt;h3&gt;Aware接口&lt;/h3&gt;&lt;p&gt;其实我对Aware来说，几乎不懂，道听途说。&lt;/p&gt;&lt;p&gt;看了文档理解了含义，但是具体的操作却有点晕。&lt;/p&gt;&lt;p&gt;我看看就会会了。&lt;/p&gt;&lt;p&gt;现在我将我知道的写下来。你有兴趣可以翻翻文档或者也简单看下。&lt;/p&gt;&lt;p&gt;Aware接口存在的意义：&lt;br/&gt;
+允许 bean 向容器表明它们需要一定的 基础结构依赖关系&lt;/p&gt;&lt;p&gt;接口表：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;ApplicationContextAware&lt;/li&gt;&lt;li&gt;ApplicationEventPublisherAware&lt;/li&gt;&lt;li&gt;BeanClassLoaderAwar&lt;/li&gt;&lt;li&gt;BeanFactoryAware&lt;/li&gt;&lt;li&gt;BeanNameAware&lt;/li&gt;&lt;li&gt;BootstrapContextAware&lt;/li&gt;&lt;li&gt;LoadTimeWeaverAware&lt;/li&gt;&lt;li&gt;MessageSourceAware&lt;/li&gt;&lt;li&gt;NotificationPublisherAware&lt;/li&gt;&lt;li&gt;PortletConfigAware&lt;/li&gt;&lt;li&gt;PortletContextAware&lt;/li&gt;&lt;li&gt;ResourceLoaderAware&lt;/li&gt;&lt;li&gt;ServletConfigAware&lt;/li&gt;&lt;li&gt;ServletContextAware&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;当你的代码用这些接口的时候，表示你的代码将不遵循“控制反转”规则。所以Spring建议：对需要对容器进行编程访问的基础结构 bean 进行使用。&lt;/p&gt;&lt;p&gt;啊！！！我好像懂了，好像是说，如果你想弄几个类来操作IoC容器，可以继承这些接口。&lt;/p&gt;&lt;h2&gt;容器的扩展&lt;/h2&gt;&lt;p&gt;Spring提供了特别多的继承接口来使我们不需要傻乎乎的去实现ApplicationContext这个接口。接下来是集成接口的介绍&lt;/p&gt;&lt;h3&gt;通过 BeanPostProcessor 来定制 beans&lt;/h3&gt;&lt;p&gt;这个接口提供了好多回调方法，你可以实现它，然后进行想干啥干啥。&lt;/p&gt;&lt;p&gt;容器在bean实例化，配置后调用它。&lt;/p&gt;&lt;p&gt;你可以实现一个或多个。。多个，这不有病吗？你要写什么？写 《权力意志》吗？&lt;/p&gt;&lt;p&gt;如果你实现多个这个接口，也要考虑实现Ordered接口，然后就可以设置order属性来控制调用顺序。&lt;/p&gt;&lt;p&gt;ps: 一个BeanPostProcessor的实现类，只在它自己的容器内才有效用。&lt;/p&gt;&lt;p&gt;org.springframework.beans.factory.config.BeanPostProcessor接口完全由两个回调方法组成，&lt;/p&gt;&lt;p&gt;如果你定义一个Bean继承了这个接口，那么这个后处理器将对所有的bean都生效。这个bean也是Application检测到的。&lt;/p&gt;&lt;p&gt;实现BeanPostProcessor接口的类是特殊的, 容器会对其进行不同的处理。作为应用程序上下文的特殊启动阶段的一部分, 它们直接引用的BeanPostProcessors和 bean 都在启动ApplicationContext实例化。接下来, 所有的BeanPostProcessors都以排序的方式进行注册, 并应用于容器中的所有其他 bean。&lt;/p&gt;&lt;p&gt;如果你有beans 装配进 BeanPostProcessor 。因为BeanPostProcessor是在特殊阶段初始化的， 所以可能 导致 被装配进 的bean出现一些问题，比如：自动代理属性失效。。&lt;/p&gt;&lt;p&gt;eg:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;package scripting;  
+  
+import org.springframework.beans.factory.config.BeanPostProcessor;  
+import org.springframework.beans.BeansException;  
+  
+public class InstantiationTracingBeanPostProcessor implements BeanPostProcessor {  
+  
+ // simply return the instantiated bean as-is  
+ public Object postProcessBeforeInitialization(Object bean, String beanName)  
+ throws BeansException {  
+ return bean; // we could potentially return any object reference here...  
+ }  
+  
+ public Object postProcessAfterInitialization(Object bean, String beanName)  
+ throws BeansException {  
+ System.out.println(&amp;quot;Bean &amp;#x27;&amp;quot; \+ beanName + &amp;quot;&amp;#x27; created : &amp;quot; \+ bean.toString());  
+ return bean;  
+ }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;Spring 2.0 AOP&lt;/h1&gt;&lt;p&gt;Spring框架最重要的就是 IoC 和 AOP了。&lt;/p&gt;&lt;p&gt;一个容器，一个面向切片编程。&lt;/p&gt;&lt;p&gt;其次就是底层数据的处理。&lt;/p&gt;&lt;p&gt;我们这个笔记只会记录这三个方面。&lt;/p&gt;&lt;p&gt;AOP 分为 2.0 和 1.2。我们先讨论2.0的，下一章讨论1.2。&lt;/p&gt;&lt;p&gt;AOP主要就是用于声明式事务管理，另外主要的地方就是我们自定义了。&lt;/p&gt;&lt;p&gt;我的AOP菜的要死，每天总有几个小时大脑死机，活跃的时候一干就是10几个小时。要不第二天脑子又不太灵光了，动态代理难啊。。。。因为之前每次看动态代理的时候大脑都处于死机状态，哈哈。&lt;/p&gt;&lt;p&gt;我给大家举个例子，如果你想尝试理解AOP的话，请想象你正在切个黄瓜，切成两段或者多段，咱们要做的就是向这些断点里面填酱料。&lt;/p&gt;&lt;p&gt;然后，AOP很抽象，都是泪。又不得不看，谁叫我想理解事务的浅原理呢。&lt;/p&gt;&lt;h2&gt;概念&lt;/h2&gt;&lt;p&gt;这里为了避免歧义，因为后面也要一个个解释他们，所以这里我要贴英文原文。&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Aspect：a modularization of a concern that cuts across multiple classes.&lt;/li&gt;&lt;li&gt;Join point: a point during the execution of a program, such as the execution of a method or the handling of an exception. In Spring AOP, a join point always represents a method execution.&lt;/li&gt;&lt;li&gt;Advice: action taken by an aspect at a particular join point. Different types of advice include “around,” “before” and “after” advice. (Advice types are discussed below.) Many AOP frameworks, including Spring, model an advice as an interceptor, maintaining a chain of interceptors around the join point.&lt;/li&gt;&lt;li&gt;Pointcut: a predicate that matches join points. Advice is associated with a pointcut expression and runs at any join point matched by the pointcut (for example, the execution of a method with a certain name). The concept of join points as matched by pointcut expressions is central to AOP, and Spring uses the AspectJ pointcut expression language by default.&lt;/li&gt;&lt;li&gt;Introduction: declaring additional methods or fields on behalf of a type. Spring AOP allows you to introduce new interfaces (and a corresponding implementation) to any advised object. For example, you could use an introduction to make a bean implement an IsModified interface, to simplify caching. (An introduction is known as an inter-type declaration in the AspectJ community.)&lt;/li&gt;&lt;li&gt;Target object: object being advised by one or more aspects. Also referred to as the advised object. Since Spring AOP is implemented using runtime proxies, this object will always be a proxied object.&lt;/li&gt;&lt;li&gt;AOP proxy: an object created by the AOP framework in order to implement the aspect contracts (advise method executions and so on). In the Spring Framework, an AOP proxy will be a JDK dynamic proxy or a CGLIB proxy.&lt;/li&gt;&lt;li&gt;Weaving: linking aspects with other application types or objects to create an advised object. This can be done at compile time (using the AspectJ compiler, for example), load time, or at runtime. Spring AOP, like other pure Java AOP frameworks, performs weaving at runtime.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;这里每一个都很重要，我们要学习的就是这八个概念，之前的章节我都将这些名字翻译成了中文，从现在开始，能用英文表达原意的英文单词，我会用原英文来表示。不用尝试翻译它，它就是它，不是别的东西。它在这里就是这个意思。&lt;/p&gt;&lt;p&gt;Advice分类：&lt;/p&gt;&lt;p&gt;和事物的概念是不是很像。。&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Before advice:&lt;/li&gt;&lt;li&gt;After returning advice:&lt;/li&gt;&lt;li&gt;After throwing advice:&lt;/li&gt;&lt;li&gt;After (finally) advice:&lt;/li&gt;&lt;li&gt;Around advice:&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;Spring对aop代理的介绍：&lt;br/&gt;
+spring aop 默认为对 aop 代理使用标准 j2se 动态代理 。这使得任何接口 (或一组接口) 都可以代理。&lt;/p&gt;&lt;p&gt;spring aop 还可以使用 cglib 代理。这对于代理类是必需的, 而不是接口所必需的。如果业务对象不实现接口, 则默认情况下使用 cglib。由于编程到接口而不是类是很好的做法, 业务类通常会实现一个或多个业务接口。在需要建议未在接口上声明的方法, 或者需要将代理对象作为具体类型传递给方法的情况下, 可以强制使用 cglib(希望是罕见的)。&lt;/p&gt;&lt;p&gt;然后我想说基本的操作就是：&lt;/p&gt;&lt;p&gt;PointCut：决定在哪里切入&lt;br/&gt;
+Advice：决定在切入点干什么&lt;br/&gt;
+然后他俩组成切面Aspect&lt;br/&gt;
+最后由Proxy来操作&lt;/p&gt;&lt;p&gt;Spring大多数操作都已经默认集成了AOP，所以这意味着，我们平时写代码的时候如果没有特殊需求，根本不会感知AOP的存在，但是为了理解一些概念，我们还是有必要了解Spring的AOP的。&lt;/p&gt;&lt;h2&gt;@AspectJ support&lt;/h2&gt;&lt;p&gt;虽然注解名字和 @AspectJ 是一样的，但是Sprig采用的还是自己的 AOP。&lt;/p&gt;&lt;h3&gt;使用 java 配置启用 @AspectJ 支持&lt;/h3&gt;&lt;p&gt;要使用Java启用@AspectJ支持，请 @Configuration添加 @EnableAspectJAutoProxy注释：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Configuration   
+@EnableAspectJAutoProxy  
+ public  class AppConfig {  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;像这样。。。&lt;/p&gt;&lt;p&gt;然后我想说，本人偏爱Springboot，这个注解在Springboot中，当引入依赖后，这个注解是默认开启的，哈哈。&lt;/p&gt;&lt;h3&gt;声明一个切面(aspect)&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;package org.xyz;  
+import org.aspectj.lang.annotation.Aspect;  
+  
+@Aspect  
+public class NotVeryUsefulAspect {  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;但是光一个@Aspect注解，上下文是发觉不到它的，所以我们还需要一个注解&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;package org.xyz;  
+import org.aspectj.lang.annotation.Aspect;  
+  
+@Aspect  
+@Component  
+public class NotVeryUsefulAspect {  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;声明切入点(pointcut)&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Pointcut(&amp;quot;execution(* transfer(..))&amp;quot;)// the pointcut expression  
+private void anyOldTransfer() {}// the pointcut signature 
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;支持的切入点指示符&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;execution:这个就是上面那个例子的指示符，这也是我们最常用的指示符。它是对方法的匹配。&lt;/li&gt;&lt;li&gt;within：使用“within(类型表达式)”匹配指定类型内的方法。我的理解就是指定类内的方法，你可以指定某包下的任何方法，或者指定类下的所有方法，或者注解也可以。&lt;/li&gt;&lt;li&gt;this：当前对象实现了参数内接口的方法。&lt;/li&gt;&lt;li&gt;target：target中使用的表达式必须是类型全限定名，不支持通配符。然后这个也是实现了权限定名的实现类的方法&lt;/li&gt;&lt;li&gt;args：前面还是类型全限定名，不支持通配符。是匹配传入的参数类型。然后这个方法我认为贼蠢，能不用就不用，像我这样的彩笔，估计用不到了，对不起了，Spring team&lt;/li&gt;&lt;li&gt;@within：匹配所以持有指定注解类型内的方法；注解类型也必须是全限定类型名；&lt;/li&gt;&lt;li&gt;@target：匹配当前目标对象类型的执行方法，其中目标对象持有指定的注解；注解类型也必须是全限定类型名；&lt;/li&gt;&lt;li&gt;@args：匹配当前执行的方法传入的参数持有指定注解的执行；注解类型也必须是全限定类型名；&lt;/li&gt;&lt;li&gt;@annotation：匹配当前执行方法持有指定注解的方法；注解类型也必须是全限定类型名；&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;很多，很杂，我很乱。“剪不断，理还乱，是离愁，别是一番滋味在心头。”&lt;/p&gt;&lt;p&gt;在此我想说，编程语言并不是个神圣的东西，它出自人类，既然出自人类，它必不完美，甚至错漏百出，杂乱无杂。生活也一样，即使不完美，我们也要慢慢走下去，尽可能在不完美的基础上做的完美一些。&lt;/p&gt;&lt;h3&gt;切入点表达式&lt;/h3&gt;&lt;p&gt;可以使用’&amp;amp;&amp;amp;’，’||’组合切入点表达式 和’！’。也可以通过名称引用切入点表达式。&lt;/p&gt;&lt;p&gt;下面是例子：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;anyPublicOperation 如果方法执行连接点表示任何公共方法的执行，则匹配&lt;/li&gt;&lt;li&gt;inTrading 如果方法执行在trading module中则匹配&lt;/li&gt;&lt;li&gt;tradingOperation 如果方法执行在trading module中的任何公共方法，则匹配&lt;/li&gt;&lt;/ol&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Pointcut(&amp;quot;execution(public * *(..))&amp;quot;)  
+private void anyPublicOperation() {}  
+  
+@Pointcut(&amp;quot;within(com.xyz.someapp.trading..*)&amp;quot;)  
+private void inTrading() {}  
+  
+@Pointcut(&amp;quot;anyPublicOperation() &amp;amp;&amp;amp; inTrading()&amp;quot;)  
+private void tradingOperation() {}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;切入点这个东西，我个人的做法是不全弄懂，搞两个最基础的。等到用的时候可以像查字典一样去寻找它，如果情况允许的话，你可以自己弄个详细的例子列表放在自己的博客上面。查找的时候也是有处可寻，也可以帮助到他人。&lt;/p&gt;&lt;p&gt;我们通常情况下，是需要搞一个大的模块来进行切面编程的。所以例子就像这样：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;package com.xyz.someapp;  
+  
+import org.aspectj.lang.annotation.Aspect;  
+import org.aspectj.lang.annotation.Pointcut;  
+  
+@Aspect  
+public class SystemArchitecture {  
+  
+ /**  
+ \* A join point is in the web layer if the method is defined  
+ \* in a type in the com.xyz.someapp.web package or any sub-package  
+ \* under that.  
+ */  
+ @Pointcut(&amp;quot;within(com.xyz.someapp.web..*)&amp;quot;)  
+ public void inWebLayer() {}  
+  
+ /**  
+ \* A join point is in the service layer if the method is defined  
+ \* in a type in the com.xyz.someapp.service package or any sub-package  
+ \* under that.  
+ */  
+ @Pointcut(&amp;quot;within(com.xyz.someapp.service..*)&amp;quot;)  
+ public void inServiceLayer() {}  
+  
+ /**  
+ \* A join point is in the data access layer if the method is defined  
+ \* in a type in the com.xyz.someapp.dao package or any sub-package  
+ \* under that.  
+ */  
+ @Pointcut(&amp;quot;within(com.xyz.someapp.dao..*)&amp;quot;)  
+ public void inDataAccessLayer() {}  
+  
+ /**  
+ \* A business service is the execution of any method defined on a service  
+ \* interface. This definition assumes that interfaces are placed in the  
+ \* &amp;quot;service&amp;quot; package, and that implementation types are in sub-packages.  
+ *  
+ \* If you group service interfaces by functional area (for example,  
+ \* in packages com.xyz.someapp.abc.service and com.xyz.def.service) then  
+ \* the pointcut expression &amp;quot;execution(* com.xyz.someapp..service.*.*(..))&amp;quot;  
+ \* could be used instead.  
+ *  
+ \* Alternatively, you can write the expression using the &amp;#x27;bean&amp;#x27;  
+ \* PCD, like so &amp;quot;bean(*Service)&amp;quot;. (This assumes that you have  
+ \* named your Spring service beans in a consistent fashion.)  
+ */  
+ @Pointcut(&amp;quot;execution(* com.xyz.someapp.service.*.*(..))&amp;quot;)  
+ public void businessService() {}  
+  
+ /**  
+ \* A data access operation is the execution of any method defined on a  
+ \* dao interface. This definition assumes that interfaces are placed in the  
+ \* &amp;quot;dao&amp;quot; package, and that implementation types are in sub-packages.  
+ */  
+ @Pointcut(&amp;quot;execution(* com.xyz.someapp.dao.*.*(..))&amp;quot;)  
+ public void dataAccessOperation() {}  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;execution是最常用的指示符&lt;/p&gt;&lt;p&gt;标准的表达式为：&lt;/p&gt;&lt;p&gt;&lt;code&gt;execution(modifiers-pattern? ret-type-pattern declaring-type-pattern? name-pattern(param-pattern) throws-pattern?)&lt;/code&gt;&lt;/p&gt;&lt;p&gt;我也没弄懂它们都什么意思，哈哈。&lt;/p&gt;&lt;ol&gt;&lt;li&gt;用于任何public方法&lt;br/&gt;execution(public (..))&lt;/li&gt;&lt;li&gt;用于任何方法开头为set的方法&lt;br/&gt;execution( &lt;em&gt;set&lt;/em&gt;(..))&lt;/li&gt;&lt;li&gt;用于任何AccountService接口内的任何方法&lt;br/&gt;execution( &lt;em&gt;com.xyz.service.AccountService.&lt;/em&gt;(..))&lt;/li&gt;&lt;li&gt;用于任何service包下的任何类任何方法&lt;br/&gt;execution( &lt;em&gt;com.xyz.service.&lt;/em&gt;.*(..))&lt;/li&gt;&lt;li&gt;分包下的同样适用&lt;br/&gt;execution( &lt;em&gt;com.xyz.service..&lt;/em&gt;.*(..))&lt;/li&gt;&lt;li&gt;service包中的任何连接点&lt;br/&gt;within(com.xyz.service.*)&lt;/li&gt;&lt;li&gt;子包也同样适用&lt;br/&gt;within(com.xyz.service..*)&lt;/li&gt;&lt;li&gt;代理实现AccountService接口的任何连接点&lt;br/&gt;this(com.xyz.service.AccountService)&lt;/li&gt;&lt;li&gt;目标对象实现AccountService接口的任何连接点&lt;br/&gt;target(com.xyz.service.AccountService)&lt;/li&gt;&lt;li&gt;任何连接点&lt;br/&gt;args(java.io.Serializable)&lt;/li&gt;&lt;li&gt;目标对象具有@Transactional注释的任何连接点&lt;br/&gt;@target(org.springframework.transaction.annotation.Transactional)&lt;/li&gt;&lt;li&gt;任何连接点，其中目标对象的声明类型具有 @Transactional注释&lt;br/&gt;@within(org.springframework.transaction.annotation.Transactional)&lt;/li&gt;&lt;li&gt;任何连接点，其中执行方法具有 @Transactional注释：&lt;br/&gt;@annotation(org.springframework.transaction.annotation.Transactional)&lt;/li&gt;&lt;li&gt;任何连接点（仅在Spring AOP中执行的方法），它接受一个参数，并且传递的参数的运行时类型具有@Classified 注释：&lt;br/&gt;@args(com.xyz.security.Classified)&lt;/li&gt;&lt;/ol&gt;&lt;h3&gt;声明建议&lt;/h3&gt;&lt;p&gt;建议与切入点表达式相关联，并在切入点匹配的方法执行之前，之后或周围运行。切入点表达式可以是对命名切入点的简单引用，也可以是在适当位置声明的切入点表达式。&lt;/p&gt;&lt;p&gt;####在建议之前&lt;br/&gt;
+在使用@Before注释在方面声明建议之前 ：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import org.aspectj.lang.annotation.Aspect;  
+import org.aspectj.lang.annotation.Before;  
+  
+@Aspect  
+ public  class BeforeExample {  
+  
+ @Before（“com.xyz.myapp.SystemArchitecture.dataAccessOperation（）”）  
+ public  void doAccessCheck（）{  
+ // ...  
+ }  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果用表达式就这样：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import org.aspectj.lang.annotation.Aspect;  
+import org.aspectj.lang.annotation.Before;  
+  
+@Aspect  
+ public class BeforeExample {  
+  
+ @Before（“execution（* com.xyz.myapp.dao。*。*（..））”）  
+ public void doAccessCheck（）{  
+ // ...  
+ }  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;h4&gt;After returning advice&lt;/h4&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import org.aspectj.lang.annotation.Aspect;  
+import org.aspectj.lang.annotation.AfterReturning;  
+  
+@Aspect  
+public class AfterReturningExample {  
+  
+ @AfterReturning(&amp;quot;com.xyz.myapp.SystemArchitecture.dataAccessOperation()&amp;quot;)  
+ public void doAccessCheck() {  
+ // ...  
+ }  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;有时您需要在advice体中访问返回的实际值。你可以使用它的 @AfterReturning形式绑定返回值：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import org.aspectj.lang.annotation.Aspect;  
+import org.aspectj.lang.annotation.AfterReturning;  
+  
+@Aspect  
+public class AfterReturningExample {  
+  
+ @AfterReturning(  
+ pointcut=&amp;quot;com.xyz.myapp.SystemArchitecture.dataAccessOperation()&amp;quot;,  
+ returning=&amp;quot;retVal&amp;quot;)  
+ public void doAccessCheck(Object retVal) {  
+ // ...  
+ }  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;returning属性中使用的名称必须与advice方法中的参数名称相对应。当方法执行返回时，返回值将作为相应的参数值传递给advice方法。&lt;/p&gt;&lt;h4&gt;After throwing advice&lt;/h4&gt;&lt;p&gt;在一个方法抛出异常时使用&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import org.aspectj.lang.annotation.Aspect;  
+import org.aspectj.lang.annotation.AfterThrowing;  
+  
+@Aspect  
+public class AfterThrowingExample {  
+  
+ @AfterThrowing(&amp;quot;com.xyz.myapp.SystemArchitecture.dataAccessOperation()&amp;quot;)  
+ public void doRecoveryActions() {  
+ // ...  
+ }  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果你想只在抛出某个固定异常才才运行advice&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import org.aspectj.lang.annotation.Aspect;  
+import org.aspectj.lang.annotation.AfterThrowing;  
+  
+@Aspect  
+public class AfterThrowingExample {  
+  
+ @AfterThrowing(  
+ pointcut=&amp;quot;com.xyz.myapp.SystemArchitecture.dataAccessOperation()&amp;quot;,  
+ throwing=&amp;quot;ex&amp;quot;)  
+ public void doRecoveryActions(DataAccessException ex) {  
+ // ...  
+ }  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;throwing属性中使用的名称必须与advice方法中的参数名称相对应。&lt;/p&gt;&lt;h4&gt;After (finally) advice&lt;/h4&gt;&lt;p&gt;它在所有advice最后运行，通常用于释放什么的。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import org.aspectj.lang.annotation.Aspect;  
+import org.aspectj.lang.annotation.After;  
+  
+@Aspect  
+public class AfterFinallyExample {  
+  
+ @After(&amp;quot;com.xyz.myapp.SystemArchitecture.dataAccessOperation()&amp;quot;)  
+ public void doReleaseLock() {  
+ // ...  
+ }  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;h4&gt;Around advice&lt;/h4&gt;&lt;p&gt;这个是个非常强大的advice，也是我使用最多的。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;import org.aspectj.lang.annotation.Aspect;  
+import org.aspectj.lang.annotation.Around;  
+import org.aspectj.lang.ProceedingJoinPoint;  
+  
+@Aspect  
+public class AroundExample {  
+  
+ @Around(&amp;quot;com.xyz.myapp.SystemArchitecture.businessService()&amp;quot;)  
+ public Object doBasicProfiling(ProceedingJoinPoint pjp) throws Throwable {  
+ // do something  
+ Object retVal = pjp.proceed();  
+ // do something  
+ return retVal;  
+ }  
+  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Object retVal = pjp.proceed();&lt;/p&gt;&lt;p&gt;这个代表的就是主体方法，&lt;/p&gt;&lt;p&gt;你可以在它周围做一些事&lt;/p&gt;&lt;p&gt;pjp.proceed();这个语句，无论你写多少个，它都只会调用一次。&lt;/p&gt;&lt;p&gt;返回的值，就是主体方法应该返回的值&lt;/p&gt;&lt;h4&gt;Access to the current JoinPoint&lt;/h4&gt;&lt;p&gt;这个我要贴原文，我并没有太大的心思去了解它。&lt;/p&gt;&lt;p&gt;Any advice method may declare as its first parameter, a parameter of type org.aspectj.lang.JoinPoint (please note that around advice is required to declare a first parameter of type ProceedingJoinPoint, which is a subclass of JoinPoint. The JoinPoint interface provides a number of useful methods such as getArgs() (returns the method arguments), getThis() (returns the proxy object), getTarget() (returns the target object), getSignature() (returns a description of the method that is being advised) and toString() (prints a useful description of the method being advised). Please do consult the Javadocs for full details.&lt;/p&gt;&lt;h4&gt;将参数传递给 advice&lt;/h4&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Before(&amp;quot;com.xyz.myapp.SystemArchitecture.dataAccessOperation() &amp;amp;&amp;amp;&amp;quot; +  
+ &amp;quot;args(account,..)&amp;quot;)  
+public void validateAccount(Account account) {  
+ // ...  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;h4&gt;advice 参数和泛型&lt;/h4&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public  interface Sample &amp;lt;T\&amp;gt; {  
+ void sampleGenericMethod（T param）;  
+ void sampleGenericCollectionMethod（Collection&amp;gt; T&amp;gt; param）;  
+}  
+  
+@Before(&amp;quot;execution(* ..Sample+.sampleGenericMethod(*)) &amp;amp;&amp;amp; args(param)&amp;quot;)  
+public void beforeSampleMethod(MyType param) {  
+ // Advice implementation  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;此样式不能用于定义集合，像这样：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;@Before(&amp;quot;execution(* ..Sample+.sampleGenericCollectionMethod(*)) &amp;amp;&amp;amp; args(param)&amp;quot;)  
+public void beforeSampleMethod(Collection&amp;lt;MyType&amp;gt; param) {  
+ // Advice implementation  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;Spring AOP API&lt;/h3&gt;&lt;p&gt;前一章描述了Spring 2.0及更高版本使用@AspectJ和基于模式的方面定义对AOP的支持。在本章中，我们将讨论较低级别的Spring AOP API以及Spring 1.2应用程序中使用的AOP支持。对于新应用程序，我们建议使用前一章中描述的Spring 2.0及更高版本的AOP支持，但在使用现有应用程序时，或者在阅读书籍和文章时，您可能会遇到Spring 1.2样式示例。Spring 3.0向后兼容Spring 1.2，本章中描述的所有内容在Spring 3.0中完全支持。&lt;/p&gt;&lt;p&gt;因为自己写的，感觉没太大的价值，关于这章，所以。。。。&lt;br/&gt;
+大家可以到这个网页直接阅读关于这个章节的 中文官方文档！&lt;br/&gt;
+&lt;a href=&quot;https://lfvepclr.gitbooks.io/spring-framework-5-doc-cn/content/37-Spring_AOP_Usage.html&quot;&gt;https://lfvepclr.gitbooks.io/spring-framework-5-doc-cn/content/37-Spring_AOP_Usage.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;不过对于AOP我们还是要仔细学习一下代理的。&lt;/p&gt;&lt;h3&gt;静态代理&lt;/h3&gt;&lt;p&gt;静态代理很简单，举个例子：&lt;/p&gt;&lt;p&gt;我们日常生活中，都要找人解决各种各样问题。&lt;/p&gt;&lt;p&gt;我们先不管到底解决的是什么问题，我们同意写成do()。&lt;/p&gt;&lt;p&gt;静态代理的一个重要的地方就是需要固定的接口。&lt;/p&gt;&lt;p&gt;大体流程是这样的：&lt;/p&gt;&lt;p&gt;平时我们找人做事，我们需要直接找到这个人，但是个人的经历非常有限，而且能做的事情非常少。&lt;/p&gt;&lt;p&gt;比如我们在这个人的接口上面定义了他能做某件事，所以这个人就只能做某件事，为什么不能干别的，因为我们没定义。因为定义了，就违反了OOP编程的概念。&lt;/p&gt;&lt;p&gt;我再把这个例子具体一点，你也许就能明白许多。&lt;/p&gt;&lt;p&gt;比如我们定义一个Person接口，它的唯一方法是do();&lt;br/&gt;
+再定义一个实现类，歌手，然后实现这个方法，我们告诉这个歌手，你只能唱歌。&lt;/p&gt;&lt;p&gt;这个时候，当我们想调用歌手的时候。发现歌手很忙。而且他只能唱歌。毕竟术业有专攻。这个时候我们怎么办。&lt;/p&gt;&lt;p&gt;我们需要给这个歌手一个经纪人。我们这里称为代理类。&lt;/p&gt;&lt;p&gt;然后我们就以后不直接找这个歌手了，我们直接找这个经纪人，也就是这个代理类，歌手负责唱歌，代理类负责做所有其它的事情。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface Person{  
+  
+ void do();  
+}  
+  
+  
+  
+public class Singer implements Person{  
+  
+ @Override  
+ public void do(){  
+ sout(&amp;quot;我能唱歌！&amp;quot;);  
+ }  
+}  
+  
+  
+public class PersonProxy{  
+  
+ private Person person;  
+
+ public PersonProxy(Person person){  
+ this.person = person  
+ }  
+
+ // 加这么多 o 就是想表面，名字不是一样的。但是do很恰当。  
+ public void dooooo(){  
+ // do something!  
+
+ person.do();  
+  
+ // do something!  
+ }  
+}  
+  
+  
+public class main{  
+ psvm{  
+ PersonProxy personproxy = new PersonProxy(new Singer);  
+  
+ personproxy.dooooo();  
+ }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;到现在你懂了吗？ 当然在代码里面是不能用 do 这个关键字的。&lt;/p&gt;&lt;p&gt;当我们想用 歌手的时候就传歌手，就很自由。&lt;/p&gt;&lt;p&gt;静态代理对于一个 经常敲代码的人来说， 即使没有学过，也会很自然的写出来，但是静态代理的缺点就是，很难扩展。&lt;/p&gt;&lt;p&gt;比如：我们要在歌手唱歌之前和后，不断变换业务，那会怎么样？你是选择做超多的代理类还是？如果要复用呢？你又如何做？&lt;/p&gt;&lt;h3&gt;动态代理&lt;/h3&gt;&lt;p&gt;使用动态代理，我们实现一个接口。&lt;/p&gt;&lt;p&gt;InvocationHandler 顾名思义： 调用处理器&lt;/p&gt;&lt;p&gt;流程控制都由它处理。&lt;/p&gt;&lt;p&gt;它长这样：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface InvocationHandler {  
+  
+ public Object invoke(Object proxy, Method method, Object\[\] args)  
+ throws Throwable;  
+  
+} 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;记得刚学动态代理的时候，反射和设计模式，总不能很好的互相适应，每次都感觉摸不到知识。后来通过不断的看，总算把它掌握了。&lt;/p&gt;&lt;p&gt;参数的名字：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;proxy：调用此方法的代理实例&lt;/li&gt;&lt;li&gt;method：就是反射那个Method类，在这里就是正在调用的方法&lt;/li&gt;&lt;li&gt;args：这个是在这个方法内调用方法时方法的参数&lt;/li&gt;&lt;li&gt;返回值：这个返回值，真的是，看了好多篇博文，大家真的是非常默契，点到即止，一到这里就没了。所以我特地查了API，找到了答案&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;原文是：the value to return from the method invocation on the proxy instance. If the declared return type of the interface method is a primitive type, then the value returned by this method must be an instance of the corresponding primitive wrapper class; otherwise, it must be a type assignable to the declared return type. If the value returned by this method is @code null and the interface method’s return type is primitive, then a @code NullPointerException will be thrown by the method invocation on the proxy instance. If the value returned by this method is otherwise not compatible with the interface method’s declared return type as described above,a @code ClassCastException will be thrown by the method invocation on the proxy instance.&lt;/p&gt;&lt;p&gt;中文意思是：从代理实例上的方法调用返回的值。如果接口方法声明的返回类型是原始类型，那么该方法返回的值必须是对应原始包装类的实例;否则，它必须是可分配给声明的返回类型的类型。如果此方法返回的值为@code null，且接口方法的返回类型为原始类型，则方法调用将在代理实例上抛出@code NullPointerException。如果此方法返回的值与上述接口方法声明的返回类型不兼容，则方法调用将在代理实例上抛出@code ClassCastException。&lt;/p&gt;&lt;p&gt;懂了没？&lt;/p&gt;&lt;p&gt;然后我们还需要一个 Proxy 类&lt;/p&gt;&lt;p&gt;这个类的作用就是：动态生成代理类和对象&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public static Object newProxyInstance(ClassLoader loader,  
+ Class&amp;lt;?&amp;gt;\[\] interfaces,  
+ InvocationHandler h)  
+ throws IllegalArgumentException  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这个类 需要传入 类加载器，要操作的接口，和 你定义的调用处理器。 并返回一个 代理对象。&lt;/p&gt;&lt;p&gt;来，我们直接上代码：&lt;br/&gt;
+我们把do改成doSomething，你们可以直接复制代码进行测试，我推荐这么做，因为动态代理，稍难理解。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface Person{  
+  
+ void doSomething();  
+}  
+  
+  
+  
+public class Singer implements Person{  
+  
+ @Override  
+ public void doSomething(){  
+ sout(&amp;quot;我能唱歌！&amp;quot;);  
+ }  
+}  
+  
+// 注意这里我不采用名字 PersonProxy，用 PersonHandler  
+  
+public class PersonHandler implements InvocationHandler{  
+  
+ private Person person;  
+  
+ public PersonProxy(Person person){  
+ this.person = person  
+ }  
+  
+ // 我们会实现这个方法  
+ @Override  
+ public Object invoke(Object proxy, Method method, Object\[\] args) {  
+    
+ // 这个方法就是控制流程了，你可以在这里做一些事情。  
+ // do something  
+  
+ //这个方法就是被代理的类内的方法。  
+ method.invoke(person, args);  
+  
+ // do something  
+  
+ // 因为原始的方法没有返回值，所以我们这里返回null  
+ return null;  
+ }  
+    
+}  
+  
+  
+public class Main{  
+    
+ psvm{  
+ // 把要处理的对象搞进来  
+ Singer singer = new Singer();  
+  
+ // 此类的处理器。多态真的太棒了。然后把要处理的对象传进去。  
+ PersonHandler personHandler = new PersonHandler(singer);  
+  
+ // 这里我们会先做个代理对象  
+ // 第一个参数：类加载器，这里我们随便选个默认加载器  
+ // 第二个参数：处理类的接口，这里就是 Person  
+ // 第三个参数：我们定义的处理器，这里就是 personHandler   
+ Person proxy = (Person)Peoxy.newProxyInstance(  
+ ClassLoader.getSystemClassLoader(),  
+ new Class\[\]{Person.class},  
+ personHandler   
+ )  
+  
+ // 这里我们就可以调用包裹了Singer所有方法的代理类，  
+ // 这个代理类 可以 调用 Singer 的所有方法，  
+ // 因为我们就定义了一个 doSomething，所以我们就调用了一个方法，  
+ // 但是这个方法就是：上面所谓的流程。  
+ // 你可以在 handler 里面，进行在这个方法上面下面干你想做的事情。  
+ // 这个就是动态代理了。  
+ proxy.doSomething();  
+    
+ }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;他们最大的区别就是，静态代理只代理一个类，&lt;br/&gt;
+而动态代理可以代理，一个接口下的多个类。&lt;/p&gt;&lt;h1&gt;资源 Resource&lt;/h1&gt;&lt;p&gt;这个我先放在这里，最近真的好忙，或者说，一直都很忙，学不过来，有做不完的事。有时间，我们再整理这个部分，这个也是最后一个部分。&lt;/p&gt;&lt;p&gt;因为急，就把文档翻译翻译放在这里。文档的英文单词，读的是真费劲，借助了大量的翻译软件。&lt;/p&gt;&lt;p&gt;java.net.URL遗憾的是，Java的各种URL前缀的标准类和标准处理程序不足以完全访问低级资源。例如，没有标准化的URL实现可用于访问需要从类路径或相对于a获取的资源 ServletContext。虽然可以为专用URL 前缀注册新的处理程序（类似于现有的前缀处理程序 http:），但这通常非常复杂，并且 URL接口仍然缺少一些理想的功能，例如检查资源是否存在的方法指着。&lt;/p&gt;&lt;h2&gt;Resource接口&lt;/h2&gt;&lt;p&gt;Spring的Resource接口用于抽象对低级资源的访问，是一个更强大的接口。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface Resource extends InputStreamSource {  
+  
+ boolean exists();  
+  
+ boolean isOpen();  
+  
+ URL getURL() throws IOException;  
+  
+ File getFile() throws IOException;  
+  
+ Resource createRelative(String relativePath) throws IOException;  
+  
+ String getFilename();  
+  
+ String getDescription();  
+}  
+  
+public interface InputStreamSource {  
+  
+ InputStream getInputStream() throws IOException;  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Resource界面中一些最重要的方法是：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;getInputStream()：找到并打开资源，返回InputStream从资源中读取的内容。预计每次调用都会返回一个新的InputStream。呼叫者有责任关闭流。&lt;/li&gt;&lt;li&gt;exists()：返回一个 boolean指示此资源是否实际存在。&lt;/li&gt;&lt;li&gt;isOpen()：返回一个 boolean指示此资源是否有打开的stream。如果true，InputStream不能多次读取，必须只读一次然后关闭以避免资源泄漏。其它默认实现默认都是flase，但不包括 InputStreamResource。&lt;/li&gt;&lt;li&gt;getDescription()：返回此资源的描述，用于处理资源时的错误输出。这通常是完全限定的文件名或资源的实际URL。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;其他方法允许您获取表示资源的实际 URL或File对象（如果底层实现兼容，并支持该功能）。&lt;/p&gt;&lt;p&gt;虽然ResourceSpring和Spring都使用了很多接口，但是在你自己的代码中使用它作为通用实用程序类非常有用，用于访问资源，即使你的代码不知道或不关心任何其他Spring部分 虽然这会将您的代码耦合到Spring，但它实际上只将它耦合到这一小组实用程序类，这些实用程序类作为更有能力的替代品URL，并且可以被认为等同于您将用于此目的的任何其他库。&lt;/p&gt;&lt;p&gt;重要的是要注意 Resource抽象不会取代功能：它尽可能地包装默认API。例如，一个 UrlResource包装URL，并使用包装 URL来完成它的工作。&lt;/p&gt;&lt;h2&gt;内置Resource实现&lt;/h2&gt;&lt;p&gt;现在有超多的默认实现类，可以随意选择。&lt;/p&gt;&lt;h3&gt;UrlResource&lt;/h3&gt;&lt;p&gt;所述UrlResource包裹着一个 java.net.URL，并且可以被用于访问任何对象，该对象是通过URL正常访问，如文件，一个HTTP，FTP 等所有URL具有标准化的对象，以使得适当的标准化的前缀被用来指示另一个URL类型。这包括file:访问文件系统路径， http:通过HTTP协议 ftp:访问资源，通过FTP访问资源等。&lt;/p&gt;&lt;p&gt;UrlResource由Java代码使用UrlResource构造函数显式创建，但通常在调用API方法时隐式创建，该方法接受一个String表示路径的参数。对于后一种情况，JavaBeans PropertyEditor最终将决定Resource要创建哪种类型。如果路径字符串包含一些众所周知的前缀，例如 classpath:，它将Resource为该前缀创建一个合适的专用 。但是，如果它不识别前缀，它将假设这只是一个标准的URL字符串，并将创建一个UrlResource。&lt;/p&gt;&lt;h3&gt;ClassPathResource&lt;/h3&gt;&lt;p&gt;此类表示应从类路径获取的资源。这使用线程上下文类加载器，给定的类加载器或给定的类来加载资源。&lt;/p&gt;&lt;p&gt;此Resource实现支持解析，就java.io.File好像类路径资源驻留在文件系统中一样，但不支持驻留在jar中且尚未（通过servlet引擎或任何环境）扩展到文件系统的类路径资源。为了解决这个问题，各种Resource 实现总是支持java.net.URL。&lt;/p&gt;&lt;p&gt;ClassPathResource由Java代码使用ClassPathResource 构造函数显式创建，但通常在调用API方法时隐式创建，该方法接受一个String表示路径的参数。对于后一种情况，JavaBeans PropertyEditor将识别classpath:字符串路径上的特殊前缀，并ClassPathResource在此情况下创建 。&lt;/p&gt;&lt;h3&gt;FileSystemResource&lt;/h3&gt;&lt;p&gt;这是句柄的Resource实现java.io.File。它显然支持解决方案作为一个File和一个 URL。我们可以使用 FileSystemResource 的 getFile() 函数获取 File 对象，使用 getURL() 获取 URL 对象。&lt;/p&gt;&lt;h3&gt;ServletContextResource&lt;/h3&gt;&lt;p&gt;这是为了获取 web 根路径的 ServletContext 资源而提供的 Resource 实现。&lt;/p&gt;&lt;p&gt;这始终支持流访问和URL访问，但仅允许 java.io.File在扩展Web应用程序归档并且资源实际位于文件系统上时进行访问。它是否在这样的文件系统上展开，或直接从JAR或其他地方（如DB）（可以想象）访问，实际上是依赖于Servlet容器。&lt;/p&gt;&lt;h3&gt;InputStreamResource&lt;/h3&gt;&lt;p&gt;这是针对 InputStream 提供的 Resource 实现。只有在没有Resource 适用的具体实施时才应使用此选项。在可能ByteArrayResource的Resource情况下，优选 或 任何基于文件的 实现。&lt;/p&gt;&lt;p&gt;相对于其他Resource 的实现，这是一个描述符 已经打开资源-因此返回 true的isOpen()。如果需要将资源描述符保留在某处，或者需要多次读取流，请不要使用它。&lt;/p&gt;&lt;h3&gt;ByteArrayResource&lt;/h3&gt;&lt;p&gt;这是Resource给定字节数组的实现。它ByteArrayInputStream为给定的字节数组创建一个 。&lt;/p&gt;&lt;p&gt;它对于从任何给定的字节数组加载内容非常有用，而不必求助于单次使用 InputStreamResource。&lt;/p&gt;&lt;h2&gt;ResourceLoader&lt;/h2&gt;&lt;p&gt;ResourceLoader 接口是用来加载 Resource 对象的，换句话说，就是当一个对象需要获取 Resource 实例时，可以选择实现 ResourceLoader 接口。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface ResourceLoader {  
+ Resource getResource(String location);  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;所有应用程序上下文都实现了 ResourceLoader接口，因此可以使用所有应用程序上下文来获取 Resource实例。&lt;/p&gt;&lt;p&gt;当您调用getResource()特定的应用程序上下文，并且指定的位置路径没有特定的前缀时，您将返回一个 Resource适合该特定应用程序上下文的类型。例如，假设针对ClassPathXmlApplicationContext实例执行了以下代码片段 ：&lt;/p&gt;&lt;p&gt;1&lt;/p&gt;&lt;p&gt;Resource template = ctx.getResource(&amp;quot;some/resource/path/myTemplate.txt&amp;quot;);&lt;/p&gt;&lt;p&gt;将返回的是一个 ClassPathResource; 如果对一个FileSystemXmlApplicationContext实例执行相同的方法，你会得到一个FileSystemResource。对于一个 WebApplicationContext，你会得到一个 ServletContextResource，等等。&lt;/p&gt;&lt;p&gt;因此，您可以以适合特定应用程序上下文的方式加载资源。&lt;/p&gt;&lt;p&gt;另一方面，您也ClassPathResource可以通过指定特殊classpath:前缀强制 使用，而不管应用程序上下文类型如何 ：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;Resource template = ctx.getResource(&amp;quot;classpath:some/resource/path/myTemplate.txt&amp;quot;); 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;类似地，可以UrlResource通过指定任何标准java.net.URL 通过前缀来强制使用：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;Resource template = ctx.getResource(&amp;quot;file:/some/resource/path/myTemplate.txt&amp;quot;);  
+  
+Resource template = ctx.getResource(&amp;quot;http://myhost.com/resource/path/myTemplate.txt&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;下表总结了将Strings 转换为 Resources 的策略 ：&lt;/p&gt;&lt;h3&gt;资源字符串&lt;/h3&gt;&lt;p&gt;&lt;code&gt;classpath:com/myapp/config.xml&lt;/code&gt;&lt;/p&gt;&lt;p&gt;从类路径加载。&lt;/p&gt;&lt;p&gt;&lt;code&gt;file:/data/config.xml&lt;/code&gt;&lt;/p&gt;&lt;p&gt;从文件系统加载URL&lt;/p&gt;&lt;p&gt;&lt;code&gt;http://myserver/logo.png&lt;/code&gt;&lt;/p&gt;&lt;p&gt;作为URL加载&lt;/p&gt;&lt;p&gt;&lt;code&gt;/data/config.xml&lt;/code&gt;&lt;/p&gt;&lt;p&gt;取决于 ApplicationContext。&lt;/p&gt;&lt;h2&gt;ResourceLoaderAware界面&lt;/h2&gt;&lt;p&gt;该ResourceLoaderAware接口是一个特殊的标记接口，它希望被提供有对象ResourceLoader参考。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public  interface ResourceLoaderAware {  
+  
+ void setResourceLoader（ResourceLoader resourceLoader）;  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当一个类实现&lt;code&gt;ResourceLoaderAware&lt;/code&gt;并部署到应用程序上下文中时（作为Spring管理的bean），它被&lt;code&gt;ResourceLoaderAware&lt;/code&gt;应用程序上下文识别 。然后，应用程序上下文将调用&lt;code&gt;setResourceLoader(ResourceLoader)&lt;/code&gt;，将自身作为参数提供（请记住，Spring中的所有应用程序上下文都实现了ResourceLoader 接口）。&lt;/p&gt;&lt;p&gt;当然，将 &lt;code&gt;ApplicationContext&lt;/code&gt; 作为一个 &lt;code&gt;ResourceLoader&lt;/code&gt; 对象注入，bean也可以实现&lt;code&gt;ApplicationContextAware&lt;/code&gt; 接口并直接使用提供的应用程序上下文来加载资源，但一般情况下，&lt;code&gt;ResourceLoader&lt;/code&gt;如果需要的话，最好使用专用 接口。代码只会耦合到资源加载接口，可以将其视为实用程序接口，而不是整个Spring ApplicationContext接口。&lt;/p&gt;&lt;h2&gt;Resources作为依赖&lt;/h2&gt;&lt;p&gt;如果bean本身将通过某种动态过程确定并提供资源路径，那么bean使用ResourceLoader接口加载资源可能是有意义的。以某种模板的加载为例，其中所需的特定资源取决于用户的角色。如果资源是静态的，那么ResourceLoader完全消除接口的使用是有意义的，只需让bean公开Resource 它需要的属性，并期望它们被注入其中。&lt;/p&gt;&lt;p&gt;然后注入这些属性变得微不足道的是，所有应用程序上下文都注册并使用PropertyEditor可以将String路径转换 为 Resource对象的特殊JavaBean 。因此，如果 myBean具有类型的模板属性 Resource，则可以使用该资源的简单字符串进行配置，如下所示：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot;&gt;&amp;lt;bean id=&amp;quot;myBean&amp;quot; class=&amp;quot;...&amp;quot;&amp;gt;  
+&amp;lt;property name=&amp;quot;template&amp;quot; value=&amp;quot;some/resource/path/myTemplate.txt&amp;quot;/&amp;gt;  
+&amp;lt;/bean&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;请注意，资源路径没有前缀，因为应用程序上下文本身将用作 ResourceLoader，资源本身将通过，或 （根据情况）加载ClassPathResource， 具体取决于上下文的确切类型。FileSystemResourceServletContextResource&lt;/p&gt;&lt;p&gt;如果需要强制使用特定 Resource类型，则可以使用前缀。以下两个示例显示了如何强制a ClassPathResource和a UrlResource（后者用于访问文件系统文件）。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot;&gt;&amp;lt;property name=&amp;quot;template&amp;quot; value=&amp;quot;classpath:some/resource/path/myTemplate.txt&amp;quot;&amp;gt;  
+&amp;lt;property name=&amp;quot;template&amp;quot; value=&amp;quot;file:///some/resource/path/myTemplate.txt&amp;quot;/&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;应用程序上下文和Resource路径&lt;/h2&gt;&lt;h3&gt;构建应用程序上下文&lt;/h3&gt;&lt;p&gt;应用程序上下文构造函数（对于特定的应用程序上下文类型）通常将字符串或字符串数​​组作为资源的位置路径（例如构成上下文定义的XML文件）。&lt;/p&gt;&lt;p&gt;当这样的位置路径没有前缀时，Resource从该路径构建并用于加载bean定义的特定 类型取决于并且适合于特定的应用程序上下文。例如，如果您创建 ClassPathXmlApplicationContext如下：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;ApplicationContext ctx = new ClassPathXmlApplicationContext(&amp;quot;conf/appContext.xml&amp;quot;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;bean定义将从类路径加载， ClassPathResource将被使用。但是如果你创建 FileSystemXmlApplicationContext如下：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;ApplicationContext ctx = new FileSystemXmlApplicationContext(&amp;quot;conf/appContext.xml&amp;quot;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;bean定义将从文件系统位置加载，在这种情况下相对于当前工作目录。&lt;/p&gt;&lt;p&gt;请注意，在位置路径上使用特殊类路径前缀或标准URL前缀将覆盖Resource为加载定义而创建的默认类型 。所以这个FileSystemXmlApplicationContext……&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;ApplicationContext ctx = new FileSystemXmlApplicationContext(&amp;quot;classpath:conf/appContext.xml&amp;quot;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;…实际上将从类路径加载其bean定义。但是，它仍然是一个FileSystemXmlApplicationContext。如果它随后是一个ResourceLoader，则任何未加前缀的路径仍将被视为文件系统路径。&lt;/p&gt;&lt;h3&gt;应用程序上下文构造函数资源路径中的通配符&lt;/h3&gt;&lt;p&gt;从前文可知，应用上下文构造器的中的资源路径可以是单一的路径（即一对一地映射到目标资源）；另外资源路径也可以使用高效的通配符——可包含 classpath&lt;em&gt;：前缀 或 ant 风格的正则表达式（使用 spring 的 PathMatcher 来匹配）。&lt;br/&gt;通配符机制的其中一种应用可以用来组装组件式的应用程序。应用程序里所有组件都可以在一个共知的位置路径发布自定义的上下文片段，则最终应用上下文可使用 classpath&lt;/em&gt;: 在同一路径前缀(前面的共知路径）下创建，这时所有组件上下文的片段都会被自动组装。&lt;br/&gt;
+谨记，路径中的通配符特定用于应用上下文的构造器，只会在应用构造时有效，与其 Resource 自身类型没有任何关系。不可以使用 classpth*：来构造任一真实的 Resource，因为一个资源点一次只可以指向一个资源。（如果直接使用 PathMatcher 的工具类，也可以在路径中使用通配符）&lt;/p&gt;&lt;p&gt;Ant 风格模式&lt;/p&gt;&lt;p&gt;以下是一些使用了 Ant 风格的位置路径：&lt;/p&gt;&lt;pre&gt;&lt;code&gt; /WEB-INF/*-context.xml  
+ com/mycompany/**/applicationContext.xml  
+ file:C:/some/path/*-context.xml  
+ classpath:com/mycompany/**/applicationContext.xml 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当位置路径使用了 ant 风格，解释器会遵循一套复杂且预定义的逻辑来解释这些位置路径。解释器会先从位置路径里获取最靠前的不带通配符的路径片段，使用这个路径片段来创建一个 Resource ，并从 Resource 里获取其 URL，若所获取到 URL 前缀并不是 “jar:”,或其他特殊容器产生的特殊前缀（如 WebLogic 的 zip:,WebSphere wsjar),则从 Resource 里获取 java.io.File 对象，并通过其遍历文件系统。进而解决位置路径里通配符;若获取的是 “jar:”的 URL ，解析器会从其获取一个 java.net.JarURLConnection 或手动解析此 URL，并遍历 jar 文件的内容进而解决位置路径的通配符。&lt;br/&gt;
+对可移植性的影响&lt;br/&gt;
+如果指定的路径已经是文件URL（显式地或隐含地，因为基本的ResourceLoader是一个文件系统的，那么通配符将保证以完全可移植的方式工作。&lt;br/&gt;
+如果指定的路径是类路径位置，则解析器必须通过Classloader.getResource（）调用获取最后一个非通配符路径段URL。 由于这只是路径的一个节点（而不是最后的文件），在这种情况下，它实际上是未定义的（在ClassLoader javadocs中）返回的是什么样的URL。 实际上，它始终是一个java.io.File，它表示类路径资源解析为文件系统位置的目录或某种类型的jar URL，其中类路径资源解析为一个jar位置。 尽管如此，这种操作仍然存在可移植性问题。&lt;br/&gt;
+如果为最后一个非通配符段获取了一个jar URL，解析器必须能够从中获取java.net.JarURLConnection，或者手动解析jar URL，以便能够遍历该jar的内容，然后解析 通配符。 这将在大多数环境中正常工作，但在其他环境中将会失败，并且强烈建议您在依赖它之前，彻底地在您的特定环境中彻底测试来自jar的资源的通配符解析。&lt;br/&gt;
+classpath&lt;em&gt;: 的可移植性&lt;br/&gt;当构造基于 xml 文件的应用上下文时，位置路径可以使用 classpath&lt;/em&gt;：前缀：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;ApplicationContext ctx = new ClassPathXmlApplicationContext(&amp;quot;classpath*:conf/appContext.xml&amp;quot;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;classpath&lt;em&gt;：的使用表示类路径下所有匹配文件名称的资源都会被获取(本质上就是调用了 ClassLoader.getResources(…) 方法），接着将获取到的资源组装成最终的应用上下文。&lt;br/&gt;通配符路径依赖了底层 classloader 的 getResource 方法。可是现在大多数应用服务器提供了自身的 classloader 实现，其处理 jar 文件的形式可能各有不同。要在指定服务器测试 classpath&lt;/em&gt;: 是否有效，简单点可以使用 getClass().getClassLoader().getResources(“”) 去加载类路径 jar包里的一个文件。尝试在两个不同的路径加载名称相同的文件，如果返回的结果不一致，就需要查看一下此服务器中与 classloader 行为设置相关的文档。&lt;br/&gt;
+在位置路径的其余部分，classpath&lt;em&gt;: 前缀可以与 PathMatcher 结合使用，如：” classpath&lt;/em&gt;:META-INF/&lt;em&gt;-beans.xml”。这种情况的解析策略非常简单：取位置路径最靠前的无通配符片段，调用 ClassLoader.getResources() 获取所有匹配的类层次加载器可加载的的资源，随后将 PathMacher 的策略应用于每一个获得的资源（起过滤作用）。&lt;br/&gt;通配符的补充说明&lt;br/&gt;除非所有目标资源都存于文件系统，否则classpath&lt;/em&gt;：和 ant 风格模式的结合使用，都只能在至少有一个确定根包路径的情况下，才能达到预期的效果。换句话说，就是像 classpath&lt;em&gt;:&lt;/em&gt;.xml 这样的 pattern 不能从根目录的 jar 文件中获取资源，只能从根目录的扩展目录获取资源。此问题的造成源于 jdk ClassLoader.getResources() 方法的局限性——当向 ClassLoader.getResources() 传入空串时(表示搜索潜在的根目录)，只能获取的文件系统的文件位置路径，即获取不了 jar 中文件的位置路径。&lt;br/&gt;
+如果在多个类路径上存在所搜索的根包，那使用 classpath: 和 ant 风格模式一起指定的资源不保证找到匹配的资源。因为使用如下的 pattern classpath:com/mycompany/&lt;em&gt;&lt;em&gt;/service-context.xml&lt;br/&gt;去搜索只在某一个路径存在的指定资源com/mycompany/package1/service-context.xml&lt;br/&gt;时,解析器只会对 getResource(“com/mycompany”) 返回的(第一个) URL 进行遍历和解释，则当在多个类路径存在基础包节点 “com/mycompany” 时(如在多个 jar 存在这个基础节点),解析器就不一定会找到指定资源。因此，这种情况下建议结合使用 classpath&lt;/em&gt;: 和 ant 风格模式，classpath&lt;/em&gt;：会让解析器去搜索所有包含基础包节点的类路径。&lt;/p&gt;&lt;h3&gt;FileSystemResource 注意事项&lt;/h3&gt;&lt;p&gt;FileSystemResource 没有依附 FileSystemApplicationContext，因为 FileSystemApplicationContext 并不是一个真正的 &lt;code&gt;ResourceLoader。FileSystemResource 并没有按约定规则来处理绝对和相对路径。相对路径是相对与当前工作而言，而绝对路径则是相对文件系统的根目录而言。 然而为了向后兼容，当 FileSystemApplicationContext 是一个 ResourceLoader 实例时，我们做了一些改变 —— 不管 FileSystemResource&lt;/code&gt; 实例的位置路径是否以 / 开头， FileSystemApplicationContext 都强制将其作为相对路径来处理。事实上，这意味着以下例子等效：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;ApplicationContext ctx = new FileSystemXmlApplicationContext(&amp;quot;conf/context.xml&amp;quot;);  
+ApplicationContext ctx = new FileSystemXmlApplicationContext(&amp;quot;/conf/context.xml&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;还有：（即使它们的意义不一样 —— 一个是相对路径，另一个是绝对路径。）&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;FileSystemXmlApplicationContext ctx = ...;  
+ctx.getResource(&amp;quot;some/resource/path/myTemplate.txt&amp;quot;);  
+FileSystemXmlApplicationContext ctx = ...;  
+ctx.getResource(&amp;quot;/some/resource/path/myTemplate.txt&amp;quot;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;实践中，如果确实需要使用绝对路径，建议放弃 FileSystemResource / FileSystemXmlApplicationContext 在绝对路劲的使用，而强制使用 file: 的 UrlResource。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;// Resource 只会是 UrlResource，与上下文的真实类型无关  
+ctx.getResource(&amp;quot;file:///some/resource/path/myTemplate.txt&amp;quot;);  
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;// 强制 FileSystemXmlApplicationContext 通过 UrlResource 加载资源  
+ApplicationContext ctx = new FileSystemXmlApplicationContext(&amp;quot;file:///conf/context.xml&amp;quot;);  
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[java建造者模式]]></title><description><![CDATA[建造者模式（Builder Pattern）使用多个简单的对象一步一步构建成一个复杂的对象。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。 一个 Builder 类会一步一步构造最终的对象。该 Builder…]]></description><link>https://www.abellee.cn/12/20/2018/java建造者模式/</link><guid isPermaLink="false">https://www.abellee.cn/12/20/2018/java建造者模式/</guid><pubDate>Thu, 20 Dec 2018 01:30:33 GMT</pubDate><content:encoded>&lt;p&gt;建造者模式（Builder Pattern）使用多个简单的对象一步一步构建成一个复杂的对象。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。&lt;/p&gt;&lt;p&gt;一个 Builder 类会一步一步构造最终的对象。该 Builder 类是独立于其他对象的。&lt;/p&gt;&lt;p&gt;通过一个例子来演示代码：&lt;/p&gt;&lt;p&gt;比如我们要装修我们的卧室和厨房。也就是组装卧室和厨房。&lt;/p&gt;&lt;p&gt;我们先创建两个类，一个表明家具，一个表明房间。&lt;/p&gt;&lt;p&gt;房间接口&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface Room{  
+ Sofa sofa();  
+ Knife knife();  
+ Bed bed();  
+ TV tv();  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;家具接口&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface Furniture{  
+ String name();  
+ Room room();  
+ Integer price();  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;房间建造接口&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface RoomBuilder{  
+ Sofa buliderSofa();  
+ Knife buliderKnife();  
+ Bed buliderBed();  
+ TV buliderTV();  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;房间装配接口&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface RoomAssemble{  
+ Room roomBulder();  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;房间建造实现类&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class RoomBuilderImpl implements RoomBuilder{  
+    
+ @Override  
+ Sofa sofa(){  
+    return new Sofa(){  
+ ...  
+ }  
+ };  
+ @Override  
+ Knife knife(){  
+    return new Knife(){  
+ ...  
+ }  
+ };  
+ @Override  
+ Bed bed(){  
+    return new Bed(){  
+ ...  
+ }  
+ };  
+ @Override  
+ TV tv(){  
+    return new TV(){  
+ ...  
+ }  
+ };  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;房间装配实现类&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public RoomAssembleImpl implements RoomAssemble{  
+  
+ private RoomBuilder builder;  
+  
+ @Override  
+ public Room roomBulder(){  
+ Sofa sofa = builder.builderSofa();  
+ Knife knife = builder.buliderKnife();  
+ Bed bed = builder.builderBed();  
+ TV tv = builder.builderTV();  
+  
+ Room room = new Room();  
+  
+ room.setSofa(sofa);  
+ room.setKnife(knife);  
+ room.setBed(bed);  
+ room.setTV(tv);  
+  
+ return room;  
+ };  
+  
+ ...构造器  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;家具类&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class Sofa implements Furniture{  
+    
+ @Override  
+ String name(){  
+    return &amp;quot;沙发&amp;quot;;  
+ };  
+  
+ @Override  
+ Room room(){  
+    return new Bedroom();  
+ };  
+  
+ @Override  
+ Interger price(){  
+    return 3000;  
+ };  
+}  
+  
+public class TV implements Furniture{  
+    
+ @Override  
+ String name(){  
+    return &amp;quot;电视&amp;quot;;  
+ };  
+  
+ @Override  
+ Room room(){  
+    return new Bedroom();  
+ };  
+  
+ @Override  
+ Interger price(){  
+    return 8000;  
+ };  
+}  
+  
+public class Bed implements Furniture{  
+    
+ @Override  
+ String name(){  
+    return &amp;quot;床&amp;quot;;  
+ };  
+  
+ @Override  
+ Room room(){  
+    return new Bedroom();  
+ };  
+  
+ @Override  
+ Interger price(){  
+    return 120000;  
+ };  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class knife implements Furniture{  
+    
+ @Override  
+ String name(){  
+    return &amp;quot;刀&amp;quot;;  
+ };  
+  
+ @Override  
+ Room room(){  
+    return new Kitchen();  
+ };  
+  
+ @Override  
+ Interger price(){  
+    return 100;  
+ };  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;以上就结束了。&lt;br/&gt;
+我在例子上把能装配的都装配了，然后装配只进行了一层装配，比较简单。&lt;br/&gt;
+你也可以只装配几个家具来组装不同的房间，这就是建造者模式的意义。自定义构建你想要的整体。&lt;/p&gt;&lt;p&gt;你也可以选择我下面的扩展代码，装配个房子，先把家具塞进房间，然后再将你选择的不同的房间装配进房子，来构造各式各样的房子。&lt;/p&gt;&lt;p&gt;实现room接口&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class Kitchen implements room{  
+    
+ @Override  
+ String name(){  
+    return &amp;quot;厨房&amp;quot;;  
+ };  
+}  
+  
+public class Bedroom implements room{  
+    
+ @Override  
+ String name(){  
+    return &amp;quot;卧室&amp;quot;;  
+ };  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;实现Furniture接口&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class Oven implements Furniture{  
+    
+ @Override  
+ String name(){  
+    return &amp;quot;烤箱&amp;quot;;  
+ };  
+  
+ @Override  
+ Room room(){  
+    return new Kitchen();  
+ };  
+  
+ @Override  
+ Interger price(){  
+    return 500;  
+ };  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class Pan implements Furniture{  
+    
+ @Override  
+ String name(){  
+    return &amp;quot;平底锅&amp;quot;;  
+ };  
+  
+ @Override  
+ Room room(){  
+    return new Kitchen();  
+ };  
+  
+ @Override  
+ Interger price(){  
+    return 200;  
+ };  
+}
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[java工厂模式]]></title><description><![CDATA[Spring的笔记写了一半，突然想复习一下工厂模式，所以写一篇。 前言 面向对象设计的基本原则 谈到工厂模式我要先提一下，面向对象设计的基本原则： 单一职责原则（Single Responsibility Principle…]]></description><link>https://www.abellee.cn/12/20/2018/java工厂模式/</link><guid isPermaLink="false">https://www.abellee.cn/12/20/2018/java工厂模式/</guid><pubDate>Thu, 20 Dec 2018 01:18:36 GMT</pubDate><content:encoded>&lt;p&gt;Spring的笔记写了一半，突然想复习一下工厂模式，所以写一篇。&lt;/p&gt;&lt;h1&gt;前言&lt;/h1&gt;&lt;h2&gt;面向对象设计的基本原则&lt;/h2&gt;&lt;p&gt;谈到工厂模式我要先提一下，面向对象设计的基本原则：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;单一职责原则（Single Responsibility Principle）&lt;/p&gt;&lt;p&gt;每一个类应该专注于做一件事情。&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;ol start=&quot;2&quot;&gt;&lt;li&gt;&lt;p&gt;里氏替换原则（Liskov Substitution Principle）&lt;/p&gt;&lt;p&gt;超类存在的地方，子类是可以替换的。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;依赖倒置原则（Dependence Inversion Principle）&lt;/p&gt;&lt;p&gt;实现尽量依赖抽象，不依赖具体实现。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;接口隔离原则（Interface Segregation Principle）&lt;/p&gt;&lt;p&gt;应当为客户端提供尽可能小的单独的接口，而不是提供大的总的接口。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;迪米特法则（Law Of Demeter）&lt;/p&gt;&lt;p&gt;又叫最少知识原则，一个软件实体应当尽可能少的与其他实体发生相互作用。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;开闭原则（Open Close Principle）&lt;/p&gt;&lt;p&gt;面向扩展开放，面向修改关闭。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;组合/聚合复用原则（Composite/Aggregate Reuse Principle CARP）&lt;/p&gt;&lt;p&gt;尽量使用组合/聚合达到复用，尽量少用继承。原则： 一个类中有另一个类的对象。&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h1&gt;工厂模式的核心本质&lt;/h1&gt;&lt;ol&gt;&lt;li&gt;通过用工厂的方法来new对象，来实现对象的实例化。&lt;/li&gt;&lt;li&gt;调用者和实现者 相互解藕&lt;/li&gt;&lt;/ol&gt;&lt;h2&gt;简单工厂模式&lt;/h2&gt;&lt;p&gt;简单工厂模式，虽然简单，但是它也是最常用的工厂模式。&lt;/p&gt;&lt;p&gt;什么都不说，这章，我们直接撸代码。&lt;/p&gt;&lt;p&gt;先来个狗的抽象类。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface Dog{  
+    void bark();  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;再来个旺财的实现类。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class Money implements Dog{  
+  
+    @Override  
+    public void bark(){  
+        system.out.println(&amp;quot;旺财叫！&amp;quot;);  
+    }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后来个来福的实现类。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class Lucky implements Dog{  
+  
+    @Override  
+    public void bark(){  
+        system.out.println(&amp;quot;来福叫！&amp;quot;);  
+    }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;现在我们的依赖关系为：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;Dog &amp;lt;——- Money  
+^  
+|—&amp;lt;——-Lucky
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果我们平时想要调用这两个实现类，我们通常会这样：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class client{  
+  
+    public static void main(String\[\] args){  
+        Dog money = new Money();  
+        Dog Lucky = new Lucky();  
+
+
+        money.bark();  
+        Lucky.barck();  
+    }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出应该是：&lt;/p&gt;&lt;p&gt;旺财叫！&lt;br/&gt;
+来福叫！&lt;/p&gt;&lt;p&gt;这样造成的问题是：&lt;br/&gt;
+client既要知道Dog，还要知道Dog的分类才能调用成功。&lt;/p&gt;&lt;p&gt;然后我们来一个Dog的工厂类&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class DogFactory{  
+    
+    public static Dog getDog(String type){  
+
+        switch(type){  
+        case &amp;quot;Money&amp;quot;:  
+            return new Money();  
+            break;  
+        case &amp;quot;Lucky&amp;quot;:  
+            return new Lucky();  
+            break;  
+        default:  
+            throw new DogNotFoundException(DOG_NOT_FOUND);  
+        }  
+    }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后我们就可以这样那拿到我们想要的狗了：&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class Client{  
+ public static void main(String\[\] args){  
+ Dog money = DogFactory.getDog(&amp;quot;Money&amp;quot;);  
+ Dog Lucky = DogFactory.getDog(&amp;quot;Lucky&amp;quot;);  
+  
+ money.bark();  
+ Lucky.barck();  
+ }  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出应该还是：&lt;/p&gt;&lt;p&gt;旺财叫！&lt;br/&gt;
+来福叫！&lt;/p&gt;&lt;p&gt;现在的依赖关系虽然较复杂，但是已经很解藕了。&lt;/p&gt;&lt;p&gt;现在客户端，只需要知道，我要Dog，我要什么狗。然后就不亲自去造狗，而是直接去找工厂要。工厂知道后，就开始找有没有这个狗，有就返回给客户端，没有嘛，就报一个简单的异常。&lt;/p&gt;&lt;p&gt;然后，你不止可以选择switch的方式来创建工厂类还可以用if else和静态方法调用。&lt;/p&gt;&lt;p&gt;if else&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class DogFactory{  
+    
+    public static Dog getDog(String type){  
+
+        if(&amp;quot;Money&amp;quot;.equals(type)){  
+            return new Money();  
+        }else(&amp;quot;Lucky&amp;quot;.equals(type)){  
+            return new Lucky();  
+        }  
+        // 异常省略了。  
+    }  
+} 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;静态方法&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class DogFactory{  
+    
+    public static Dog getMoney(){  
+        return new Money();  
+    }  
+
+    public static Dog getLucky(){  
+        return new Lucky();  
+    }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;当然工厂模式的命名以 createXX 更好，但是我总觉得创造一个 旺财怪怪的，所以改成了get。&lt;/p&gt;&lt;h2&gt;工厂方法模式&lt;/h2&gt;&lt;p&gt;我们还是先搞三个类&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface Dog{  
+    void bark();  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class Money implements Dog{  
+  
+    @Override  
+    public void bark(){  
+        system.out.println(&amp;quot;旺财叫！&amp;quot;);  
+    }  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class Lucky implements Dog{  
+  
+    @Override  
+    public void bark(){  
+        system.out.println(&amp;quot;来福叫！&amp;quot;);  
+    }  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这个模式，每个实现类都需要自己的工厂类&lt;/p&gt;&lt;p&gt;所以我们创建 旺财 和 来福 各自的工厂类 还有 Dog工厂的抽象类&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface DogFactory{  
+  
+    Dog getDog();  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class MoneyFactory implements DogFactory{  
+  
+    @Override  
+    public Dog getDog(){  
+        return new Money();  
+    }  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class LuckyFactory implements DogFactory{  
+  
+    @Override  
+    public Dog getDog(){  
+        return new Lucky();  
+    }  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后写客户端&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class Client{  
+  
+    public static void main(String [] args){  
+        Money money = MoneyFactory.getDog();  
+        Lucky lucky = LuckyFactory.getDog();  
+
+        money.bark();  
+        Lucky.bark();  
+    }  
+} 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样就保证了开闭原则，扩展时不修改原有代码，但是类太XX多了。&lt;br/&gt;
+我也认为这样设计很蠢，贼蠢。&lt;/p&gt;&lt;h2&gt;抽象工厂模式&lt;/h2&gt;&lt;p&gt;抽象工厂模式，是为了解决多层次情况。比如：我们现在把来福和旺财看成两类狗，然后再加入狗的颜色属性&lt;/p&gt;&lt;p&gt;然后我们需要输出也就是得到：&lt;/p&gt;&lt;p&gt;例如：&lt;/p&gt;&lt;p&gt;黑色旺财叫！&lt;/p&gt;&lt;p&gt;白色旺财叫！&lt;/p&gt;&lt;p&gt;黑色来福叫！&lt;/p&gt;&lt;p&gt;白色来福叫！&lt;/p&gt;&lt;p&gt;核心思想就是，我们通过工厂类来指定一个来福工厂类还是旺财工厂类，&lt;br/&gt;
+然后用它们各自工厂类的创建狗方法来生成上面的结果。&lt;/p&gt;&lt;p&gt;然后我们再让整体结构复杂一点，添加点属性。&lt;/p&gt;&lt;p&gt;所以我们的整体结构现在变成了现在这个样子：&lt;/p&gt;&lt;p&gt;白色狗抽象类和具体实现类&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface WhiteDog{  
+ void bark();  
+}  
+  
+public class MoneyWhiteDog implements WhiteDog{  
+ public void bark(){  
+ sout(&amp;quot;白色旺财叫！&amp;quot;)  
+ };  
+}  
+  
+public class LuckyWhiteDog implements WhiteDog{  
+ public void bark(){  
+ sout(&amp;quot;白色来福叫！&amp;quot;)  
+ };  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;黑色狗抽象类和具体实现类&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface BlackDog{  
+    void bark();  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class MoneyBlackDog implements BlackDog{  
+    public void bark(){  
+        sout(&amp;quot;黑色旺财叫！&amp;quot;)  
+    };      
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class LuckyBlackDog implements BlackDog{  
+    public void bark(){  
+        sout(&amp;quot;黑色来福叫！&amp;quot;)  
+    };  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;狗的工厂抽象类&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public interface DogFactory{  
+    WhiteDog createWhiteDog();  
+    BlackDog createBlackDog();  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;旺财工厂类&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class MoneyFactory implements DogFactory{  
+    
+    @Override  
+    WhiteDog createWhiteDog(){  
+        return new MoneyWhiteDog;  
+    };  
+
+    BlackDog createBlackDog(){  
+        return new MoneyBlackDog  
+    };  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;来福工厂类&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class LuckyFactory implements DogFactory{  
+    
+    @Override  
+    WhiteDog createWhiteDog(){  
+        return new LuckyWhiteDog;  
+    };  
+
+    BlackDog createBlackDog(){  
+        return new LuckyBlackDog  
+    };  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public static void main(String [] args){  
+    DogFactory dogFactory = new MoneyFactory();  
+
+    MoneyWhiteDog moneyWhiteDog = dogFactory.createWhiteDog();  
+
+    moneyWhiteDog.bark();  
+}  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果不出意外的话，输出是：“白色旺财叫！”&lt;/p&gt;</content:encoded></item><item><title><![CDATA[自己写的一个好玩的滑稽减压HTML]]></title><description><![CDATA[先贴演示地址 https://www.abellee.cn/comic/ 谷歌浏览器演示很棒！ 代码]]></description><link>https://www.abellee.cn/12/8/2018/自己写的一个好玩的滑稽减压HTML/</link><guid isPermaLink="false">https://www.abellee.cn/12/8/2018/自己写的一个好玩的滑稽减压HTML/</guid><pubDate>Sat, 08 Dec 2018 01:03:33 GMT</pubDate><content:encoded>&lt;h1&gt;先贴演示地址&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://www.abellee.cn/comic/&quot;&gt;https://www.abellee.cn/comic/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;谷歌浏览器演示很棒！&lt;/p&gt;&lt;h1&gt;代码&lt;/h1&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;zh-CN&amp;quot;&amp;gt;
+
+&amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;comic&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;
+    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;script&amp;gt;
+    var quantity = Math.floor( Math.random() * 20 ) + 1;
+
+    var comicWidth = 200;
+    var offset = 1;
+    var timeInterval = 15;
+
+    var comicHeight = comicWidth;
+    var height = window.innerHeight;
+    var width = window.innerWidth;
+    window.onload = function() {
+        init();
+
+        setInterval(function(){
+            resize();
+            move();
+        }, timeInterval);
+
+        function resize() {
+            height = window.innerHeight;
+            width = window.innerWidth;
+        }
+
+        function move() {
+            var comics = document.querySelectorAll(&amp;#x27;.comic&amp;#x27;);
+            for (var i = 0; i &amp;lt; comics.length; i++) {
+                moveItem(comics[i], offset);
+            }
+        }
+
+        function moveItem(element, offset){
+            var itemWidth = parseInt(element.style.width, 10);
+            var itemScale = itemWidth * element.scale;
+            var style = element.style;
+
+            var xaxis = element.xaxis;
+            var yaxis = element.yaxis;
+
+            var top = parseInt(style.top, 10);
+            var left = parseInt(style.left, 10);
+
+            if(element.xaxis){
+                style.left = compute(left, offset);
+            }
+            if(!element.xaxis){
+                style.left = compute(left, -offset);
+            }
+            if(left &amp;lt;= 0){
+                element.xaxis = true;
+            }
+            if(left &amp;gt;= width - itemScale){
+                element.xaxis = false;
+            }
+            if(element.yaxis){
+                style.top = compute(top, offset);
+            }
+            if(!element.yaxis){
+                style.top = compute(top, -offset);
+            }
+            if(top &amp;lt;= 0){
+                element.yaxis = true;
+            }
+            if(top &amp;gt;= height - itemScale){
+                element.yaxis = false;
+            }
+        }
+
+        function compute(m, n) {
+            return (m + n) + &amp;#x27;px&amp;#x27;;
+        }
+    }
+
+
+
+    function init() {
+        appendComic(quantity);
+        initComics();
+    }
+
+    function initComics() {
+        var comics = document.querySelectorAll(&amp;#x27;.comic&amp;#x27;);
+        for (var i = 0; i &amp;lt; comics.length; i++) {
+            var style = comics[i].style;
+            comics[i].xaxis = Math.random() &amp;gt;= 0.5;
+            comics[i].yaxis = Math.random() &amp;gt;= 0.5;
+            style.position = &amp;#x27;absolute&amp;#x27;;
+            style.width = comicWidth + &amp;#x27;px&amp;#x27;;
+            style.height = comicHeight + &amp;#x27;px&amp;#x27;;
+            style.left = Math.random() * (width - comicWidth) + &amp;#x27;px&amp;#x27;;
+            style.top = Math.random() * (height - comicHeight) + &amp;#x27;px&amp;#x27;;
+        }
+    }
+
+    function appendComic(quantity) {
+        for (var index = 0; index &amp;lt; quantity; index++) {
+            var comicNode = document.createElement(&amp;#x27;div&amp;#x27;);
+            comicNode.classList.add(&amp;#x27;comic&amp;#x27;);
+
+            var scale = Math.random();
+            comicNode.scale = scale;
+            comicNode.style.transform = &amp;#x27;scale(&amp;#x27; + scale + &amp;#x27;)&amp;#x27;
+            comicNode.style.transformOrigin = &amp;#x27;top left&amp;#x27;;
+
+            var mouth = document.createElement(&amp;#x27;div&amp;#x27;);
+            mouth.classList.add(&amp;#x27;mouth&amp;#x27;);
+
+            var left_eye = document.createElement(&amp;#x27;div&amp;#x27;);
+            left_eye.classList.add(&amp;#x27;eye&amp;#x27;);
+            left_eye.classList.add(&amp;#x27;eye_left&amp;#x27;);
+
+            var right_eye = document.createElement(&amp;#x27;div&amp;#x27;);
+            right_eye.classList.add(&amp;#x27;eye&amp;#x27;);
+            right_eye.classList.add(&amp;#x27;eye_right&amp;#x27;);
+
+            var left_eye1 = document.createElement(&amp;#x27;div&amp;#x27;);
+            left_eye1.classList.add(&amp;#x27;eye1&amp;#x27;);
+            var left_eye2 = document.createElement(&amp;#x27;div&amp;#x27;);
+            left_eye2.classList.add(&amp;#x27;eye2&amp;#x27;);
+            var left_eye3 = document.createElement(&amp;#x27;div&amp;#x27;);
+            left_eye3.classList.add(&amp;#x27;eye3&amp;#x27;);
+            var left_eye4 = document.createElement(&amp;#x27;div&amp;#x27;);
+            left_eye4.classList.add(&amp;#x27;eye4&amp;#x27;);
+            var left_eye5 = document.createElement(&amp;#x27;div&amp;#x27;);
+            left_eye5.classList.add(&amp;#x27;eye5&amp;#x27;);
+            var left_eye6 = document.createElement(&amp;#x27;div&amp;#x27;);
+            left_eye6.classList.add(&amp;#x27;eye6&amp;#x27;);
+
+            var right_eye1 = document.createElement(&amp;#x27;div&amp;#x27;);
+            right_eye1.classList.add(&amp;#x27;eye1&amp;#x27;);
+            var right_eye2 = document.createElement(&amp;#x27;div&amp;#x27;);
+            right_eye2.classList.add(&amp;#x27;eye2&amp;#x27;);
+            var right_eye3 = document.createElement(&amp;#x27;div&amp;#x27;);
+            right_eye3.classList.add(&amp;#x27;eye3&amp;#x27;);
+            var right_eye4 = document.createElement(&amp;#x27;div&amp;#x27;);
+            right_eye4.classList.add(&amp;#x27;eye4&amp;#x27;);
+            var right_eye5 = document.createElement(&amp;#x27;div&amp;#x27;);
+            right_eye5.classList.add(&amp;#x27;eye5&amp;#x27;);
+            var right_eye6 = document.createElement(&amp;#x27;div&amp;#x27;);
+            right_eye6.classList.add(&amp;#x27;eye6&amp;#x27;);
+
+            left_eye.appendChild(left_eye1);
+            left_eye.appendChild(left_eye2);
+            left_eye.appendChild(left_eye3);
+            left_eye.appendChild(left_eye4);
+            left_eye.appendChild(left_eye5);
+            left_eye.appendChild(left_eye6)
+
+            right_eye.appendChild(right_eye1);
+            right_eye.appendChild(right_eye2);
+            right_eye.appendChild(right_eye3);
+            right_eye.appendChild(right_eye4);
+            right_eye.appendChild(right_eye5);
+            right_eye.appendChild(right_eye6);
+
+            comicNode.appendChild(mouth);
+
+            comicNode.appendChild(left_eye);
+            comicNode.appendChild(right_eye);
+
+            document.querySelector(&amp;#x27;.container&amp;#x27;).appendChild(comicNode);
+        }
+    }
+
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style&amp;gt;
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .comic {
+        background: #fd8;
+        border-radius: 50%;
+        box-shadow: 3px 8px 20px 2px rgba(0, 0, 0, 0.3), 
+                        /* 内阴影 */
+                        0px 0px 20px 10px rgba(238, 170, 85, 0.8)inset;
+        /* position: absolute; */
+        transform-origin: 50% 100%;
+        animation: rotate3 0.5s infinite linear;
+    }
+
+    .mouth {
+        width: 80%;
+        height: 70%;
+        border-bottom: 0.3rem solid rgb(80, 64, 31);
+        border-left: 0px solid transparent;
+        border-right: 0 solid transparent;
+        border-radius: 50% / 50%;
+        position: absolute;
+        bottom: 12.5%;
+        left: 10%;
+    }
+
+    .eye {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 50%;
+        transform: translate(-50%, -25%) rotate(45deg);
+    }
+
+    .eye_left {
+        left: 20%;
+    }
+
+    .eye_right {
+        left: 80%;
+    }
+
+    .eye1 {
+        position: absolute;
+        top: 1.5%;
+        left: 1.5%;
+        width: 38%;
+        height: 38%;
+        overflow: hidden;
+    }
+
+    .eye1::before {
+        content: &amp;quot;&amp;quot;;
+        width: 300%;
+        height: 300%;
+        position: absolute;
+        border: 0.75rem solid #fff;
+        border-radius: 150%;
+    }
+
+    .eye2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+    }
+
+    .eye3 {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        width: 65px;
+        height: 65px;
+        overflow: hidden;
+    }
+
+    .eye2::before,
+    .eye3::before {
+        content: &amp;quot;&amp;quot;;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        border: 5px solid #fb7;
+        border-radius: 120px;
+    }
+
+    .eye4 {
+        position: absolute;
+        top: 72px;
+        left: 9px;
+        width: 24px;
+        height: 12px;
+        overflow: hidden;
+        transform: rotate(-160deg);
+    }
+
+    .eye5 {
+        position: absolute;
+        top: 15px;
+        left: 66px;
+        width: 24px;
+        height: 12px;
+        overflow: hidden;
+        transform: rotate(70deg);
+    }
+
+    .eye4::before,
+    .eye5::before {
+        content: &amp;quot;&amp;quot;;
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        border: 5px solid #fb7;
+        border-radius: 120px;
+    }
+
+    .eye6 {
+        position: absolute;
+        top: 62px;
+        left: 17px;
+        width: 15px;
+        height: 15px;
+        background: rgb(37, 37, 37);
+        border-radius: 10px;
+    }
+
+&amp;lt;/style&amp;gt;
+
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[独自]]></title><description><![CDATA[独自 烟雨梨花巷，谁人识我家。
+家中独人坐，车行往来忙。]]></description><link>https://www.abellee.cn/5/16/2018/独自/</link><guid isPermaLink="false">https://www.abellee.cn/5/16/2018/独自/</guid><pubDate>Wed, 16 May 2018 16:55:25 GMT</pubDate><content:encoded>&lt;p&gt;独自&lt;/p&gt;&lt;p&gt;烟雨梨花巷，谁人识我家。
+家中独人坐，车行往来忙。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[相思]]></title><description><![CDATA[2018年4月8日记 相思 江南花已开，破碎旧时梦。 一别十七载，愿亲常安在。 西柳厦耸立，小院已不在。 每当夜思亲，仍记白布围。]]></description><link>https://www.abellee.cn/4/8/2018/相思/</link><guid isPermaLink="false">https://www.abellee.cn/4/8/2018/相思/</guid><pubDate>Sun, 08 Apr 2018 01:08:21 GMT</pubDate><content:encoded>&lt;p&gt;2018年4月8日记 相思&lt;/p&gt;&lt;p&gt;江南花已开，破碎旧时梦。&lt;br/&gt;
+一别十七载，愿亲常安在。&lt;br/&gt;
+西柳厦耸立，小院已不在。&lt;br/&gt;
+每当夜思亲，仍记白布围。&lt;/p&gt;</content:encoded></item></channel></rss>
