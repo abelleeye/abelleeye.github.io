@@ -1,4 +1,150 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed]]></title><description><![CDATA[不会写代码，也不会打人马。]]></description><link>https://www.abellee.cn</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 01 May 2021 21:17:33 GMT</lastBuildDate><item><title><![CDATA[eva]]></title><description><![CDATA[EVA 一款因作者需求而生的一款极简风谷歌扩展! 扩展商店地址 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed]]></title><description><![CDATA[不会写代码，也不会打人马。]]></description><link>https://www.abellee.cn</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 May 2021 10:49:29 GMT</lastBuildDate><item><title><![CDATA[什么是Markdown]]></title><description><![CDATA[什么是 Markdown ? Markdown 是一种可以使用普通文本编辑器编写的标记语言, 通过简单的标记语法, 它可以使普通文本内容具有一定的格式。 目录 什么是 Markdown…]]></description><link>https://www.abellee.cn/5/2/2021/什么是 Markdown/</link><guid isPermaLink="false">https://www.abellee.cn/5/2/2021/什么是 Markdown/</guid><pubDate>Sun, 02 May 2021 18:45:38 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://cdoco.com/images/markdown-syntax.png&quot;/&gt;&lt;/p&gt;&lt;h2&gt;什么是 Markdown ?&lt;/h2&gt;&lt;blockquote&gt;&lt;p&gt;Markdown 是一种可以使用普通文本编辑器编写的标记语言, 通过简单的标记语法, 它可以使普通文本内容具有一定的格式。&lt;/p&gt;&lt;/blockquote&gt;&lt;h2&gt;目录&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;#%E4%BB%80%E4%B9%88%E6%98%AF-markdown-&quot;&gt;什么是 Markdown ?&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E7%9B%AE%E5%BD%95&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E5%88%86%E7%BA%A7%E6%A0%87%E9%A2%98&quot;&gt;分级标题&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E5%88%86%E9%9A%94%E7%BA%BF&quot;&gt;分隔线&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E8%B6%85%E9%93%BE%E6%8E%A5&quot;&gt;超链接&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;#%E8%A1%8C%E5%86%85%E5%BC%8F&quot;&gt;行内式&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E5%8F%82%E8%80%83%E5%BC%8F&quot;&gt;参考式&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E8%87%AA%E5%8A%A8%E9%93%BE%E6%8E%A5&quot;&gt;自动链接&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E5%8C%BA%E5%9D%97%E5%BC%95%E7%94%A8&quot;&gt;区块引用&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;#%E5%BC%95%E7%94%A8%E7%9A%84%E5%A4%9A%E5%B1%82%E5%B5%8C%E5%A5%97&quot;&gt;引用的多层嵌套&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E5%BC%95%E7%94%A8%E5%85%B6%E5%AE%83%E8%A6%81%E7%B4%A0&quot;&gt;引用其它要素&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E9%94%9A%E7%82%B9&quot;&gt;锚点&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E5%BC%BA%E8%B0%83&quot;&gt;强调&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;#%E6%96%9C%E4%BD%93&quot;&gt;斜体&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E7%B2%97%E4%BD%93&quot;&gt;粗体&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E5%88%A0%E9%99%A4%E7%BA%BF&quot;&gt;删除线&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E5%88%97%E8%A1%A8&quot;&gt;列表&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8&quot;&gt;无序列表&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8&quot;&gt;有序列表&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E5%8C%85%E5%90%AB%E5%BC%95%E7%94%A8%E7%9A%84%E5%88%97%E8%A1%A8&quot;&gt;包含引用的列表&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87&quot;&gt;插入图片&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;#%E5%9B%BE%E7%89%87%E8%A1%8C%E5%86%85%E5%BC%8F&quot;&gt;图片行内式&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E5%9B%BE%E7%89%87%E5%8F%82%E8%80%83%E5%BC%8F&quot;&gt;图片参考式&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E8%A1%A8%E6%A0%BC&quot;&gt;表格&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E4%BB%A3%E7%A0%81&quot;&gt;代码&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;#%E4%BB%A3%E7%A0%81%E8%A1%8C%E5%86%85%E5%BC%8F&quot;&gt;代码行内式&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E7%BC%A9%E8%BF%9B%E5%BC%8F%E5%A4%9A%E8%A1%8C%E4%BB%A3%E7%A0%81&quot;&gt;缩进式多行代码&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E7%94%A8%E5%85%AD%E4%B8%AA--%E5%8C%85%E8%A3%B9%E5%A4%9A%E8%A1%8C%E4%BB%A3%E7%A0%81&quot;&gt;用六个 ` 包裹多行代码&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#html-%E5%8E%9F%E5%A7%8B%E7%A0%81&quot;&gt;HTML 原始码&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E5%86%85%E5%AE%B9%E7%9B%AE%E5%BD%95&quot;&gt;内容目录&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E6%B3%A8%E8%84%9A&quot;&gt;注脚&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#latex-%E5%85%AC%E5%BC%8F&quot;&gt;LaTeX 公式&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;#-%E8%A1%A8%E7%A4%BA%E8%A1%8C%E5%86%85%E5%85%AC%E5%BC%8F&quot;&gt;$ 表示行内公式&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#-%E8%A1%A8%E7%A4%BA%E6%95%B4%E8%A1%8C%E5%85%AC%E5%BC%8F&quot;&gt;$$ 表示整行公式&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E6%B5%81%E7%A8%8B%E5%9B%BE&quot;&gt;流程图&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E6%97%B6%E5%BA%8F%E5%9B%BE&quot;&gt;时序图&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;#%E5%BE%85%E5%8A%9E%E4%BA%8B%E5%AE%9C%E5%88%97%E8%A1%A8&quot;&gt;待办事宜列表&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2&gt;分级标题&lt;/h2&gt;&lt;p&gt;第一种写法:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;这是一个一级标题
+============================
+
+这是一个二级标题
+--------------------------------------------------
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;h1&gt;这是一个一级标题&lt;/h1&gt;&lt;h2&gt;这是一个二级标题&lt;/h2&gt;&lt;/blockquote&gt;&lt;hr/&gt;&lt;p&gt;第二种写法:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;h1&gt;一级标题&lt;/h1&gt;&lt;h2&gt;二级标题&lt;/h2&gt;&lt;h3&gt;三级标题&lt;/h3&gt;&lt;h4&gt;四级标题&lt;/h4&gt;&lt;h5&gt;五级标题&lt;/h5&gt;&lt;h6&gt;六级标题&lt;/h6&gt;&lt;/blockquote&gt;&lt;h2&gt;分隔线&lt;/h2&gt;&lt;p&gt;你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线, 行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;hr/&gt;&lt;hr/&gt;&lt;/blockquote&gt;&lt;h2&gt;超链接&lt;/h2&gt;&lt;p&gt;Markdown 支持两种形式的链接语法: 行内式和参考式两种形式, 行内式一般使用较多。&lt;/p&gt;&lt;h3&gt;行内式&lt;/h3&gt;&lt;p&gt;&lt;code&gt;[]&lt;/code&gt;里写链接文字，&lt;code&gt;()&lt;/code&gt;里写链接地址, &lt;code&gt;()&lt;/code&gt;中的 &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt; 中可以为链接指定title属性, title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。&lt;code&gt;[链接文字](链接地址 &amp;quot;链接标题&amp;quot;)&lt;/code&gt; 这样的形式。链接地址与链接标题前有一个空格。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;[Markdown Syntax](https://github.com/cdoco/markdown-syntax)
+[Markdown Syntax](https://github.com/cdoco/markdown-syntax &amp;quot;Markdown Syntax&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/cdoco/markdown-syntax&quot;&gt;Markdown Syntax&lt;/a&gt;&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/cdoco/markdown-syntax&quot; title=&quot;Markdown Syntax&quot;&gt;Markdown Syntax&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;参考式&lt;/h3&gt;&lt;p&gt;参考式超链接一般用在学术论文上面, 或者另一种情况, 如果某一个链接在文章中多处使用, 那么使用引用的方式创建链接将非常好, 它可以让你对链接进行统一的管理。&lt;/p&gt;&lt;p&gt;参考式链接分为两部分, 文中的写法 &lt;code&gt;[链接文字][链接标记]&lt;/code&gt;，在文本的任意位置添加 &lt;code&gt;[链接标记]:链接地址 &amp;quot;链接标题&amp;quot;&lt;/code&gt;, 链接地址与链接标题前有一个空格。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;全球最大的搜索引擎网站是[Google][1]。
+
+[1]:http://www.google.com &amp;quot;Google&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;p&gt;全球最大的搜索引擎网站是 &lt;a href=&quot;http://www.google.com&quot; title=&quot;Google&quot;&gt;Google&lt;/a&gt;。&lt;/p&gt;&lt;br/&gt;&lt;/blockquote&gt;&lt;h3&gt;自动链接&lt;/h3&gt;&lt;p&gt;Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱, 只要是用 &lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt; 包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样, 例如:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;&amp;lt;https://google.com/&amp;gt;
+
+&amp;lt;ocdoco@gmail.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;https://google.com/&quot;&gt;https://google.com/&lt;/a&gt;&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;a href=&quot;mailto:ocdoco@gmail.com&quot;&gt;ocdoco@gmail.com&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;h2&gt;区块引用&lt;/h2&gt;&lt;p&gt;区块引用需要在被引用的文本前加上 &lt;code&gt;&amp;gt;&lt;/code&gt; 符号。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;&amp;gt; 这是一个区块引用实例,
+
+&amp;gt; Markdown.
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;p&gt;这是一个区块引用实例,&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;Markdown.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;Markdown 也允许你偷懒只在整个段落的第一行最前面加上 &lt;code&gt;&amp;gt;&lt;/code&gt; :&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;&amp;gt; 平生不会相思,
+才会相思,
+便害相思。
+
+&amp;gt; 空一缕余香在此,
+盼千金游子何之。
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;p&gt;平生不会相思,
+才会相思,
+便害相思。&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;空一缕余香在此,
+盼千金游子何之。&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;引用的多层嵌套&lt;/h3&gt;&lt;p&gt;区块引用可以嵌套（例如：引用内的引用）, 只要根据层次加上不同数量的 &lt;code&gt;&amp;gt;&lt;/code&gt; :&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;&amp;gt;&amp;gt;&amp;gt; 锄禾日当午, 汗滴禾下土。 - 李绅
+
+&amp;gt;&amp;gt; 山有木兮木有枝, 心悦君兮君不知。 - 越人歌
+
+&amp;gt; 去年今日此门中, 人面桃花相映红。 - 崔护
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;blockquote&gt;&lt;blockquote&gt;&lt;p&gt;锄禾日当午, 汗滴禾下土。 - 李绅&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;blockquote&gt;&lt;p&gt;山有木兮木有枝, 心悦君兮君不知。 - 越人歌&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;去年今日此门中, 人面桃花相映红。 - 题都城南庄&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;引用其它要素&lt;/h3&gt;&lt;p&gt;引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;&amp;gt; - 入我相思门, 知我相思苦。
+&amp;gt;
+&amp;gt; - 长相思兮长相忆, 短相思兮无穷极。
+&amp;gt;
+&amp;gt; - 给出一些例子代码:
+&amp;gt; ```markdown
+&amp;gt;   return debug_backtrace();
+&amp;gt; ```
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;入我相思门, 知我相思苦。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;长相思兮长相忆, 短相思兮无穷极。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;给出一些例子代码:&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;  return debug_backtrace();
+&lt;/code&gt;&lt;/pre&gt;&lt;/blockquote&gt;&lt;h2&gt;锚点&lt;/h2&gt;&lt;p&gt;网页中, 锚点其实就是页内超链接, 也就是链接本文档内部的某些元素, 实现当前页面中的跳转。比如我这里写下一个锚点, 点击回到目录, 就能跳转到目录。 在目录中点击这一节, 就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;**[⬆ top](#什么是-markdown-)**
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;#%E4%BB%80%E4%B9%88%E6%98%AF-markdown-&quot;&gt;⬆ top&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;h2&gt;强调&lt;/h2&gt;&lt;p&gt;Markdown 使用星号&lt;code&gt;*&lt;/code&gt;和底线&lt;code&gt;_&lt;/code&gt;作为标记强调字词的符号。&lt;/p&gt;&lt;h3&gt;斜体&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;*花自飘零水自流*
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;p&gt;&lt;em&gt;花自飘零水自流&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;粗体&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;**花自飘零水自流**
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;花自飘零水自流&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;删除线&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;~~花自飘零水自流~~
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;p&gt;&lt;del&gt;花自飘零水自流&lt;/del&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;h2&gt;列表&lt;/h2&gt;&lt;p&gt;使用 *，+，- 表示无序列表。&lt;/p&gt;&lt;h3&gt;无序列表&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;- 白头吟
+- 击鼓
+- 断句
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;白头吟&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;击鼓&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;断句&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;&lt;h3&gt;有序列表&lt;/h3&gt;&lt;p&gt;有序列表则使用数字接着一个英文句点。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;1. 白头吟
+2. 击鼓
+3. 断句
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;白头吟&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;击鼓&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;断句&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/blockquote&gt;&lt;h3&gt;包含引用的列表&lt;/h3&gt;&lt;p&gt;如果要在列表项目内放进引用，那 &lt;code&gt;&amp;gt;&lt;/code&gt; 就需要缩进:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;* 菩提偈:
+
+  &amp;gt; 菩提本无树，明镜亦非台。
+  &amp;gt; 本来无一物，何处惹尘埃！
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;菩提偈:&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;菩提本无树，明镜亦非台。
+本来无一物，何处惹尘埃！&lt;/p&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h2&gt;插入图片&lt;/h2&gt;&lt;p&gt;图片的创建方式与超链接相似, 而且和超链接一样也有两种写法, 行内式和参考式写法。&lt;/p&gt;&lt;p&gt;语法中图片Alt的意思是如果图片因为某些原因不能显示, 就用定义的图片Alt文字来代替图片。 图片Title则和链接中的Title一样, 表示鼠标悬停与图片上时出现的文字。 Alt 和 Title 都不是必须的, 可以省略, 但建议写上。&lt;/p&gt;&lt;h3&gt;图片行内式&lt;/h3&gt;&lt;p&gt;&lt;code&gt;![图片Alt](图片地址 &amp;quot;图片Title&amp;quot;)&lt;/code&gt;&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;![哆啦A梦](https://cdoco.com/images/duolaameng.jpeg &amp;quot;哆啦A梦&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;https://cdoco.com/images/duolaameng.jpeg&quot; alt=&quot;哆啦A梦&quot; title=&quot;哆啦A梦&quot;/&gt;&lt;/p&gt;&lt;h3&gt;图片参考式&lt;/h3&gt;&lt;p&gt;在文档要插入图片的地方写 &lt;code&gt;![图片Alt][标记]&lt;/code&gt;。&lt;/p&gt;&lt;p&gt;在文档的最后写上 &lt;code&gt;[标记]:图片地址 &amp;quot;Title&amp;quot;&lt;/code&gt;。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;![哆啦A梦][duolaameng]
+
+[duolaameng]:https://cdoco.com/images/duolaameng.jpeg &amp;quot;哆啦A梦&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;https://cdoco.com/images/duolaameng.jpeg&quot; alt=&quot;哆啦A梦&quot; title=&quot;哆啦A梦&quot;/&gt;&lt;/p&gt;&lt;h2&gt;表格&lt;/h2&gt;&lt;ol&gt;&lt;li&gt;不管是哪种方式, 第一行为表头, 第二行分隔表头和主体部分, 第三行开始每一行为一个表格行。&lt;/li&gt;&lt;li&gt;列于列之间用管道符&lt;code&gt;|&lt;/code&gt;隔开。原生方式的表格每一行的两边也要有管道符。&lt;/li&gt;&lt;li&gt;第二行还可以为不同的列指定对齐方向。默认为左对齐, 在&lt;code&gt;-&lt;/code&gt;右边加上&lt;code&gt;:&lt;/code&gt;就右对齐。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;简单方式:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;诗名|作者|朝代
+-|-|-
+白头吟|卓文君|两汉
+锦瑟|李商隐|唐代
+登科后|孟郊|唐代
+&lt;/code&gt;&lt;/pre&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;诗名&lt;/th&gt;&lt;th&gt;作者&lt;/th&gt;&lt;th&gt;朝代&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;白头吟&lt;/td&gt;&lt;td&gt;卓文君&lt;/td&gt;&lt;td&gt;两汉&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;锦瑟&lt;/td&gt;&lt;td&gt;李商隐&lt;/td&gt;&lt;td&gt;唐代&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;登科后&lt;/td&gt;&lt;td&gt;孟郊&lt;/td&gt;&lt;td&gt;唐代&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;原生方式:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;|诗名|作者|朝代|
+|-|-|-|
+|白头吟|卓文君|两汉|
+|锦瑟|李商隐|唐代|
+|登科后|孟郊|唐代|
+&lt;/code&gt;&lt;/pre&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;诗名&lt;/th&gt;&lt;th&gt;作者&lt;/th&gt;&lt;th&gt;朝代&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;白头吟&lt;/td&gt;&lt;td&gt;卓文君&lt;/td&gt;&lt;td&gt;两汉&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;锦瑟&lt;/td&gt;&lt;td&gt;李商隐&lt;/td&gt;&lt;td&gt;唐代&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;登科后&lt;/td&gt;&lt;td&gt;孟郊&lt;/td&gt;&lt;td&gt;唐代&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;为表格第二列指定方向:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;诗名|名句
+-|-:
+梦微之|君埋泉下泥销骨。
+上邪|上邪，我欲与君相知，长命无绝衰。
+&lt;/code&gt;&lt;/pre&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;诗名&lt;/th&gt;&lt;th align=&quot;right&quot;&gt;名句&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;梦微之&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;君埋泉下泥销骨。&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;上邪&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;上邪，我欲与君相知，长命无绝衰。&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h2&gt;代码&lt;/h2&gt;&lt;p&gt;对于程序员来说这个功能是必不可少的, 插入程序代码的方式有两种, 一种是利用缩进(Tab), 另一种是利用 &amp;quot;`&amp;quot; 符号(一般在ESC键下方)包裹代码。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;插入行内代码, 即插入一个单词或者一句代码的情况，使用 `code` 这样的形式插入。&lt;/li&gt;&lt;li&gt;插入多行代码, 可以使用缩进或者 ``` code ```, 具体看示例。&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;代码行内式&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;PHP打印堆栈信息 `debug_backtrace()`。
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&lt;p&gt;PHP打印堆栈信息 &lt;code&gt;debug_backtrace()&lt;/code&gt;。&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;缩进式多行代码&lt;/h3&gt;&lt;p&gt;缩进 4 个空格或是 1 个制表符。&lt;/p&gt;&lt;p&gt;一个代码区块会一直持续到没有缩进的那一行(或是文件结尾)。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;    $closure = function () use($name) {
+      return $name;
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;$closure = function () use($name) {
+  return $name;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;用六个 ` 包裹多行代码&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;```php
+$closure = function () use($name) {
+  return $name;
+}
+` ``
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;$closure = function () use($name) {
+  return $name;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;HTML 原始码&lt;/h3&gt;&lt;p&gt;在代码区块里面, &lt;code&gt;&amp;amp;&lt;/code&gt; 、 &lt;code&gt;&amp;lt;&lt;/code&gt; 和 &lt;code&gt;&amp;gt;&lt;/code&gt; 会自动转成 HTML 实体, 这样的方式让你非常容易使用 Markdown 插入范例用的 HTML 原始码, 只需要复制贴上, 剩下的 Markdown 都会帮你处理，例如:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;table&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;th rowspan=&amp;quot;2&amp;quot;&amp;gt;值班人员&amp;lt;/th&amp;gt;
+        &amp;lt;th&amp;gt;星期一&amp;lt;/th&amp;gt;
+        &amp;lt;th&amp;gt;星期二&amp;lt;/th&amp;gt;
+        &amp;lt;th&amp;gt;星期三&amp;lt;/th&amp;gt;
+    &amp;lt;/tr&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;td&amp;gt;李强&amp;lt;/td&amp;gt;
+        &amp;lt;td&amp;gt;张明&amp;lt;/td&amp;gt;
+        &amp;lt;td&amp;gt;王平&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;table&gt;&lt;tr&gt;&lt;th rowspan=&quot;2&quot;&gt;值班人员&lt;/th&gt;&lt;th&gt;星期一&lt;/th&gt;&lt;th&gt;星期二&lt;/th&gt;&lt;th&gt;星期三&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;李强&lt;/td&gt;&lt;td&gt;张明&lt;/td&gt;&lt;td&gt;王平&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;内容目录&lt;/h3&gt;&lt;p&gt;在段落中填写 &lt;code&gt;[TOC]&lt;/code&gt; 以显示全文内容的目录结构。&lt;/p&gt;&lt;h2&gt;注脚&lt;/h2&gt;&lt;p&gt;在需要添加注脚的文字后加上脚注名字&lt;code&gt;[^注脚名字]&lt;/code&gt;, 称为加注。 然后在文本的任意位置(一般在最后)添加脚注, 脚注前必须有对应的脚注名字。&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2]。
+
+[^1]: Markdown 是一种纯文本标记语言
+
+[^2]: HyperText Markup Language 超文本标记语言
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;PS: github 不支持注脚 :joy:&lt;/p&gt;&lt;h2&gt;LaTeX 公式&lt;/h2&gt;&lt;h3&gt;$ 表示行内公式&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;质能守恒方程可以用一个很简洁的方程式 &lt;img src=&quot;https://latex.codecogs.com/gif.latex?E=mc%5E2&quot;/&gt; 来表达。&lt;/p&gt;&lt;h3&gt;$$ 表示整行公式&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;$$\sum_{i=1}^n a_i=0$$
+$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
+$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;PS: github 不支持 LaTeX 公式, 但是有个折中的解决方案, 使用 codecogs, 例如:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;![](https://latex.codecogs.com/gif.latex?sum_{i=1}^n%20a_i=0)
+![](https://latex.codecogs.com/gif.latex?f\(x_1,x_x,\ldots,x_n\)%20=%20x_1^2%20+%20x_2^2%20+%20\cdots%20+%20x_n^2%20)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;https://latex.codecogs.com/gif.latex?sum_%7Bi=1%7D%5En%20a_i=0&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://latex.codecogs.com/gif.latex?f(x_1,x_x,%5Cldots,x_n)%20=%20x_1%5E2%20+%20x_2%5E2%20+%20%5Ccdots%20+%20x_n%5E2%20&quot;/&gt;&lt;/p&gt;&lt;h2&gt;流程图&lt;/h2&gt;&lt;p&gt;流程图大致分为两段, 第一段是定义元素, 第二段是定义元素之间的走向。&lt;/p&gt;&lt;p&gt;定义元素的语法 &lt;code&gt;tag=&amp;gt;type: content:&amp;gt;url&lt;/code&gt;。&lt;/p&gt;&lt;ul&gt;&lt;li&gt;tag就是元素名字。&lt;/li&gt;&lt;li&gt;type是这个元素的类型, 有6中类型,分别为:&lt;/li&gt;&lt;/ul&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;type&lt;/th&gt;&lt;th&gt;含义&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;start&lt;/td&gt;&lt;td&gt;开始&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;end&lt;/td&gt;&lt;td&gt;结束&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;operation&lt;/td&gt;&lt;td&gt;操作&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;subroutine&lt;/td&gt;&lt;td&gt;子程序&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;condition&lt;/td&gt;&lt;td&gt;条件&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;inputoutput&lt;/td&gt;&lt;td&gt;输入或产出&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;content 就是在框框中要写的内容, 注意type后的冒号与文本之间一定要有个空格。&lt;/p&gt;&lt;p&gt;用&lt;code&gt;-&amp;gt;&lt;/code&gt;来连接两个元素, 需要注意的是condition类型, 因为他有yes和no两个分支, 所以要写成:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;c2(yes)-&amp;gt;io-&amp;gt;e
+c2(no)-&amp;gt;op2-&amp;gt;e
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;```flow
+st=&amp;gt;start: Start:&amp;gt;https://www.markdown-syntax.com
+io=&amp;gt;inputoutput: verification
+op=&amp;gt;operation: Your Operation
+cond=&amp;gt;condition: Yes or No?
+sub=&amp;gt;subroutine: Your Subroutine
+e=&amp;gt;end
+st-&amp;gt;io-&amp;gt;op-&amp;gt;cond
+cond(yes)-&amp;gt;e
+cond(no)-&amp;gt;sub-&amp;gt;io
+` ``
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;https://cdoco.com/images/flow.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;PS: github 不支持流程图 :joy:&lt;/p&gt;&lt;h2&gt;时序图&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;```sequence
+Alice-&amp;gt;Bob: Hello Bob, how are you ?
+Note right of Bob: Bob thinks
+Bob--&amp;gt;Alice: I am good thanks!
+` ``
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;https://cdoco.com/images/sequence.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;PS: github 不支持时序图 :joy:&lt;/p&gt;&lt;h2&gt;待办事宜列表&lt;/h2&gt;&lt;p&gt;使用带有 &lt;code&gt;[ ]&lt;/code&gt; 或 &lt;code&gt;[x]&lt;/code&gt; (未完成或已完成)项的列表语法撰写一个待办事宜列表, 例如:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-markdown&quot;&gt;* [ ] 早起跑步
+* [x] 看书
+&lt;/code&gt;&lt;/pre&gt;&lt;ul class=&quot;contains-task-list&quot;&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; disabled=&quot;&quot;/&gt; 早起跑步&lt;/li&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; 看书&lt;/li&gt;&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[eva]]></title><description><![CDATA[EVA 一款因作者需求而生的一款极简风谷歌扩展! 扩展商店地址 
  logo作者 Peter Qian(钱学毅) 功能 时间戳转换 图片转base64 base64转图片 字符串编解码(md5, base6…]]></description><link>https://www.abellee.cn/5/1/2021/eva/</link><guid isPermaLink="false">https://www.abellee.cn/5/1/2021/eva/</guid><pubDate>Sat, 01 May 2021 02:21:34 GMT</pubDate><content:encoded>&lt;h1&gt;&lt;a href=&quot;https://github.com/abelleeye/eva&quot;&gt;EVA&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;一款因作者需求而生的一款极简风谷歌扩展!&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/eva/dcjhacinagjbejleicefnpcnbeffhihi&quot;&gt;扩展商店地址&lt;/a&gt;
 &lt;img src=&quot;https://github.com/abelleeye/eva/raw/master/image/eva_store_pic.png&quot; alt=&quot;商店&quot;/&gt;&lt;/p&gt;&lt;h1&gt;logo作者&lt;/h1&gt;&lt;p&gt;Peter Qian(钱学毅)&lt;/p&gt;&lt;h1&gt;功能&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;时间戳转换&lt;/li&gt;&lt;li&gt;图片转base64&lt;/li&gt;&lt;li&gt;base64转图片&lt;/li&gt;&lt;li&gt;字符串编解码(md5, base64)&lt;/li&gt;&lt;/ul&gt;&lt;h1&gt;使用方法&lt;/h1&gt;&lt;p&gt;直接点击扩展图标会弹出主页面&lt;/p&gt;&lt;h1&gt;页面截图&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://github.com/abelleeye/eva/raw/master/image/eva_page.png&quot; alt=&quot;页面截图&quot;/&gt;&lt;/p&gt;&lt;h1&gt;离线安装方法&lt;/h1&gt;&lt;ol&gt;&lt;li&gt;&lt;code&gt;yarn&lt;/code&gt; 安装依赖&lt;/li&gt;&lt;li&gt;&lt;code&gt;yarn dev&lt;/code&gt; 将编译好的 build 文件夹拖拽进谷歌浏览器中。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;你也可以直接在Releases直接下载最新的zip包，解压后直接将文件夹拖拽到chrome扩展页面。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[aliyun_ddns]]></title><description><![CDATA[DDNS aliyun ddns 基于openjdk11开发 Feature 多主域名解析 多主机记录解析 任务轮询间隔可配置 当解析主机记录未设置过，自动创建 异步线程同时解析 jsonip.com低延迟获取公网IP docker-compose…]]></description><link>https://www.abellee.cn/3/8/2021/aliyun_ddns/</link><guid isPermaLink="false">https://www.abellee.cn/3/8/2021/aliyun_ddns/</guid><pubDate>Mon, 08 Mar 2021 06:58:20 GMT</pubDate><content:encoded>&lt;h1&gt;&lt;a href=&quot;https://github.com/AbelLee-LiYe/ddns&quot;&gt;DDNS&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;aliyun ddns&lt;/p&gt;&lt;p&gt;基于openjdk11开发&lt;/p&gt;&lt;h2&gt;Feature&lt;/h2&gt;&lt;ul class=&quot;contains-task-list&quot;&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; 多主域名解析&lt;/li&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; 多主机记录解析&lt;/li&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; 任务轮询间隔可配置&lt;/li&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; 当解析主机记录未设置过，自动创建&lt;/li&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; 异步线程同时解析&lt;/li&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; jsonip.com低延迟获取公网IP&lt;/li&gt;&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;/&gt; docker-compose一键启动&lt;/li&gt;&lt;/ul&gt;&lt;h2&gt;安装&lt;/h2&gt;&lt;h2&gt;配置&lt;/h2&gt;&lt;p&gt;accessKeyId 和 secret 获取方式： 阿里云 -&amp;gt; 控制台 -&amp;gt; 右上角头像 -&amp;gt; AccessKey 管理&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;language-json5&quot;&gt;{
   &amp;quot;regionId&amp;quot;: &amp;quot;cn-hangzhou&amp;quot;,  //可用区域
