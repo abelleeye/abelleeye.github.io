@@ -28,7 +28,9 @@
 <url> <loc>https://www.abellee.cn/7/6/2021/其实除了梧桐_其它什么都没有/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/3/3/2022/CompleteSuicideManual/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/4/14/2022/brew_change_source/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.abellee.cn/5/5/2022/何时使用引用参数/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/tags/chrome</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.abellee.cn/tags/cpp</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/tags/css</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/tags/essay</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/tags/html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -44,6 +46,7 @@
 <url> <loc>https://www.abellee.cn/tags/设计模式</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/tags/诗</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/categories/chrome</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.abellee.cn/categories/cpp</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/categories/essay</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/categories/html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/categories/java</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
