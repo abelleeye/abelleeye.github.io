@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed]]></title><description><![CDATA[不会写代码，也不会打人马。]]></description><link>https://www.abellee.cn</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 28 Sep 2022 16:57:16 GMT</lastBuildDate><item><title><![CDATA[Caffe DetectionOutput Layer Python Version]]></title><link>https://www.abellee.cn/2022/09/28/Caffe_DetectionOutput_layer_python_version/</link><guid isPermaLink="false">https://www.abellee.cn/2022/09/28/Caffe_DetectionOutput_layer_python_version/</guid><pubDate>Wed, 28 Sep 2022 16:28:00 GMT</pubDate><content:encoded>&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import cv2
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed]]></title><description><![CDATA[不会写代码，也不会打人马。]]></description><link>https://www.abellee.cn</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 28 Sep 2022 17:01:01 GMT</lastBuildDate><item><title><![CDATA[Caffe DetectionOutput Layer Python Version]]></title><link>https://www.abellee.cn/2022/09/28/Caffe_DetectionOutput_layer_python_version/</link><guid isPermaLink="false">https://www.abellee.cn/2022/09/28/Caffe_DetectionOutput_layer_python_version/</guid><pubDate>Wed, 28 Sep 2022 16:28:00 GMT</pubDate><content:encoded>&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;import cv2
 import caffe
 import numpy as np
 import math
@@ -422,8 +422,8 @@ def detection_out(mreshape_loc, mbox_conf_flatten, reshape_priorbox):
 
 
 if __name__ == &amp;#x27;__main__&amp;#x27;:
-    coco_net = caffe.Net(&amp;#x27;VGG_coco_SSD_512x512_iter_360000_ali_cut.prototxt&amp;#x27;, # Cut Detection Output Layer
-                         &amp;#x27;VGG_coco_SSD_512x512_iter_360000_ali_cut.caffemodel&amp;#x27;, caffe.TEST)
+    coco_net = caffe.Net(&amp;#x27;VGG_coco_SSD_512x512_iter_360000_without_detection_output.prototxt&amp;#x27;, # Cut Detection Output Layer
+                         &amp;#x27;VGG_coco_SSD_512x512_iter_360000_without_detection_output.caffemodel&amp;#x27;, caffe.TEST)
 
     image_path = &amp;#x27;ssd.jpg&amp;#x27;
     img = cv2.imread(image_path)
