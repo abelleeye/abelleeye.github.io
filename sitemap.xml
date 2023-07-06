@@ -30,8 +30,10 @@
 <url> <loc>https://www.abellee.cn/2022/04/14/brew_change_source/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/2022/05/05/何时使用引用参数/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/2022/09/28/Caffe_DetectionOutput_layer_python_version/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.abellee.cn/2023/07/06/始于秋末的人生旅途/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/2023/07/15/容/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/tags/algorithm</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.abellee.cn/tags/abel</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/tags/chrome</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/tags/cpp</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/tags/css</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -49,6 +51,7 @@
 <url> <loc>https://www.abellee.cn/tags/设计模式</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/tags/诗</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/categories/algorithm</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.abellee.cn/categories/abel</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/categories/chrome</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/categories/cpp</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.abellee.cn/categories/essay</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
