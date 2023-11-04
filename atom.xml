@@ -1,4 +1,1480 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed]]></title><description><![CDATA[不会写代码，也不会打人马。]]></description><link>https://www.abellee.cn</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 Oct 2023 17:29:10 GMT</lastBuildDate><item><title><![CDATA[风未起，时影]]></title><description><![CDATA[…]]></description><link>https://www.abellee.cn/2023/07/27/风未起，时影/</link><guid isPermaLink="false">https://www.abellee.cn/2023/07/27/风未起，时影/</guid><pubDate>Thu, 27 Jul 2023 21:44:00 GMT</pubDate><content:encoded>&lt;h1&gt;第一章&lt;/h1&gt;&lt;p&gt;周日的下午无所事事，看阳光不错就打算出门随意走走。 &lt;/p&gt;&lt;p&gt;接近深秋，杭州的天气已经相当冷了，出门前特意带上朋友上次来杭州送我的围巾，倒不是觉得很需要带这个东西，只是觉得戴上心里会暖和一些。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed]]></title><description><![CDATA[不会写代码，也不会打人马。]]></description><link>https://www.abellee.cn</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Nov 2023 08:38:38 GMT</lastBuildDate><item><title><![CDATA[Nvidia 4070Ti cuda report]]></title><description><![CDATA[asyncAPI bandwidthTest batchCUBLAS bf16TensorCoreGemm binaryPartitionCG binomialOptions binomialOptions_nvrtc BlackScholes BlackScholes…]]></description><link>https://www.abellee.cn/2023/11/04/nvidia_4070TI_cuda_report/</link><guid isPermaLink="false">https://www.abellee.cn/2023/11/04/nvidia_4070TI_cuda_report/</guid><pubDate>Sat, 04 Nov 2023 16:04:00 GMT</pubDate><content:encoded>&lt;h1&gt;asyncAPI&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[./asyncAPI] - Starting...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+CUDA device [NVIDIA GeForce RTX 4070 Ti]
+time spent executing by the GPU: 5.63
+time spent by CPU in CUDA calls: 2.81
+CPU executed 48686 iterations while waiting for GPU to finish
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;bandwidthTest&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[CUDA Bandwidth Test] - Starting...
+Running on...
+
+ Device 0: NVIDIA GeForce RTX 4070 Ti
+ Quick Mode
+
+ Host to Device Bandwidth, 1 Device(s)
+ PINNED Memory Transfers
+   Transfer Size (Bytes)    Bandwidth(GB/s)
+   32000000         24.0
+
+ Device to Host Bandwidth, 1 Device(s)
+ PINNED Memory Transfers
+   Transfer Size (Bytes)    Bandwidth(GB/s)
+   32000000         26.3
+
+ Device to Device Bandwidth, 1 Device(s)
+ PINNED Memory Transfers
+   Transfer Size (Bytes)    Bandwidth(GB/s)
+   32000000         457.7
+
+Result = PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;batchCUBLAS&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;batchCUBLAS Starting...
+
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+
+ ==== Running single kernels ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=128 n=128 k=128  alpha = (0xbf800000, -1) beta= (0x40000000, 2)
+#### args: lda=128 ldb=128 ldc=128
+^^^^ elapsed = 0.00437307 sec  GFLOPS=0.95912
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=128 n=128 k=128  alpha = (0x0000000000000000, 0) beta= (0x0000000000000000, 0)
+#### args: lda=128 ldb=128 ldc=128
+^^^^ elapsed = 0.00002599 sec  GFLOPS=161.396
+@@@@ dgemm test OK
+
+ ==== Running N=10 without streams ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=128 n=128 k=128  alpha = (0xbf800000, -1) beta= (0x00000000, 0)
+#### args: lda=128 ldb=128 ldc=128
+^^^^ elapsed = 0.00005698 sec  GFLOPS=736.075
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=128 n=128 k=128  alpha = (0xbff0000000000000, -1) beta= (0x0000000000000000, 0)
+#### args: lda=128 ldb=128 ldc=128
+^^^^ elapsed = 0.00040507 sec  GFLOPS=103.544
+@@@@ dgemm test OK
+
+ ==== Running N=10 with streams ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=128 n=128 k=128  alpha = (0x40000000, 2) beta= (0x40000000, 2)
+#### args: lda=128 ldb=128 ldc=128
+^^^^ elapsed = 0.00006294 sec  GFLOPS=666.371
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=128 n=128 k=128  alpha = (0xbff0000000000000, -1) beta= (0x0000000000000000, 0)
+#### args: lda=128 ldb=128 ldc=128
+^^^^ elapsed = 0.00009298 sec  GFLOPS=451.082
+@@@@ dgemm test OK
+
+ ==== Running N=10 batched ==== 
+
+Testing sgemm
+#### args: ta=0 tb=0 m=128 n=128 k=128  alpha = (0x3f800000, 1) beta= (0xbf800000, -1)
+#### args: lda=128 ldb=128 ldc=128
+^^^^ elapsed = 0.00007200 sec  GFLOPS=582.523
+@@@@ sgemm test OK
+Testing dgemm
+#### args: ta=0 tb=0 m=128 n=128 k=128  alpha = (0xbff0000000000000, -1) beta= (0x4000000000000000, 2)
+#### args: lda=128 ldb=128 ldc=128
+^^^^ elapsed = 0.00043511 sec  GFLOPS=96.3955
+@@@@ dgemm test OK
+
+Test Summary
+0 error(s)
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;bf16TensorCoreGemm&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Initializing...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+M: 8192 (16 x 512)
+N: 8192 (16 x 512)
+K: 8192 (16 x 512)
+Preparing data for GPU...
+Required shared memory size: 72 Kb
+Computing using high performance kernel = 0 - compute_bf16gemm_async_copy
+Time: 20.165665 ms
+TFLOPS: 54.52
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;binaryPartitionCG&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+
+Launching 120 blocks with 768 threads...
+
+Array size = 102400 Num of Odds = 50945 Sum of Odds = 1272565 Sum of Evens 1233938
+
+...Done.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;binomialOptions&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[./binomialOptions] - Starting...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Generating input data...
+Running GPU binomial tree...
+Options count            : 1024     
+Time steps               : 2048     
+binomialOptionsGPU() time: 0.640000 msec
+Options per second       : 1600000.035763     
+Running CPU binomial tree...
+Comparing the results...
+GPU binomial vs. Black-Scholes
+L1 norm: 2.220214E-04
+CPU binomial vs. Black-Scholes
+L1 norm: 2.220922E-04
+CPU binomial vs. GPU binomial
+L1 norm: 7.997008E-07
+Shutting down...
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+
+Test passed
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;binomialOptions_nvrtc&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[./binomialOptions_nvrtc] - Starting...
+Generating input data...
+Running GPU binomial tree...
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; GPU Device has SM 8.9 compute capability
+Options count            : 1024     
+Time steps               : 2048     
+binomialOptionsGPU() time: 142.667007 msec
+Options per second       : 7177.552949     
+Running CPU binomial tree...
+Comparing the results...
+GPU binomial vs. Black-Scholes
+L1 norm: 2.216577E-04
+CPU binomial vs. Black-Scholes
+L1 norm: 9.435265E-05
+CPU binomial vs. GPU binomial
+L1 norm: 1.513570E-04
+Shutting down...
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+
+Test passed
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;BlackScholes&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[./BlackScholes] - Starting...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Initializing data...
+...allocating CPU memory for options.
+...allocating GPU memory for options.
+...generating input data in CPU mem.
+...copying input data to GPU mem.
+Data init done.
+
+Executing Black-Scholes GPU kernel (512 iterations)...
+Options count             : 8000000     
+BlackScholesGPU() time    : 0.180459 msec
+Effective memory bandwidth: 443.314048 GB/s
+Gigaoptions per second    : 44.331405     
+
+BlackScholes, Throughput = 44.3314 GOptions/s, Time = 0.00018 s, Size = 8000000 options, NumDevsUsed = 1, Workgroup = 128
+
+Reading back GPU results...
+Checking the results...
+...running CPU calculations.
+
+Comparing the results...
+L1 norm: 1.741792E-07
+Max absolute error: 1.192093E-05
+
+Shutting down...
+...releasing GPU memory.
+...releasing CPU memory.
+Shutdown done.
+
+[BlackScholes] - Test Summary
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+
+Test passed
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;BlackScholes_nvrtc&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[./BlackScholes_nvrtc] - Starting...
+Initializing data...
+...allocating CPU memory for options.
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; GPU Device has SM 8.9 compute capability
+...allocating GPU memory for options.
+...generating input data in CPU mem.
+...copying input data to GPU mem.
+Data init done.
+
+Executing Black-Scholes GPU kernel (512 iterations)...
+Options count             : 8000000     
+BlackScholesGPU() time    : 0.180770 msec
+Effective memory bandwidth: 442.552452 GB/s
+Gigaoptions per second    : 44.255245     
+
+BlackScholes, Throughput = 44.2552 GOptions/s, Time = 0.00018 s, Size = 8000000 options, NumDevsUsed = 1, Workgroup = 128
+
+Reading back GPU results...
+Checking the results...
+...running CPU calculations.
+
+Comparing the results...
+L1 norm: 1.741792E-07
+Max absolute error: 1.192093E-05
+
+Shutting down...
+...releasing GPU memory.
+...releasing CPU memory.
+Shutdown done.
+
+[./BlackScholes_nvrtc] - Test Summary
+Test passed
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;c++11_cuda&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Read 3223503 byte corpus from ../../../../Samples/0_Introduction/c++11_cuda/warandpeace.txt
+counted 107310 instances of &amp;#x27;x&amp;#x27;, &amp;#x27;y&amp;#x27;, &amp;#x27;z&amp;#x27;, or &amp;#x27;w&amp;#x27; in &amp;quot;../../../../Samples/0_Introduction/c++11_cuda/warandpeace.txt&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;cdpAdvancedQuicksort&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+GPU device NVIDIA GeForce RTX 4070 Ti has compute capabilities (SM 8.9)
+Running qsort on 1000000 elements with seed 0, on NVIDIA GeForce RTX 4070 Ti
+    cdpAdvancedQuicksort PASSED
+Sorted 1000000 elems in 5.871 ms (170.341 Melems/sec)
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;cdpBezierTessellation&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Running on GPU 0 (NVIDIA GeForce RTX 4070 Ti)
+Computing Bezier Lines (CUDA Dynamic Parallelism Version) ... Done!
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;cdpQuadtree&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+GPU device NVIDIA GeForce RTX 4070 Ti has compute capabilities (SM 8.9)
+Launching CDP kernel to build the quadtree
+Results: OK
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;cdpSimplePrint&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;starting Simple Print (CUDA Dynamic Parallelism)
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+***************************************************************************
+The CPU launches 2 blocks of 2 threads each. On the device each thread will
+launch 2 blocks of 2 threads each. The GPU we will do that recursively
+until it reaches max_depth=2
+
+In total 2+8=10 blocks are launched!!! (8 from the GPU)
+***************************************************************************
+
+Launching cdp_kernel() with CUDA Dynamic Parallelism:
+
+BLOCK 0 launched by the host
+BLOCK 1 launched by the host
+|  BLOCK 2 launched by thread 0 of block 0
+|  BLOCK 4 launched by thread 0 of block 1
+|  BLOCK 3 launched by thread 0 of block 0
+|  BLOCK 5 launched by thread 0 of block 1
+|  BLOCK 6 launched by thread 1 of block 0
+|  BLOCK 7 launched by thread 1 of block 0
+|  BLOCK 8 launched by thread 1 of block 1
+|  BLOCK 9 launched by thread 1 of block 1
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;cdpSimpleQuicksort&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Initializing data:
+Running quicksort on 128 elements
+Launching kernel on the GPU
+Validating results: OK
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;clock&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;CUDA Clock sample
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Average clocks/block = 2276.953125
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;clock_nvrtc&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;CUDA Clock sample
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; GPU Device has SM 8.9 compute capability
+Average clocks/block = 2316.890625
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;concurrentKernels&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[./concurrentKernels] - Starting...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+&amp;gt; Detected Compute SM 8.9 hardware with 60 multi-processors
+Expected time for serial execution of 8 kernels = 0.080s
+Expected time for concurrent execution of 8 kernels = 0.010s
+Measured time for sample = 0.010s
+Test passed
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;conjugateGradientMultiDeviceCG&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Starting [conjugateGradientMultiDeviceCG]...
+GPU Device 0: &amp;quot;NVIDIA GeForce RTX 4070 Ti&amp;quot; with compute capability 8.9
+No two or more GPUs with same architecture capable of concurrentManagedAccess found. 
+Waiving the sample
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;convolutionFFT2D&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[./convolutionFFT2D] - Starting...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Testing built-in R2C / C2R FFT-based convolution
+...allocating memory
+...generating random input data
+...creating R2C &amp;amp; C2R FFT plans for 2048 x 2048
+...uploading to GPU and padding convolution kernel and input data
+...transforming convolution kernel
+...running GPU FFT convolution: 20100.502416 MPix/s (0.199000 ms)
+...reading back GPU convolution results
+...running reference CPU convolution
+...comparing the results: rel L2 = 9.395370E-08 (max delta = 1.208283E-06)
+L2norm Error OK
+...shutting down
+Testing custom R2C / C2R FFT-based convolution
+...allocating memory
+...generating random input data
+...creating C2C FFT plan for 2048 x 1024
+...uploading to GPU and padding convolution kernel and input data
+...transforming convolution kernel
+...running GPU FFT convolution: 14760.147718 MPix/s (0.271000 ms)
+...reading back GPU FFT results
+...running reference CPU convolution
+...comparing the results: rel L2 = 1.067915E-07 (max delta = 9.817303E-07)
+L2norm Error OK
+...shutting down
+Testing updated custom R2C / C2R FFT-based convolution
+...allocating memory
+...generating random input data
+...creating C2C FFT plan for 2048 x 1024
+...uploading to GPU and padding convolution kernel and input data
+...transforming convolution kernel
+...running GPU FFT convolution: 25477.706155 MPix/s (0.157000 ms)
+...reading back GPU FFT results
+...running reference CPU convolution
+...comparing the results: rel L2 = 1.065127E-07 (max delta = 9.817303E-07)
+L2norm Error OK
+...shutting down
+Test Summary: 0 errors
+Test passed
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;cppIntegration&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Hello World.
+Hello World.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;cppOverload&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;C++ Function Overloading starting...
+Device Count: 1
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Shared Size:   1024
+Constant Size: 0
+Local Size:    0
+Max Threads Per Block: 1024
+Number of Registers: 12
+PTX Version: 89
+Binary Version: 89
+simple_kernel(const int *pIn, int *pOut, int a) PASSED
+
+Shared Size:   2048
+Constant Size: 0
+Local Size:    0
+Max Threads Per Block: 1024
+Number of Registers: 12
+PTX Version: 89
+Binary Version: 89
+simple_kernel(const int2 *pIn, int *pOut, int a) PASSED
+
+Shared Size:   2048
+Constant Size: 0
+Local Size:    0
+Max Threads Per Block: 1024
+Number of Registers: 16
+PTX Version: 89
+Binary Version: 89
+simple_kernel(const int *pIn1, const int *pIn2, int *pOut, int a) PASSED
+
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;cudaCompressibleMemory&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Generic memory compression support is available
+Running saxpy on 167772160 bytes of Compressible memory
+Running saxpy with 120 blocks x 768 threads = 0.188 ms 2.671 TB/s
+Running saxpy on 167772160 bytes of Non-Compressible memory
+Running saxpy with 120 blocks x 768 threads = 1.164 ms 0.432 TB/s
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;cudaOpenMP&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./cudaOpenMP Starting...
+
+number of host CPUs:    20
+number of CUDA devices: 1
+   0: NVIDIA GeForce RTX 4070 Ti
+---------------------------
+CPU thread 0 (of 1) uses CUDA device 0
+---------------------------
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;cudaTensorCoreGemm&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Initializing...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+M: 4096 (16 x 256)
+N: 4096 (16 x 256)
+K: 4096 (16 x 256)
+Preparing data for GPU...
+Required shared memory size: 64 Kb
+Computing... using high performance kernel compute_gemm 
+Time: 2.207872 ms
+TFLOPS: 62.25
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;deviceQuery&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./deviceQuery Starting...
+
+ CUDA Device Query (Runtime API) version (CUDART static linking)
+
+Detected 1 CUDA Capable device(s)
+
+Device 0: &amp;quot;NVIDIA GeForce RTX 4070 Ti&amp;quot;
+  CUDA Driver Version / Runtime Version          12.2 / 12.1
+  CUDA Capability Major/Minor version number:    8.9
+  Total amount of global memory:                 11976 MBytes (12557942784 bytes)
+  (060) Multiprocessors, (128) CUDA Cores/MP:    7680 CUDA Cores
+  GPU Max Clock rate:                            2730 MHz (2.73 GHz)
+  Memory Clock rate:                             10501 Mhz
+  Memory Bus Width:                              192-bit
+  L2 Cache Size:                                 50331648 bytes
+  Maximum Texture Dimension Size (x,y,z)         1D=(131072), 2D=(131072, 65536), 3D=(16384, 16384, 16384)
+  Maximum Layered 1D Texture Size, (num) layers  1D=(32768), 2048 layers
+  Maximum Layered 2D Texture Size, (num) layers  2D=(32768, 32768), 2048 layers
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total shared memory per multiprocessor:        102400 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per multiprocessor:  1536
+  Maximum number of threads per block:           1024
+  Max dimension size of a thread block (x,y,z): (1024, 1024, 64)
+  Max dimension size of a grid size    (x,y,z): (2147483647, 65535, 65535)
+  Maximum memory pitch:                          2147483647 bytes
+  Texture alignment:                             512 bytes
+  Concurrent copy and kernel execution:          Yes with 2 copy engine(s)
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support:                        Disabled
+  Device supports Unified Addressing (UVA):      Yes
+  Device supports Managed Memory:                Yes
+  Device supports Compute Preemption:            Yes
+  Supports Cooperative Kernel Launch:            Yes
+  Supports MultiDevice Co-op Kernel Launch:      Yes
+  Device PCI Domain ID / Bus ID / location ID:   0 / 1 / 0
+  Compute Mode:
+     &amp;lt; Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) &amp;gt;
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 12.2, CUDA Runtime Version = 12.1, NumDevs = 1
+Result = PASS
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;deviceQueryDrv&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./deviceQueryDrv Starting...
+
+CUDA Device Query (Driver API) statically linked version 
+Detected 1 CUDA Capable device(s)
+
+Device 0: &amp;quot;NVIDIA GeForce RTX 4070 Ti&amp;quot;
+  CUDA Driver Version:                           12.2
+  CUDA Capability Major/Minor version number:    8.9
+  Total amount of global memory:                 11976 MBytes (12557942784 bytes)
+  (60) Multiprocessors, (128) CUDA Cores/MP:     7680 CUDA Cores
+  GPU Max Clock rate:                            2730 MHz (2.73 GHz)
+  Memory Clock rate:                             10501 Mhz
+  Memory Bus Width:                              192-bit
+  L2 Cache Size:                                 50331648 bytes
+  Max Texture Dimension Sizes                    1D=(131072) 2D=(131072, 65536) 3D=(16384, 16384, 16384)
+  Maximum Layered 1D Texture Size, (num) layers  1D=(32768), 2048 layers
+  Maximum Layered 2D Texture Size, (num) layers  2D=(32768, 32768), 2048 layers
+  Total amount of constant memory:               65536 bytes
+  Total amount of shared memory per block:       49152 bytes
+  Total number of registers available per block: 65536
+  Warp size:                                     32
+  Maximum number of threads per multiprocessor:  1536
+  Maximum number of threads per block:           1024
+  Max dimension size of a thread block (x,y,z): (1024, 1024, 64)
+  Max dimension size of a grid size (x,y,z):    (2147483647, 65535, 65535)
+  Texture alignment:                             512 bytes
+  Maximum memory pitch:                          2147483647 bytes
+  Concurrent copy and kernel execution:          Yes with 2 copy engine(s)
+  Run time limit on kernels:                     Yes
+  Integrated GPU sharing Host Memory:            No
+  Support host page-locked memory mapping:       Yes
+  Concurrent kernel execution:                   Yes
+  Alignment requirement for Surfaces:            Yes
+  Device has ECC support:                        Disabled
+  Device supports Unified Addressing (UVA):      Yes
+  Device supports Managed Memory:                Yes
+  Device supports Compute Preemption:            Yes
+  Supports Cooperative Kernel Launch:            Yes
+  Supports MultiDevice Co-op Kernel Launch:      Yes
+  Device PCI Domain ID / Bus ID / location ID:   0 / 1 / 0
+  Compute Mode:
+     &amp;lt; Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) &amp;gt;
+Result = PASS
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;dmmaTensorCoreGemm&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Initializing...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+M: 8192 (8 x 1024)
+N: 8192 (8 x 1024)
+K: 4096 (4 x 1024)
+Preparing data for GPU...
+Required shared memory size: 68 Kb
+Computing using high performance kernel = 0 - compute_dgemm_async_copy
+Time: 942.316528 ms
+FP64 TFLOPS: 0.58
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;dwtHaar1D&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./dwtHaar1D Starting...
+
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+source file    = &amp;quot;../../../../Samples/5_Domain_Specific/dwtHaar1D/data/signal.dat&amp;quot;
+reference file = &amp;quot;result.dat&amp;quot;
+gold file      = &amp;quot;../../../../Samples/5_Domain_Specific/dwtHaar1D/data/regression.gold.dat&amp;quot;
+Reading signal from &amp;quot;../../../../Samples/5_Domain_Specific/dwtHaar1D/data/signal.dat&amp;quot;
+Writing result to &amp;quot;result.dat&amp;quot;
+Reading reference result from &amp;quot;../../../../Samples/5_Domain_Specific/dwtHaar1D/data/regression.gold.dat&amp;quot;
+Test success!
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;dxtc&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./dxtc Starting...
+
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Image Loaded &amp;#x27;../../../../Samples/5_Domain_Specific/dxtc/data/teapot512_std.ppm&amp;#x27;, 512 x 512 pixels
+
+Running DXT Compression on 512 x 512 image...
+
+16384 Blocks, 64 Threads per Block, 1048576 Threads in Grid...
+
+dxtc, Throughput = 530.6559 MPixels/s, Time = 0.00049 s, Size = 262144 Pixels, NumDevsUsed = 1, Workgroup = 64
+
+Checking accuracy...
+RMS(reference, result) = 0.000000
+
+Test passed
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;encode_output&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./markdown_echo_for.sh: line 10: ./encode_output: Is a directory
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;fastWalshTransform&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./fastWalshTransform Starting...
+
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Initializing data...
+...allocating CPU memory
+...allocating GPU memory
+...generating data
+Data length: 8388608; kernel length: 128
+Running GPU dyadic convolution using Fast Walsh Transform...
+GPU time: 1.171000 ms; GOP/s: 247.145154
+Reading back GPU results...
+Running straightforward CPU dyadic convolution...
+Comparing the results...
+Shutting down...
+L2 norm: 1.021579E-07
+Test passed
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;FDTD3d&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./FDTD3d Starting...
+
+Set-up, based upon target device GMEM size...
+ getTargetDeviceGlobalMemSize
+ cudaGetDeviceCount
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+ cudaGetDeviceProperties
+ generateRandomData
+
+FDTD on 376 x 376 x 376 volume with symmetric filter radius 4 for 5 timesteps...
+
+fdtdReference...
+ calloc intermediate
+ Host FDTD loop
+    t = 0
+    t = 1
+    t = 2
+    t = 3
+    t = 4
+
+fdtdReference complete
+fdtdGPU...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+ set block size to 32x16
+ set grid size to 12x24
+ GPU FDTD loop
+    t = 0 launch kernel
+    t = 1 launch kernel
+    t = 2 launch kernel
+    t = 3 launch kernel
+    t = 4 launch kernel
+
+fdtdGPU complete
+
+CompareData (tolerance 0.000100)...
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;fp16ScalarProduct&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Result native operators : 658990.000000 
+Result intrinsics   : 658990.000000 
+&amp;amp;&amp;amp;&amp;amp;&amp;amp; fp16ScalarProduct PASSED
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;globalToShmemAsyncCopy&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[globalToShmemAsyncCopy] - Starting...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+MatrixA(1280,1280), MatrixB(1280,1280)
+Running kernel = 0 - AsyncCopyMultiStageLargeChunk
+Computing result using CUDA Kernel...
+done
+Performance= 2897.51 GFlop/s, Time= 1.448 msec, Size= 4194304000 Ops, WorkgroupSize= 256 threads/block
+Checking computed result for correctness: Result = PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;graphMemoryFootprint&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Driver version is: 12.2
+Running sample.
+================================
+Running virtual address reuse example.
+Sequential allocations &amp;amp; frees within a single graph enable CUDA to reuse virtual addresses.
+
+Check confirms that d_a and d_b share a virtual address.
+    FOOTPRINT: 67108864 bytes
+
+Cleaning up example by trimming device memory.
+    FOOTPRINT: 0 bytes
+
+================================
+Running physical memory reuse example.
+CUDA reuses the same physical memory for allocations from separate graphs when the allocation lifetimes don&amp;#x27;t overlap.
+
+Creating the graph execs does not reserve any physical memory.
+    FOOTPRINT: 0 bytes
+
+The first graph launched reserves the memory it needs.
+    FOOTPRINT: 67108864 bytes
+A subsequent launch of the same graph in the same stream reuses the same physical memory. Thus the memory footprint does not grow here.
+    FOOTPRINT: 67108864 bytes
+
+Subsequent launches of other graphs in the same stream also reuse the physical memory. Thus the memory footprint does not grow here.
+01:     FOOTPRINT: 67108864 bytes
+02:     FOOTPRINT: 67108864 bytes
+03:     FOOTPRINT: 67108864 bytes
+04:     FOOTPRINT: 67108864 bytes
+05:     FOOTPRINT: 67108864 bytes
+06:     FOOTPRINT: 67108864 bytes
+07:     FOOTPRINT: 67108864 bytes
+
+Check confirms all graphs use a different virtual address.
+
+Cleaning up example by trimming device memory.
+    FOOTPRINT: 0 bytes
+
+================================
+Running simultaneous streams example.
+Graphs that can run concurrently need separate physical memory. In this example, each graph launched in a separate stream increases the total memory footprint.
+
+When launching a new graph, CUDA may reuse physical memory from a graph whose execution has already finished -- even if the new graph is being launched in a different stream from the completed graph. Therefore, a kernel node is added to the graphs to increase runtime.
+
+Initial footprint:
+    FOOTPRINT: 0 bytes
+
+Each graph launch in a seperate stream grows the memory footprint:
+01:     FOOTPRINT: 67108864 bytes
+02:     FOOTPRINT: 134217728 bytes
+03:     FOOTPRINT: 201326592 bytes
+04:     FOOTPRINT: 268435456 bytes
+05:     FOOTPRINT: 335544320 bytes
+06:     FOOTPRINT: 402653184 bytes
+07:     FOOTPRINT: 469762048 bytes
+
+Cleaning up example by trimming device memory.
+    FOOTPRINT: 0 bytes
+
+================================
+Running unfreed streams example.
+CUDA cannot reuse phyiscal memory from graphs which do not free their allocations.
+
+Despite being launched in the same stream, each graph launch grows the memory footprint. Since the allocation is not freed, CUDA keeps the memory valid for use.
+00:     FOOTPRINT: 67108864 bytes
+01:     FOOTPRINT: 134217728 bytes
+02:     FOOTPRINT: 201326592 bytes
+03:     FOOTPRINT: 268435456 bytes
+04:     FOOTPRINT: 335544320 bytes
+05:     FOOTPRINT: 402653184 bytes
+06:     FOOTPRINT: 469762048 bytes
+07:     FOOTPRINT: 536870912 bytes
+
+Trimming does not impact the memory footprint since the un-freed allocations are still holding onto the memory.
+    FOOTPRINT: 536870912 bytes
+
+Freeing the allocations does not shrink the footprint.
+    FOOTPRINT: 536870912 bytes
+
+Since the allocations are now freed, trimming does reduce the footprint even when the graph execs are not yet destroyed.
+    FOOTPRINT: 0 bytes
+
+Cleaning up example by trimming device memory.
+    FOOTPRINT: 0 bytes
+
+================================
+Sample complete.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;graphMemoryNodes&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Driver version is: 12.2
+Setting up sample.
+Setup complete.
+
+Running negateSquares in a stream.
+Validating negateSquares in a stream...
+Validation PASSED!
+
+Running negateSquares in a stream-captured graph.
+Validating negateSquares in a stream-captured graph...
+Validation PASSED!
+
+Running negateSquares in an explicitly constructed graph.
+Check verified that d_negSquare and d_input share a virtual address.
+Validating negateSquares in an explicitly constructed graph...
+Validation PASSED!
+
+Running negateSquares with d_negSquare freed outside the stream.
+Check verified that d_negSquare and d_input share a virtual address.
+Validating negateSquares with d_negSquare freed outside the stream...
+Validation PASSED!
+
+Running negateSquares with d_negSquare freed outside the graph.
+Validating negateSquares with d_negSquare freed outside the graph...
+Validation PASSED!
+
+Running negateSquares with d_negSquare freed in a different graph.
+Validating negateSquares with d_negSquare freed in a different graph...
+Validation PASSED!
+
+Cleaning up sample.
+Cleanup complete. Exiting sample.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;HSOpticalFlow&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;HSOpticalFlow Starting...
+
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Loading &amp;quot;frame10.ppm&amp;quot; ...
+Loading &amp;quot;frame11.ppm&amp;quot; ...
+Computing optical flow on CPU...
+Computing optical flow on GPU...
+L1 error : 0.044308
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;immaTensorCoreGemm&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Initializing...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+M: 4096 (16 x 256)
+N: 4096 (16 x 256)
+K: 4096 (16 x 256)
+Preparing data for GPU...
+Required shared memory size: 64 Kb
+Computing... using high performance kernel compute_gemm_imma 
+Time: 0.983040 ms
+TOPS: 139.81
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;jacobiCudaGraphs&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+CPU iterations : 2954
+CPU error : 4.988e-03
+CPU Processing time: 1204.943970 (ms)
+GPU iterations : 2954
+GPU error : 4.988e-03
+GPU Processing time: 63.724998 (ms)
+&amp;amp;&amp;amp;&amp;amp;&amp;amp; jacobiCudaGraphs PASSED
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;matrixMul&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[Matrix Multiply Using CUDA] - Starting...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+MatrixA(320,320), MatrixB(640,320)
+Computing result using CUDA Kernel...
+done
+Performance= 2698.52 GFlop/s, Time= 0.049 msec, Size= 131072000 Ops, WorkgroupSize= 1024 threads/block
+Checking computed result for correctness: Result = PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;matrixMulDrv&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[ matrixMulDrv (Driver API) ]
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; GPU Device has SM 8.9 compute capability
+  Total amount of global memory:     12557942784 bytes
+&amp;gt; findModulePath found file at &amp;lt;./matrixMul_kernel64.fatbin&amp;gt;
+&amp;gt; initCUDA loading module: &amp;lt;./matrixMul_kernel64.fatbin&amp;gt;
+&amp;gt; 16 block size selected
+Processing time: 0.023000 (ms)
+Checking computed result for correctness: Result = PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;matrixMulDynlinkJIT&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[ matrixMulDynlinkJIT (CUDA dynamic linking) ]
+&amp;gt; Device 0: &amp;quot;NVIDIA GeForce RTX 4070 Ti&amp;quot; with Compute 8.9 capability
+&amp;gt; Compiling CUDA module
+&amp;gt; PTX JIT log:
+
+Test run success!
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;matrixMul_nvrtc&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[Matrix Multiply Using CUDA] - Starting...
+MatrixA(320,320), MatrixB(640,320)
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; GPU Device has SM 8.9 compute capability
+Computing result using CUDA Kernel...
+Checking computed result for correctness: Result = PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;memMapIPCDrv&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&amp;gt; findModulePath found file at &amp;lt;./memMapIpc_kernel64.ptx&amp;gt;
+&amp;gt; initCUDA loading module: &amp;lt;./memMapIpc_kernel64.ptx&amp;gt;
+&amp;gt; PTX JIT log:
+
+Step 0 done
+Process 0: verifying...
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;mergeSort&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./mergeSort Starting...
+
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Allocating and initializing host arrays...
+
+Allocating and initializing CUDA arrays...
+
+Initializing GPU merge sort...
+Running GPU merge sort...
+Time: 2.122000 ms
+Reading back GPU merge sort results...
+Inspecting the results...
+...inspecting keys array: OK
+...inspecting keys and values array: OK
+...stability property: stable!
+Shutting down...
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;MonteCarloMultiGPU&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./MonteCarloMultiGPU Starting...
+
+Using single CPU thread for multiple GPUs
+MonteCarloMultiGPU
+==================
+Parallelization method  = streamed
+Problem scaling         = weak
+Number of GPUs          = 1
+Total number of options = 8192
+Number of paths         = 262144
+main(): generating input data...
+main(): starting 1 host threads...
+main(): GPU statistics, streamed
+GPU Device #0: NVIDIA GeForce RTX 4070 Ti
+Options         : 8192
+Simulation paths: 262144
+
+Total time (ms.): 6.029000
+    Note: This is elapsed time for all to compute.
+Options per sec.: 1358766.008351
+main(): comparing Monte Carlo and Black-Scholes results...
+Shutting down...
+Test Summary...
+L1 norm        : 4.898407E-04
+Average reserve: 12.983048
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+
+Test passed
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;newdelete&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;newdelete Starting...
+
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+ &amp;gt; Container = Vector test OK
+
+ &amp;gt; Container = Vector, using placement new on SMEM buffer test OK
+
+ &amp;gt; Container = Vector, with user defined datatype test OK
+
+Test Summary: 3/3 succesfully run
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;NV12toBGRandResize&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+
+TEST#1:
+  CUDA resize nv12(1920x1080 --&amp;gt; 640x480), batch: 24, average time: 0.036 ms ==&amp;gt; 0.001 ms/frame
+  CUDA convert nv12(640x480) to bgr(640x480), batch: 24, average time: 0.230 ms ==&amp;gt; 0.010 ms/frame
+
+TEST#2:
+  CUDA convert nv12(1920x1080) to bgr(1920x1080), batch: 24, average time: 1.630 ms ==&amp;gt; 0.068 ms/frame
+  CUDA resize bgr(1920x1080 --&amp;gt; 640x480), batch: 24, average time: 1.223 ms ==&amp;gt; 0.051 ms/frame
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;output&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./markdown_echo_for.sh: line 10: ./output: Is a directory
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;p2pBandwidthLatencyTest&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[P2P (Peer-to-Peer) GPU Bandwidth Latency Test]
+Device: 0, NVIDIA GeForce RTX 4070 Ti, pciBusID: 1, pciDeviceID: 0, pciDomainID:0
+
+***NOTE: In case a device doesn&amp;#x27;t have P2P access to other one, it falls back to normal memcopy procedure.
+So you can see lesser Bandwidth (GB/s) and unstable Latency (us) in those cases.
+
+P2P Connectivity Matrix
+     D\D     0
+     0       1
+Unidirectional P2P=Disabled Bandwidth Matrix (GB/s)
+   D\D     0 
+     0 428.20 
+Unidirectional P2P=Enabled Bandwidth (P2P Writes) Matrix (GB/s)
+   D\D     0 
+     0 389.94 
+Bidirectional P2P=Disabled Bandwidth Matrix (GB/s)
+   D\D     0 
+     0 387.46 
+Bidirectional P2P=Enabled Bandwidth Matrix (GB/s)
+   D\D     0 
+     0 390.17 
+P2P=Disabled Latency Matrix (us)
+   GPU     0 
+     0   1.20 
+
+   CPU     0 
+     0   1.11 
+P2P=Enabled Latency (P2P Writes) Matrix (us)
+   GPU     0 
+     0   1.16 
+
+   CPU     0 
+     0   1.08 
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;ptxjit&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[PTX Just In Time (JIT) Compilation (no-qatest)] - Starting...
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; findModulePath &amp;lt;./ptxjit_kernel64.ptx&amp;gt;
+&amp;gt; initCUDA loading module: &amp;lt;./ptxjit_kernel64.ptx&amp;gt;
+Loading ptxjit_kernel[] program
+CUDA Link Completed in 0.000000ms. Linker Output:
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function &amp;#x27;myKernel&amp;#x27; for &amp;#x27;sm_89&amp;#x27;
+ptxas info    : Function properties for myKernel
+ptxas         .     0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 8 registers, 360 bytes cmem[0]
+info    : 0 bytes gmem
+info    : Function properties for &amp;#x27;myKernel&amp;#x27;:
+info    : used 8 registers, 0 stack, 0 bytes smem, 360 bytes cmem[0], 0 bytes lmem
+CUDA kernel launched
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;quasirandomGenerator&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./quasirandomGenerator Starting...
+
+Allocating GPU memory...
+Allocating CPU memory...
+Initializing QRNG tables...
+
+Testing QRNG...
+
+quasirandomGenerator, Throughput = 59.8047 GNumbers/s, Time = 0.00005 s, Size = 3145728 Numbers, NumDevsUsed = 1, Workgroup = 384
+
+Reading GPU results...
+Comparing to the CPU results...
+
+L1 norm: 7.275964E-12
+
+Testing inverseCNDgpu()...
+
+quasirandomGenerator-inverse, Throughput = 186.6901 GNumbers/s, Time = 0.00002 s, Size = 3145728 Numbers, NumDevsUsed = 1, Workgroup = 128
+Reading GPU results...
+
+Comparing to the CPU results...
+L1 norm: 9.439909E-08
+
+Shutting down...
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;quasirandomGenerator_nvrtc&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./quasirandomGenerator_nvrtc Starting...
+
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; GPU Device has SM 8.9 compute capability
+Allocating GPU memory...
+Allocating CPU memory...
+Initializing QRNG tables...
+
+Testing QRNG...
+
+quasirandomGenerator, Throughput = 57.5614 GNumbers/s, Time = 0.00005 s, Size = 3145728 Numbers, NumDevsUsed = 1, Workgroup = 384
+
+Reading GPU results...
+Comparing to the CPU results...
+
+L1 norm: 7.275964E-12
+
+Testing inverseCNDgpu()...
+
+quasirandomGenerator-inverse, Throughput = 162.9911 GNumbers/s, Time = 0.00002 s, Size = 3145728 Numbers, NumDevsUsed = 1, Workgroup = 128
+Reading GPU results...
+
+Comparing to the CPU results...
+L1 norm: 9.439909E-08
+
+Shutting down...
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleAssert&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;simpleAssert.cu:63: void testKernel(int): block: [1,0,0], thread: [28,0,0] Assertion `gtid &amp;lt; N` failed.
+simpleAssert.cu:63: void testKernel(int): block: [1,0,0], thread: [29,0,0] Assertion `gtid &amp;lt; N` failed.
+simpleAssert.cu:63: void testKernel(int): block: [1,0,0], thread: [30,0,0] Assertion `gtid &amp;lt; N` failed.
+simpleAssert.cu:63: void testKernel(int): block: [1,0,0], thread: [31,0,0] Assertion `gtid &amp;lt; N` failed.
+simpleAssert starting...
+OS_System_Type.release = 5.15.0-82-generic
+OS Info: &amp;lt;#91~20.04.1-Ubuntu SMP Fri Aug 18 16:24:39 UTC 2023&amp;gt;
+
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Launch kernel to generate assertion failures
+
+-- Begin assert output
+
+
+-- End assert output
+
+Device assert failed as expected, CUDA error message is: device-side assert triggered
+
+simpleAssert completed, returned OK
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleAssert_nvrtc&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;../../../../Samples/0_Introduction/simpleAssert_nvrtc/simpleAssert_kernel.cu:37: void testKernel(int): block: [1,0,0], thread: [28,0,0] Assertion `gtid &amp;lt; N` failed.
+../../../../Samples/0_Introduction/simpleAssert_nvrtc/simpleAssert_kernel.cu:37: void testKernel(int): block: [1,0,0], thread: [29,0,0] Assertion `gtid &amp;lt; N` failed.
+../../../../Samples/0_Introduction/simpleAssert_nvrtc/simpleAssert_kernel.cu:37: void testKernel(int): block: [1,0,0], thread: [30,0,0] Assertion `gtid &amp;lt; N` failed.
+../../../../Samples/0_Introduction/simpleAssert_nvrtc/simpleAssert_kernel.cu:37: void testKernel(int): block: [1,0,0], thread: [31,0,0] Assertion `gtid &amp;lt; N` failed.
+simpleAssert_nvrtc starting...
+Launch kernel to generate assertion failures
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; GPU Device has SM 8.9 compute capability
+
+-- Begin assert output
+
+
+-- End assert output
+
+Device assert failed as expected
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleAtomicIntrinsics&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;simpleAtomicIntrinsics starting...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Processing time: 0.564000 (ms)
+simpleAtomicIntrinsics completed, returned OK
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleAtomicIntrinsics_nvrtc&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;simpleAtomicIntrinsics_nvrtc starting...
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; GPU Device has SM 8.9 compute capability
+Processing time: 0.108000 (ms)
+simpleAtomicIntrinsics_nvrtc completed, returned OK
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleAttributes&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./simpleAttributes Starting...
+
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Processing time: 6674.319824 (ms)
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleAWBarrier&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./simpleAWBarrier starting...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Launching normVecByDotProductAWBarrier kernel with numBlocks = 120 blockSize = 768
+Result = PASSED
+./simpleAWBarrier completed, returned OK
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleCallback&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Starting simpleCallback
+Found 1 CUDA capable GPUs
+GPU[0] NVIDIA GeForce RTX 4070 Ti supports SM 8.9, capable GPU Callback Functions
+1 GPUs available to run Callback Functions
+Starting 8 heterogeneous computing workloads
+Total of 8 workloads finished:
+Success
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleCooperativeGroups&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;
+Launching a single block with 64 threads...
+
+ Sum of all ranks 0..63 in threadBlockGroup is 2016 (expected 2016)
+
+ Now creating 4 groups, each of size 16 threads:
+
+   Sum of all ranks 0..15 in this tiledPartition16 group is 120 (expected 120)
+   Sum of all ranks 0..15 in this tiledPartition16 group is 120 (expected 120)
+   Sum of all ranks 0..15 in this tiledPartition16 group is 120 (expected 120)
+   Sum of all ranks 0..15 in this tiledPartition16 group is 120 (expected 120)
+
+...Done.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleCubemapTexture&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+CUDA device [NVIDIA GeForce RTX 4070 Ti] has 60 Multi-Processors SM 8.9
+Covering Cubemap data array of 64~3 x 1: Grid size is 8 x 8, each block has 8 x 8 threads
+Processing time: 0.005 msec
+4915.20 Mtexlookups/sec
+Comparing kernel output to expected data
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleCudaGraphs&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+16777216 elements
+threads per block  = 512
+Graph Launch iterations = 3
+
+Num of nodes in the graph created manually = 7
+[cudaGraphsManual] Host callback final reduced sum = 0.996214
+[cudaGraphsManual] Host callback final reduced sum = 0.996214
+[cudaGraphsManual] Host callback final reduced sum = 0.996214
+Cloned Graph Output.. 
+[cudaGraphsManual] Host callback final reduced sum = 0.996214
+[cudaGraphsManual] Host callback final reduced sum = 0.996214
+[cudaGraphsManual] Host callback final reduced sum = 0.996214
+
+Num of nodes in the graph created using stream capture API = 7
+[cudaGraphsUsingStreamCapture] Host callback final reduced sum = 0.996214
+[cudaGraphsUsingStreamCapture] Host callback final reduced sum = 0.996214
+[cudaGraphsUsingStreamCapture] Host callback final reduced sum = 0.996214
+Cloned Graph Output.. 
+[cudaGraphsUsingStreamCapture] Host callback final reduced sum = 0.996214
+[cudaGraphsUsingStreamCapture] Host callback final reduced sum = 0.996214
+[cudaGraphsUsingStreamCapture] Host callback final reduced sum = 0.996214
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleCUFFT_2d_MGPU&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;
+Poisson equation using CUFFT library on Multiple GPUs is starting...
+
+No. of GPU on node 1
+Two GPUs are required to run simpleCUFFT_2d_MGPU sample code
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleDrvRuntime&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;simpleDrvRuntime..
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+&amp;gt; findModulePath found file at &amp;lt;./vectorAdd_kernel64.fatbin&amp;gt;
+&amp;gt; initCUDA loading module: &amp;lt;./vectorAdd_kernel64.fatbin&amp;gt;
+Result = PASS
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleHyperQ&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;starting hyperQ...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+&amp;gt; Detected Compute SM 8.9 hardware with 60 multi-processors
+Expected time for serial execution of 32 sets of kernels is between approx. 0.330s and 0.640s
+Expected time for fully concurrent execution of 32 sets of kernels is approx. 0.020s
+Measured time for sample = 0.058s
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleIPC&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Process 0: Starting on device 0...
+Step 0 done
+Process 0: verifying...
+Process 0 complete!
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleLayeredTexture&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[simpleLayeredTexture] - Starting...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+CUDA device [NVIDIA GeForce RTX 4070 Ti] has 60 Multi-Processors SM 8.9
+Covering 2D data array of 512 x 512: Grid size is 64 x 64, each block has 8 x 8 threads
+Processing time: 0.024 msec
+54613.33 Mtexlookups/sec
+Comparing kernel output to expected data
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleMPI&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Invalid MIT-MAGIC-COOKIE-1 keyRunning on 1 nodes
+Average of square roots is: 0.667242
+PASSED
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleMultiCopy&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[simpleMultiCopy] - Starting...
+&amp;gt; Using CUDA device [0]: NVIDIA GeForce RTX 4070 Ti
+[NVIDIA GeForce RTX 4070 Ti] has 60 MP(s) x 128 (Cores/MP) = 7680 (Cores)
+&amp;gt; Device name: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; CUDA Capability 8.9 hardware with 60 multi-processors
+&amp;gt; scale_factor = 1.00
+&amp;gt; array_size   = 4194304
+
+
+Relevant properties of this CUDA device
+(X) Can overlap one CPU&amp;lt;&amp;gt;GPU data transfer with GPU kernel execution (device property &amp;quot;deviceOverlap&amp;quot;)
+(X) Can overlap two CPU&amp;lt;&amp;gt;GPU data transfers with GPU kernel execution
+    (Compute Capability &amp;gt;= 2.0 AND (Tesla product OR Quadro 4000/5000/6000/K5000)
+
+Measured timings (throughput):
+ Memcpy host to device  : 0.703936 ms (23.833440 GB/s)
+ Memcpy device to host  : 0.640000 ms (26.214401 GB/s)
+ Kernel         : 0.037728 ms (4446.887142 GB/s)
+
+Theoretical limits for speedup gained from overlapped data transfers:
+No overlap at all (transfer-kernel-transfer): 1.381664 ms 
+Compute can overlap with one transfer: 1.343936 ms
+Compute can overlap with both data transfers: 0.703936 ms
+
+Average measured timings over 10 repetitions:
+ Avg. time when execution fully serialized  : 1.389363 ms
+ Avg. time when overlapped using 4 streams  : 0.751098 ms
+ Avg. speedup gained (serialized - overlapped)  : 0.638266 ms
+
+Measured throughput:
+ Fully serialized execution     : 24.150944 GB/s
+ Overlapped using 4 streams     : 44.673865 GB/s
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleMultiGPU&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Starting simpleMultiGPU
+CUDA-capable device count: 1
+Generating input data...
+
+Computing with 1 GPUs...
+  GPU Processing time: 6.476000 (ms)
+
+Computing with Host CPU...
+
+Comparing GPU and Host CPU results...
+  GPU sum: 16777296.000000
+  CPU sum: 16777294.395033
+  Relative difference: 9.566307E-08 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleOccupancy&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;starting Simple Occupancy
+
+[ Manual configuration with 32 threads per block ]
+Potential occupancy: 50%
+Elapsed time: 0.054464ms
+
+[ Automatic, occupancy-based configuration ]
+Suggested block size: 768
+Minimum grid size for maximum occupancy: 120
+Potential occupancy: 100%
+Elapsed time: 0.008512ms
+
+Test PASSED
+
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleP2P&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[./simpleP2P] - Starting...
+Checking for multiple GPUs...
+CUDA-capable device count: 1
+Two or more GPUs with Peer-to-Peer access capability are required for ./simpleP2P.
+Waiving test.
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simplePitchLinearTexture&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;simplePitchLinearTexture starting...
+
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+
+Bandwidth (GB/s) for pitch linear: 1.40e+03; for array: 1.83e+03
+
+Texture fetch rate (Mpix/s) for pitch linear: 1.75e+05; for array: 2.29e+05
+
+simplePitchLinearTexture completed, returned OK
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simplePrintf&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Device 0: &amp;quot;NVIDIA GeForce RTX 4070 Ti&amp;quot; with Compute 8.9 capability
+printf() is called. Output:
+
+[2, 0]:     Value is:10
+[2, 1]:     Value is:10
+[2, 2]:     Value is:10
+[2, 3]:     Value is:10
+[2, 4]:     Value is:10
+[2, 5]:     Value is:10
+[2, 6]:     Value is:10
+[2, 7]:     Value is:10
+[3, 0]:     Value is:10
+[3, 1]:     Value is:10
+[3, 2]:     Value is:10
+[3, 3]:     Value is:10
+[3, 4]:     Value is:10
+[3, 5]:     Value is:10
+[3, 6]:     Value is:10
+[3, 7]:     Value is:10
+[1, 0]:     Value is:10
+[1, 1]:     Value is:10
+[1, 2]:     Value is:10
+[1, 3]:     Value is:10
+[1, 4]:     Value is:10
+[1, 5]:     Value is:10
+[1, 6]:     Value is:10
+[1, 7]:     Value is:10
+[0, 0]:     Value is:10
+[0, 1]:     Value is:10
+[0, 2]:     Value is:10
+[0, 3]:     Value is:10
+[0, 4]:     Value is:10
+[0, 5]:     Value is:10
+[0, 6]:     Value is:10
+[0, 7]:     Value is:10
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleSeparateCompilation&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;simpleSeparateCompilation starting...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+simpleSeparateCompilation completed, returned OK
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleStreams&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[ simpleStreams ]
+
+Device synchronization method set to = 0 (Automatic Blocking)
+Setting reps to 100 to demonstrate steady state
+
+&amp;gt; GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Device: &amp;lt;NVIDIA GeForce RTX 4070 Ti&amp;gt; canMapHostMemory: Yes
+&amp;gt; CUDA Capable: SM 8.9 hardware
+&amp;gt; 60 Multiprocessor(s) x 128 (Cores/Multiprocessor) = 7680 (Cores)
+&amp;gt; scale_factor = 1.0000
+&amp;gt; array_size   = 16777216
+
+&amp;gt; Using CPU/GPU Device Synchronization method (cudaDeviceScheduleAuto)
+&amp;gt; mmap() allocating 64.00 Mbytes (generic page-aligned system memory)
+&amp;gt; cudaHostRegister() registering 64.00 Mbytes of generic allocated system memory
+
+Starting Test
+memcopy:    2.55
+kernel:     0.31
+non-streamed:   2.79
+4 streams:  2.64
+-------------------------------
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleSurfaceWrite&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;simpleSurfaceWrite starting...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+CUDA device [NVIDIA GeForce RTX 4070 Ti] has 60 Multi-Processors, SM 8.9
+Loaded &amp;#x27;teapot512.pgm&amp;#x27;, 512 x 512 pixels
+Processing time: 0.007000 (ms)
+37449.14 Mpixels/sec
+Wrote &amp;#x27;output.pgm&amp;#x27;
+Comparing files
+    output:    &amp;lt;output.pgm&amp;gt;
+    reference: &amp;lt;../../../../Samples/0_Introduction/simpleSurfaceWrite/data/ref_rotated.pgm&amp;gt;
+simpleSurfaceWrite completed, returned OK
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleTemplates&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&amp;gt; runTest&amp;lt;float,32&amp;gt;
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+CUDA device [NVIDIA GeForce RTX 4070 Ti] has 60 Multi-Processors
+Processing time: 0.119000 (ms)
+Compare OK
+
+&amp;gt; runTest&amp;lt;int,64&amp;gt;
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+CUDA device [NVIDIA GeForce RTX 4070 Ti] has 60 Multi-Processors
+Processing time: 0.043000 (ms)
+Compare OK
+
+
+[simpleTemplates] -&amp;gt; Test Results: 0 Failures
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleTemplates_nvrtc&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&amp;gt; runTest&amp;lt;float,32&amp;gt;
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; GPU Device has SM 8.9 compute capability
+Processing time: 0.064000 (ms)
+Compare OK
+
+&amp;gt; runTest&amp;lt;int,64&amp;gt;
+Processing time: 0.050000 (ms)
+Compare OK
+
+
+[simpleTemplates_nvrtc] -&amp;gt; Test Results: 0 Failures
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleTexture&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;simpleTexture starting...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Loaded &amp;#x27;teapot512.pgm&amp;#x27;, 512 x 512 pixels
+Processing time: 0.007000 (ms)
+37449.14 Mpixels/sec
+Wrote &amp;#x27;../../../../Samples/0_Introduction/simpleTexture/data/teapot512_out.pgm&amp;#x27;
+Comparing files
+    output:    &amp;lt;../../../../Samples/0_Introduction/simpleTexture/data/teapot512_out.pgm&amp;gt;
+    reference: &amp;lt;../../../../Samples/0_Introduction/simpleTexture/data/ref_rotated.pgm&amp;gt;
+simpleTexture completed, returned OK
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleTextureDrv&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; GPU Device has SM 8.9 compute capability
+&amp;gt; findModulePath found file at &amp;lt;./simpleTexture_kernel64.fatbin&amp;gt;
+&amp;gt; initCUDA loading module: &amp;lt;./simpleTexture_kernel64.fatbin&amp;gt;
+Loaded &amp;#x27;teapot512.pgm&amp;#x27;, 512 x 512 pixels
+Processing time: 0.007000 (ms)
+37449.14 Mpixels/sec
+Wrote &amp;#x27;../../../../Samples/0_Introduction/simpleTextureDrv/data/teapot512_out.pgm&amp;#x27;
+Comparing files
+    output:    &amp;lt;../../../../Samples/0_Introduction/simpleTextureDrv/data/teapot512_out.pgm&amp;gt;
+    reference: &amp;lt;../../../../Samples/0_Introduction/simpleTextureDrv/data/ref_rotated.pgm&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleVoteIntrinsics&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[simpleVoteIntrinsics]
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+&amp;gt; GPU device has 60 Multi-Processors, SM 8.9 compute capabilities
+
+[VOTE Kernel Test 1/3]
+    Running &amp;lt;&amp;lt;Vote.Any&amp;gt;&amp;gt; kernel1 ...
+    OK
+
+[VOTE Kernel Test 2/3]
+    Running &amp;lt;&amp;lt;Vote.All&amp;gt;&amp;gt; kernel2 ...
+    OK
+
+[VOTE Kernel Test 3/3]
+    Running &amp;lt;&amp;lt;Vote.Any&amp;gt;&amp;gt; kernel3 ...
+    OK
+    Shutting down...
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleVoteIntrinsics_nvrtc&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; GPU Device has SM 8.9 compute capability
+[simpleVoteIntrinsics_nvrtc]
+[VOTE Kernel Test 1/3]
+    Running &amp;lt;&amp;lt;Vote.Any&amp;gt;&amp;gt; kernel1 ...
+    OK
+
+[VOTE Kernel Test 2/3]
+    Running &amp;lt;&amp;lt;Vote.All&amp;gt;&amp;gt; kernel2 ...
+    OK
+
+[VOTE Kernel Test 3/3]
+    Running &amp;lt;&amp;lt;Vote.Any&amp;gt;&amp;gt; kernel3 ...
+    OK
+    Shutting down...
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;simpleZeroCopy&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;  Device 0: &amp;lt;             Ada &amp;gt;, Compute SM 8.9 detected
+&amp;gt; Using CUDA Host Allocated (cudaHostAlloc)
+&amp;gt; vectorAddGPU kernel will add vectors using mapped CPU memory...
+&amp;gt; Checking the results from vectorAddGPU() ...
+&amp;gt; Releasing CPU memory...
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;SobolQRNG&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Sobol Quasi-Random Number Generator Starting...
+
+&amp;gt; number of vectors = 100000
+&amp;gt; number of dimensions = 100
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Allocating CPU memory...
+Allocating GPU memory...
+Initializing direction numbers...
+Copying direction numbers to device...
+Executing QRNG on GPU...
+Gsamples/s: 52.9101
+Reading results from GPU...
+
+Executing QRNG on CPU...
+Gsamples/s: 0.448853
+Checking results...
+L1-Error: 0
+Shutting down...
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;stereoDisparity&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[stereoDisparity] Starting...
+
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+&amp;gt; GPU device has 60 Multi-Processors, SM 8.9 compute capabilities
+
+Loaded &amp;lt;../../../../Samples/5_Domain_Specific/stereoDisparity/data/stereo.im0.640x533.ppm&amp;gt; as image 0
+Loaded &amp;lt;../../../../Samples/5_Domain_Specific/stereoDisparity/data/stereo.im1.640x533.ppm&amp;gt; as image 1
+Launching CUDA stereoDisparityKernel()
+Input Size  [640x533], Kernel size [17x17], Disparities [-16:0]
+GPU processing time : 0.1874 (ms)
+Pixel throughput    : 1820.355 Mpixels/sec
+GPU Checksum = 4293895789, GPU image: &amp;lt;output_GPU.pgm&amp;gt;
+Computing CPU reference...
+CPU Checksum = 4293895789, CPU image: &amp;lt;output_CPU.pgm&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;StreamPriorities&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Starting [./StreamPriorities]...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+CUDA stream priority range: LOW: 0 to HIGH: -5
+elapsed time of kernels launched to LOW priority stream: 2.885 ms
+elapsed time of kernels launched to HI  priority stream: 1.838 ms
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;systemWideAtomics&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+CANNOT access pageable memory
+systemWideAtomics completed, returned OK 
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;template&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./template Starting...
+
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Processing time: 0.108000 (ms)
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;tf32TensorCoreGemm&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Initializing...
+GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+M: 8192 (16 x 512)
+N: 8192 (16 x 512)
+K: 4096 (8 x 512)
+Preparing data for GPU...
+Required shared memory size: 72 Kb
+Computing using high performance kernel = 0 - compute_tf32gemm_async_copy
+Time: 80.129021 ms
+TFLOPS: 6.86
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;topologyQuery&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU0 &amp;lt;-&amp;gt; CPU:
+  * Atomic Supported: no
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;UnifiedMemoryStreams&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+Executing tasks on host / device
+Task [2], thread [0] executing on device (368)
+Task [0], thread [2] executing on device (884)
+Task [3], thread [1] executing on host (64)
+Task [1], thread [3] executing on device (387)
+Task [4], thread [1] executing on device (250)
+Task [5], thread [0] executing on device (399)
+Task [6], thread [2] executing on device (131)
+Task [7], thread [3] executing on device (642)
+Task [8], thread [1] executing on device (704)
+Task [9], thread [0] executing on device (469)
+Task [10], thread [0] executing on device (174)
+Task [11], thread [1] executing on device (286)
+Task [12], thread [1] executing on device (513)
+Task [13], thread [0] executing on device (789)
+Task [14], thread [0] executing on device (604)
+Task [15], thread [1] executing on device (133)
+Task [16], thread [0] executing on device (795)
+Task [17], thread [3] executing on device (578)
+Task [18], thread [2] executing on host (91)
+Task [19], thread [1] executing on device (592)
+Task [20], thread [1] executing on device (426)
+Task [21], thread [1] executing on host (64)
+Task [22], thread [1] executing on device (279)
+Task [23], thread [0] executing on device (990)
+Task [24], thread [1] executing on device (160)
+Task [25], thread [0] executing on device (644)
+Task [26], thread [0] executing on device (830)
+Task [27], thread [0] executing on host (64)
+Task [28], thread [2] executing on device (877)
+Task [29], thread [2] executing on device (523)
+Task [30], thread [0] executing on device (834)
+Task [31], thread [0] executing on device (485)
+Task [32], thread [2] executing on host (64)
+Task [33], thread [2] executing on device (577)
+Task [34], thread [2] executing on device (781)
+Task [35], thread [2] executing on device (879)
+Task [36], thread [2] executing on device (564)
+Task [37], thread [2] executing on device (802)
+Task [38], thread [2] executing on device (389)
+Task [39], thread [2] executing on device (954)
+All Done!
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;vectorAdd&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+CUDA kernel launch with 196 blocks of 256 threads
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;vectorAddDrv&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Vector Addition (Driver API)
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; findModulePath found file at &amp;lt;./vectorAdd_kernel64.fatbin&amp;gt;
+&amp;gt; initCUDA loading module: &amp;lt;./vectorAdd_kernel64.fatbin&amp;gt;
+Result = PASS
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;vectorAddMMAP&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;Vector Addition (Driver API)
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+Device 0 VIRTUAL ADDRESS MANAGEMENT SUPPORTED = 1.
+&amp;gt; findModulePath found file at &amp;lt;./vectorAdd_kernel64.fatbin&amp;gt;
+&amp;gt; initCUDA loading module: &amp;lt;./vectorAdd_kernel64.fatbin&amp;gt;
+Result = PASS
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;vectorAdd_nvrtc&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; Using CUDA Device [0]: NVIDIA GeForce RTX 4070 Ti
+&amp;gt; GPU Device has SM 8.9 compute capability
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+CUDA kernel launch with 196 blocks of 256 threads
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;warpAggregatedAtomicsCG&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
+
+CPU max matches GPU max
+
+Warp Aggregated Atomics PASSED 
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[风未起，时影]]></title><description><![CDATA[…]]></description><link>https://www.abellee.cn/2023/07/27/风未起，时影/</link><guid isPermaLink="false">https://www.abellee.cn/2023/07/27/风未起，时影/</guid><pubDate>Thu, 27 Jul 2023 21:44:00 GMT</pubDate><content:encoded>&lt;h1&gt;第一章&lt;/h1&gt;&lt;p&gt;周日的下午无所事事，看阳光不错就打算出门随意走走。 &lt;/p&gt;&lt;p&gt;接近深秋，杭州的天气已经相当冷了，出门前特意带上朋友上次来杭州送我的围巾，倒不是觉得很需要带这个东西，只是觉得戴上心里会暖和一些。
 我沿着钱塘江边走了一会儿，找了个没有人的地方坐了下来。一个声音在旁边叫我的名字。&lt;/p&gt;&lt;p&gt;“小叶子，是你嘛？” 她又喊了一句，听起来像是一位年纪轻轻的少女。&lt;/p&gt;&lt;p&gt;这个声音将我的视线从钱塘江上面的渔船拉了回来。一个可爱的女孩子站在不远处正向我招着手, 她穿着绿色的马甲里面搭配着一件白色长袖T恤外加一条卡其色的直筒裤子，这套装扮衬得她白皙的肌肤显得更加纤细。
 她留着一头过肩的绿色漂染长发，一双明亮的眸子搭配着一幅黑色宽框眼镜，宛如一朵含苞欲放的花朵。&lt;/p&gt;&lt;p&gt;我不确定是否认识她，但看着她亲切的笑容和熟悉的称呼，我试着回忆起在哪里见过她。&lt;/p&gt;&lt;p&gt;还没等我回过神来，她好像也无所谓我没有认出她来，轻步走过来坐在我旁边，慢慢坐了下来，右手轻轻地将她的长发抚到耳后。&lt;/p&gt;&lt;p&gt;这个长椅的长度也是刚刚好，好像我不管坐到哪个位置总有一个位置还能留给她。&lt;/p&gt;&lt;p&gt;“我见你在这里若有所思的样子，在想什么?小叶子。” 她第二次喊了我的名字。我又一次搜遍了记忆还是没有找到和她匹配的人。&lt;/p&gt;&lt;p&gt;难道我失忆了，但是我好像历史的记忆还是很连贯的，那她是谁呢？难道我在梦里嘛？我清晰的记得今天确实是真实的周末呀。&lt;/p&gt;&lt;p&gt;“额？你认识我？” 都叫出我的名字了，那肯定认识我呀，这还用问嘛。但是我还是奇怪的问道：“你认识我？” 而不是“请问你哪位？”。&lt;/p&gt;&lt;p&gt;“你还记得，不久前西湖区之前有个画展嘛？那天有人在画展喊了你的名字，我凑巧在旁边，你的名字很特别，所以我就记下来了，没想到今天在这里居然可以见到你。看到你一个人在这里若有所思的，于是就过来好奇问问。”&lt;/p&gt;&lt;p&gt;“难道是蓝色柏拉图没有永恒的画展？” 我惊讶的问到。没想到若大的杭州居然这么巧，我心里想到。&lt;/p&gt;&lt;p&gt;”对呀！那天我看到你在《风未起，时影》前驻足了很久，一直盯着那幅画，所以对你印象比较深，我也喜欢那幅画。你那天的样子就像方才你看钱塘江的样子，都是一幅呆呆的样子。“&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2023/07/31/JPwNmy3aZ9OXsRB.jpg&quot; alt=&quot;风未起，时影-手稿.jpeg&quot;/&gt;
 &lt;em&gt;蓝色柏拉图没有永恒——《风未起，时影》手稿&lt;/em&gt;&lt;/p&gt;&lt;p&gt;“哈哈，你也喜欢那幅画？” 我答道。&lt;/p&gt;&lt;p&gt;“当然！不过我倒是好奇，你为什么对那幅画情有独钟？居然看了那么久，我那天在后面看你的时间都足足有10几分钟，那天你就像呆住了一样，看起来像一个呆瓜，今天也像。”&lt;/p&gt;&lt;p&gt;不知道为什么，明明是第一次见面。不对，是我第一次见她。被叫了呆瓜却生不起一丝气。反倒我认真回答起了她的问题，甚至我连她的名字都不知道。&lt;/p&gt;&lt;p&gt;“那幅画，看起来很温柔，我一会仿佛自己在阳光四溢的森林里，一会又仿佛沉入了钱塘江底，就是那种像死一样的温柔你懂嘛？”。&lt;/p&gt;&lt;p&gt;“哇，你的形容真是太美了！”她听得津津有味，眼神里闪烁着赞赏之色。“我也有同感，那幅画给人一种奇妙的感觉，仿佛穿越了时空，融入了画中的场景。”&lt;/p&gt;&lt;p&gt;我微微笑着点头，继续说道：“其实，我小时候是个爱幻想的孩子，经常会沉浸在自己的世界里。那幅画勾起了我童年时对自然、孤独和自由的向往。我感觉那画家用颜色和线条表达了一种与众不同的情感，它们就像是隐藏在我们内心深处的秘密。”&lt;/p&gt;&lt;p&gt;“你说的太对了！”她激动地拍着手，仿佛也完全理解了我的心境。“画真是神奇的东西，它能唤起我们深埋心底的情感，让我们在画中寻找共鸣和自我。”&lt;/p&gt;&lt;p&gt;我们俩聊得很投机，仿佛早就认识一样，时间也在不知不觉中流逝。夕阳渐渐西下，天色变得更加寒冷。我突然想到自己带来的围巾，就把它拿出来准备给她披上。&lt;/p&gt;&lt;p&gt;“你看，这是我带来的围巾，天冷了，你戴上也许会暖和一些。” 我把围巾递给她。&lt;/p&gt;&lt;p&gt;她接过围巾，笑了笑，然后环绕着自己的脖子上。“谢谢你，真的有点冷。”&lt;/p&gt;&lt;p&gt;“没关系，我很高兴能和你一起分享这个美好的下午。” 我回答道。&lt;/p&gt;&lt;p&gt;渐渐地，天色已经完全暗了下来，我们都起身准备离开。然而，我对这位神秘的少女充满了好奇心，还有很多问题想要问她。于是我说：“不知道你叫什么名字？还有，那天你为什么也在画展？”&lt;/p&gt;&lt;p&gt;她微笑着回答：“我叫由月，其实我是画展的志愿者。我当时看到你对那幅画那么投入，觉得很有意思，所以记住了你的名字。”&lt;/p&gt;&lt;p&gt;“原来是这样。” 我点头表示理解。&lt;/p&gt;&lt;p&gt;“小叶子，其实我一直在等待这样的机会能够和你好好聊聊。” 由月的声音中透着一丝暖意。“在画展的时候，我觉得你是一个特别的人，内心深处有一种敏感而又坚定的气质，就像那幅画一样，温柔而又坚强。所以当我看到你在钱塘江边停下来，我毫不犹豫地走过来。”&lt;/p&gt;&lt;p&gt;“你在跟踪我？”&lt;/p&gt;&lt;p&gt;“不不，今天确实是凑巧遇到，我今天在家打扫完卫生，闲的无聊，突然想出来走走，正好我住这附近，没想到在这里居然可以遇见你。”&lt;/p&gt;</content:encoded></item><item><title><![CDATA[关于停药200mg喹硫平的一周变量试验]]></title><description><![CDATA[关于三方观察： 同事A为女性，同事B为男性。 星期一 白天正常工作 晚上回家后，准备今晚开始尝试第一天的停药实验。 回家后，和有趣小姐姐聊天 + 睡前烧烤 + 三瓶500ml百威 + zw 睡着时间：2:30-3:00  星期二 睡醒时间：06:0…]]></description><link>https://www.abellee.cn/2023/07/11/关于停药200mg喹硫平的一周变量试验/</link><guid isPermaLink="false">https://www.abellee.cn/2023/07/11/关于停药200mg喹硫平的一周变量试验/</guid><pubDate>Tue, 11 Jul 2023 14:22:00 GMT</pubDate><content:encoded>&lt;p&gt;关于三方观察： 同事A为女性，同事B为男性。&lt;/p&gt;&lt;h1&gt;星期一&lt;/h1&gt;&lt;p&gt;白天正常工作&lt;/p&gt;&lt;p&gt;晚上回家后，准备今晚开始尝试第一天的停药实验。&lt;/p&gt;&lt;p&gt;回家后，和有趣小姐姐聊天 + 睡前烧烤 + 三瓶500ml百威 + zw&lt;/p&gt;&lt;p&gt;睡着时间：2:30-3:00 &lt;/p&gt;&lt;h1&gt;星期二&lt;/h1&gt;&lt;p&gt;睡醒时间：06:00&lt;/p&gt;&lt;p&gt;昨夜一整晚睡着时候感觉 半梦半醒。&lt;/p&gt;&lt;p&gt;虽然是睡着状态，但是感觉自己一直是清醒的。&lt;/p&gt;&lt;p&gt;早上8点-9:20 补觉。补觉体验，依旧半梦半醒。&lt;/p&gt;&lt;p&gt;9:40 去上班&lt;/p&gt;&lt;p&gt;今天状态良好，
