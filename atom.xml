@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed]]></title><description><![CDATA[不会写代码，也不会打人马。]]></description><link>https://www.abellee.cn</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Nov 2023 08:38:38 GMT</lastBuildDate><item><title><![CDATA[Nvidia 4070Ti cuda report]]></title><description><![CDATA[asyncAPI bandwidthTest batchCUBLAS bf16TensorCoreGemm binaryPartitionCG binomialOptions binomialOptions_nvrtc BlackScholes BlackScholes…]]></description><link>https://www.abellee.cn/2023/11/04/nvidia_4070TI_cuda_report/</link><guid isPermaLink="false">https://www.abellee.cn/2023/11/04/nvidia_4070TI_cuda_report/</guid><pubDate>Sat, 04 Nov 2023 16:04:00 GMT</pubDate><content:encoded>&lt;h1&gt;asyncAPI&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[./asyncAPI] - Starting...
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed]]></title><description><![CDATA[不会写代码，也不会打人马。]]></description><link>https://www.abellee.cn</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Nov 2023 08:40:41 GMT</lastBuildDate><item><title><![CDATA[Nvidia 4070Ti cuda report]]></title><description><![CDATA[asyncAPI bandwidthTest batchCUBLAS bf16TensorCoreGemm binaryPartitionCG binomialOptions binomialOptions_nvrtc BlackScholes BlackScholes…]]></description><link>https://www.abellee.cn/2023/11/04/nvidia_4070TI_cuda_report/</link><guid isPermaLink="false">https://www.abellee.cn/2023/11/04/nvidia_4070TI_cuda_report/</guid><pubDate>Sat, 04 Nov 2023 16:04:00 GMT</pubDate><content:encoded>&lt;h1&gt;asyncAPI&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[./asyncAPI] - Starting...
 GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
 
 CUDA device [NVIDIA GeForce RTX 4070 Ti]
@@ -853,7 +853,6 @@ TEST#1:
 TEST#2:
   CUDA convert nv12(1920x1080) to bgr(1920x1080), batch: 24, average time: 1.630 ms ==&amp;gt; 0.068 ms/frame
   CUDA resize bgr(1920x1080 --&amp;gt; 640x480), batch: 24, average time: 1.223 ms ==&amp;gt; 0.051 ms/frame
-&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;output&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;./markdown_echo_for.sh: line 10: ./output: Is a directory
 &lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;p2pBandwidthLatencyTest&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[P2P (Peer-to-Peer) GPU Bandwidth Latency Test]
 Device: 0, NVIDIA GeForce RTX 4070 Ti, pciBusID: 1, pciDeviceID: 0, pciDomainID:0
 
