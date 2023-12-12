@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed]]></title><description><![CDATA[不会写代码，也不会打人马。]]></description><link>https://www.abellee.cn</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 04 Nov 2023 08:40:41 GMT</lastBuildDate><item><title><![CDATA[Nvidia 4070Ti cuda report]]></title><description><![CDATA[asyncAPI bandwidthTest batchCUBLAS bf16TensorCoreGemm binaryPartitionCG binomialOptions binomialOptions_nvrtc BlackScholes BlackScholes…]]></description><link>https://www.abellee.cn/2023/11/04/nvidia_4070TI_cuda_report/</link><guid isPermaLink="false">https://www.abellee.cn/2023/11/04/nvidia_4070TI_cuda_report/</guid><pubDate>Sat, 04 Nov 2023 16:04:00 GMT</pubDate><content:encoded>&lt;h1&gt;asyncAPI&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[./asyncAPI] - Starting...
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed]]></title><description><![CDATA[不会写代码，也不会打人马。]]></description><link>https://www.abellee.cn</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 Dec 2023 09:39:23 GMT</lastBuildDate><item><title><![CDATA[Nvidia 4070Ti cuda report]]></title><description><![CDATA[asyncAPI bandwidthTest batchCUBLAS bf16TensorCoreGemm binaryPartitionCG binomialOptions binomialOptions_nvrtc BlackScholes BlackScholes…]]></description><link>https://www.abellee.cn/2023/11/04/nvidia_4070TI_cuda_report/</link><guid isPermaLink="false">https://www.abellee.cn/2023/11/04/nvidia_4070TI_cuda_report/</guid><pubDate>Sat, 04 Nov 2023 16:04:00 GMT</pubDate><content:encoded>&lt;h1&gt;asyncAPI&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;[./asyncAPI] - Starting...
 GPU Device 0: &amp;quot;Ada&amp;quot; with compute capability 8.9
 
 CUDA device [NVIDIA GeForce RTX 4070 Ti]
@@ -2453,7 +2453,7 @@ ctrl + u 清空当前行，无论光标在什么位置
 ⌘ + shift + h 会列出剪切板历史
 &lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[弱冠赋]]></title><description><![CDATA[人衰花谢亦流年，春来物新不见先。
 欲世知命忘回首，苍苍沧里获苍苍。]]></description><link>https://www.abellee.cn/2019/05/18/弱冠赋/</link><guid isPermaLink="false">https://www.abellee.cn/2019/05/18/弱冠赋/</guid><pubDate>Sat, 18 May 2019 00:17:17 GMT</pubDate><content:encoded>&lt;p&gt;人衰花谢亦流年，春来物新不见先。
-欲世知命忘回首，苍苍沧里获苍苍。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[线程安全延迟初始化方案]]></title><description><![CDATA[Initialization On Demand Holder idiom DoubleCheckedLocking…]]></description><link>https://www.abellee.cn/2019/04/07/线程安全延迟初始化方案/</link><guid isPermaLink="false">https://www.abellee.cn/2019/04/07/线程安全延迟初始化方案/</guid><pubDate>Sun, 07 Apr 2019 09:43:38 GMT</pubDate><content:encoded>&lt;h2&gt;Initialization On Demand Holder idiom&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class InstanceFactory { 
+欲世知命忘回首，苍苍沧里获苍苍。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[线程安全延迟初始化方案]]></title><description><![CDATA[Java Initialization On Demand Holder idiom DoubleCheckedLocking…]]></description><link>https://www.abellee.cn/2019/04/07/线程安全延迟初始化方案/</link><guid isPermaLink="false">https://www.abellee.cn/2019/04/07/线程安全延迟初始化方案/</guid><pubDate>Sun, 07 Apr 2019 09:43:38 GMT</pubDate><content:encoded>&lt;h1&gt;Java&lt;/h1&gt;&lt;h2&gt;Initialization On Demand Holder idiom&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot;&gt;public class InstanceFactory { 
     private static class InstanceHolder {
         public static Instance instance = new Instance(); 
     } public static Instance getInstance() {
@@ -2473,7 +2473,37 @@ ctrl + u 清空当前行，无论光标在什么位置
         return instance;
     }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;结语&lt;/h2&gt;&lt;p&gt;字段延迟初始化降低了初始化类或创建实例的开销，但增加了访问被延迟初始化的字段 的开销。在大多数时候，正常的初始化要优于延迟初始化。如果确实需要对实例字段使用线程 安全的延迟初始化，请使用上面介绍的基于volatile的延迟初始化的方案；如果确实需要对静 态字段使用线程安全的延迟初始化，请使用上面介绍的基于类初始化的方案。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[happens-before规则]]></title><description><![CDATA[《JSR-133:Java Memory Model and Thread Specification》定义了如下happens-before规则。 1）程序顺序规则：一个线程中的每个操作，happens-before于该线程中的任意后续操作。…]]></description><link>https://www.abellee.cn/2019/04/07/happens-before规则/</link><guid isPermaLink="false">https://www.abellee.cn/2019/04/07/happens-before规则/</guid><pubDate>Sun, 07 Apr 2019 09:27:35 GMT</pubDate><content:encoded>&lt;p&gt;《JSR-133:Java Memory Model and Thread Specification》定义了如下happens-before规则。&lt;/p&gt;&lt;p&gt;1）程序顺序规则：一个线程中的每个操作，happens-before于该线程中的任意后续操作。&lt;/p&gt;&lt;p&gt;2）监视器锁规则：对一个锁的解锁，happens-before于随后对这个锁的加锁。&lt;/p&gt;&lt;p&gt;3）volatile变量规则：对一个volatile域的写，happens-before于任意后续对这个volatile域的 读。&lt;/p&gt;&lt;p&gt;4）传递性：如果A happens-before B，且B happens-before C，那么A happens-before C。&lt;/p&gt;&lt;p&gt;5）start()规则：如果线程A执行操作ThreadB.start()（启动线程B），那么A线程的 ThreadB.start()操作happens-before于线程B中的任意操作。&lt;/p&gt;&lt;p&gt;6）join()规则：如果线程A执行操作ThreadB.join()并成功返回，那么线程B中的任意操作 happens-before于线程A从ThreadB.join()操作成功返回。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[响了许久的花和炮]]></title><description><![CDATA[2019年1月1日记 响了许久的炮和花   春花谢，谢走花人怨。 花人愿，愿作梨花圈。 梨花眷，眷那故人念。 故人唸，唸不完春花。]]></description><link>https://www.abellee.cn/2019/01/01/响了许久的花和炮/</link><guid isPermaLink="false">https://www.abellee.cn/2019/01/01/响了许久的花和炮/</guid><pubDate>Tue, 01 Jan 2019 09:26:00 GMT</pubDate><content:encoded>&lt;p&gt;2019年1月1日记&lt;br/&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;结语&lt;/h2&gt;&lt;p&gt;字段延迟初始化降低了初始化类或创建实例的开销，但增加了访问被延迟初始化的字段 的开销。在大多数时候，正常的初始化要优于延迟初始化。如果确实需要对实例字段使用线程 安全的延迟初始化，请使用上面介绍的基于volatile的延迟初始化的方案；如果确实需要对静 态字段使用线程安全的延迟初始化，请使用上面介绍的基于类初始化的方案。&lt;/p&gt;&lt;h1&gt;c++&lt;/h1&gt;&lt;h2&gt;c++中的常见单例&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot;&gt;class Singleton {
+public:
+    static Singleton &amp;amp;GetInstance();
+private:
+    Singleton();
+    ~Singleton();
+    Singleton(const Singleton &amp;amp;);
+    const Singleton &amp;amp;opertor = (const Singleton &amp;amp;);
+
+}
+
+Singleton &amp;amp;Singleton::GetInstance() {
+    static Singleton instance;
+    return instance;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;DoubleCheckedLocking&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot;&gt;Singleton &amp;amp;Singleton::GetInstance() {
+    static Singleton *instance = nullptr;
+
+    if (!instance) {
+        Mutex mutex;
+        ScopedLock lock(&amp;amp;mutex);
+
+
+        if (!instance) {
+            instance = new Singleton();
+        }
+    }
+
+    return *instance;
+}
+&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[happens-before规则]]></title><description><![CDATA[《JSR-133:Java Memory Model and Thread Specification》定义了如下happens-before规则。 1）程序顺序规则：一个线程中的每个操作，happens-before于该线程中的任意后续操作。…]]></description><link>https://www.abellee.cn/2019/04/07/happens-before规则/</link><guid isPermaLink="false">https://www.abellee.cn/2019/04/07/happens-before规则/</guid><pubDate>Sun, 07 Apr 2019 09:27:35 GMT</pubDate><content:encoded>&lt;p&gt;《JSR-133:Java Memory Model and Thread Specification》定义了如下happens-before规则。&lt;/p&gt;&lt;p&gt;1）程序顺序规则：一个线程中的每个操作，happens-before于该线程中的任意后续操作。&lt;/p&gt;&lt;p&gt;2）监视器锁规则：对一个锁的解锁，happens-before于随后对这个锁的加锁。&lt;/p&gt;&lt;p&gt;3）volatile变量规则：对一个volatile域的写，happens-before于任意后续对这个volatile域的 读。&lt;/p&gt;&lt;p&gt;4）传递性：如果A happens-before B，且B happens-before C，那么A happens-before C。&lt;/p&gt;&lt;p&gt;5）start()规则：如果线程A执行操作ThreadB.start()（启动线程B），那么A线程的 ThreadB.start()操作happens-before于线程B中的任意操作。&lt;/p&gt;&lt;p&gt;6）join()规则：如果线程A执行操作ThreadB.join()并成功返回，那么线程B中的任意操作 happens-before于线程A从ThreadB.join()操作成功返回。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[响了许久的花和炮]]></title><description><![CDATA[2019年1月1日记 响了许久的炮和花   春花谢，谢走花人怨。 花人愿，愿作梨花圈。 梨花眷，眷那故人念。 故人唸，唸不完春花。]]></description><link>https://www.abellee.cn/2019/01/01/响了许久的花和炮/</link><guid isPermaLink="false">https://www.abellee.cn/2019/01/01/响了许久的花和炮/</guid><pubDate>Tue, 01 Jan 2019 09:26:00 GMT</pubDate><content:encoded>&lt;p&gt;2019年1月1日记&lt;br/&gt;
 响了许久的炮和花  &lt;/p&gt;&lt;p&gt;春花谢，谢走花人怨。&lt;br/&gt;
 花人愿，愿作梨花圈。&lt;br/&gt;
 梨花眷，眷那故人念。&lt;br/&gt;
