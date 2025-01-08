@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/about.js"],"names":["React","createElement"],"mappings":"8FAAA,gCAEe,cAAMA,IAAAC,cAAA,WAAK","file":"component---src-pages-about-js-4559f8c506ffc97fb7a8.js","sourcesContent":["import React from 'react';\n\nexport default () => <div>Homepage in a user's site</div>;\n"],"sourceRoot":""}
